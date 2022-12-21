@@ -1,0 +1,55 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 5rem 0;
+  /* text-align: center; */
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indexCtasGitHubButtonWrapper {
+  display: flex;
+}
+
+.indexCtas a:last-of-type {
+  margin: 20px 36px;
+}
+
+.indexCtas {
+  --ifm-button-size-multiplier: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 36px;
+  justify-content: center;
+}
+
+/* .heroLogo {
+  display: block;
+  float: none;
+  margin: 0 auto;
+} */
+
+.heroLogo {
+  animation-duration: 2s;
+  animation-name: jack-in-the-box;
+  float: right;
+  /* margin-top: 20px; */
+  padding: 0 20px 0;
+  height: auto;
+}
