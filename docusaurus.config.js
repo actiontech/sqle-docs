@@ -122,8 +122,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: '用户手册',
+                to: '/docs/user-manual/intro',
+              },
+              {
+                label: '部署文档',
+                to: '/docs/deploy-manual/intro',
+              },
+              {
+                label: '开发手册',
+                to: '/docs/dev-manual/intro',
               },
             ],
           },
@@ -131,16 +139,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '爱可生公司主页',
+                href: 'https://www.actionsky.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: '爱可生开源社区',
+                href: 'https://opensource.actionsky.com/',
               },
             ],
           },
@@ -148,17 +152,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/actiontech/sqle',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
