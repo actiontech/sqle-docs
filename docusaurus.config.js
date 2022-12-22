@@ -65,19 +65,35 @@ const config = {
         items: [
           {
             type: 'dropdown',
-            label: '在线体验',
+            label: '文档',
             position: 'left',
             items: [
               {
-                label: '社区版',
-                href: 'http://demo.sqle.actionsky.com/',
+                type: "doc",
+                label: '用户手册',
+                docId: 'user-manual/intro',
               },
               {
-                label: '企业版',
-                href: 'http://demo.sqle.actionsky.com:8889/',
+                type: "doc",
+                label: '开发手册',
+                docId: 'dev-manual/intro',
               },
-              // ... more items
             ],
+          },
+          {
+            type: "doc",
+            label: "安装部署",
+            docId: 'user-manual/intro',
+          },
+          {
+            type: "doc",
+            label: "在线体验",
+            docId: 'online-demo',
+          },
+          {
+            type: "doc",
+            label: "商务支持",
+            docId: 'support',
           },
           {
             type: 'docsVersionDropdown',

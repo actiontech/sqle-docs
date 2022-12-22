@@ -30,8 +30,8 @@ SQLE 是由上海爱可生信息技术股份有限公司 开发并开源，支�
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/user-manual/user-manual-intro">
-            用户手册
+            to="/docs/intro">
+            用户指南
           </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>
             <iframe src="https://ghbtns.com/github-btn.html?user=actiontech&repo=sqle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
