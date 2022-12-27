@@ -7,7 +7,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SQLE 文档',
-  tagline: 'SQLE 是啥啥啥',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -83,7 +82,7 @@ const config = {
           {
             type: "doc",
             label: "安装部署",
-            docId: 'user-manual/intro',
+            docId: 'deploy-manual/intro',
           },
           {
             type: "doc",
@@ -92,7 +91,7 @@ const config = {
           },
           {
             type: "doc",
-            label: "商务支持",
+            label: "商业支持",
             docId: 'support',
           },
           {
