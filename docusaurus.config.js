@@ -122,7 +122,7 @@ const config = {
             items: [
               {
                 label: '用户手册',
-                to: '/docs/user-manual/intro',
+                to: '/docs/user-manual/project/intro',
               },
               {
                 label: '部署文档',
