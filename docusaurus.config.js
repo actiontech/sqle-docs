@@ -70,7 +70,7 @@ const config = {
               {
                 type: "doc",
                 label: '用户手册',
-                docId: 'user-manual/intro',
+                docId: 'user-manual/project/intro',
               },
               {
                 type: "doc",

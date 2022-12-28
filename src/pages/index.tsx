@@ -30,7 +30,7 @@ SQLE 是由上海爱可生信息技术股份有限公司 开发并开源，支�
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/guide">
             用户指南
           </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>

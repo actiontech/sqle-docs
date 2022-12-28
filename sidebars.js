@@ -15,6 +15,7 @@
 const sidebars = {
   tutorialSidebar: [
     "intro",
+    "guide",
     "online-demo",
     "support",
     {
@@ -28,7 +29,6 @@ const sidebars = {
       type: 'category',
       label: '用户手册',
       items: [
-        "user-manual/intro",
         {
           type: 'category',
           label: '项目',
