@@ -34,6 +34,29 @@ const sidebars = {
           label: '项目',
           items: [
             "user-manual/project/intro",
+            "user-manual/project/instance-manager",
+            "user-manual/project/rule-template-manager",
+            "user-manual/project/workflow-template-manager",
+            "user-manual/project/whitelist-manager",
+            // {
+            //   type: 'category',
+            //   label: '成员',
+            //   items: [
+            //     "user-manual/project/member-manager/user",
+            //     // "user-manual/project/member-manager/user-group",
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: '工单',
+            //   items: [
+            //     "user-manual/project/workflow/intro",
+            //     "user-manual/project/workflow/create-workflow",
+            //     "user-manual/project/workflow/audit-workflow",
+            //     "user-manual/project/workflow/exec-workflow",
+            //     "user-manual/project/workflow/others",
+            //   ],
+            // }
           ],
         },
       ],
