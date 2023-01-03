@@ -81,18 +81,23 @@ const config = {
           },
           {
             type: "doc",
-            label: "安装部署",
-            docId: 'deploy-manual/intro',
-          },
-          {
-            type: "doc",
             label: "在线体验",
             docId: 'online-demo',
           },
           {
             type: "doc",
+            label: "安装部署",
+            docId: 'deploy-manual/intro',
+          },
+          {
+            type: "doc",
+            label: "社区支持",
+            docId: 'community-support',
+          },
+          {
+            type: "doc",
             label: "商业支持",
-            docId: 'support',
+            docId: 'commercial-support',
           },
           {
             type: 'docsVersionDropdown',

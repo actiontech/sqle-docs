@@ -15,14 +15,19 @@
 const sidebars = {
   tutorialSidebar: [
     "intro",
-    "guide",
     "online-demo",
-    "support",
+    "community-support",
+    "commercial-support",
     {
       type: 'category',
       label: '安装部署',
       items: [
         "deploy-manual/intro",
+        "deploy-manual/config",
+        "deploy-manual/source",
+        "deploy-manual/rpm",
+        "deploy-manual/docker",
+        "deploy-manual/docker-compose",
       ],
     },
     {
