@@ -18,6 +18,7 @@ const sidebars = {
     "online-demo",
     "community-support",
     "commercial-support",
+    "quick-usage",
     {
       type: 'category',
       label: '安装部署',

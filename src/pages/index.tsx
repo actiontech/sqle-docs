@@ -25,7 +25,7 @@ function HomepageHeader() {
 SQLE 是由上海爱可生信息技术股份有限公司 开发并开源，支持SQL审核、索引优化、事前审核、事后审核、支持标准化上线流程、原生支持 MySQL 审核且数据库类型可扩展的 SQL 审核工具</p>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/quick-usage">
             快速开始
           </Link>
           <span className={styles.indexCtasGitHubButtonWrapper}>
