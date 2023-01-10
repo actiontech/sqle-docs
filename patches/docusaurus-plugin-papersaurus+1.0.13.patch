@@ -1,0 +1,22 @@
+diff --git a/node_modules/docusaurus-plugin-papersaurus/lib/generate.js b/node_modules/docusaurus-plugin-papersaurus/lib/generate.js
+index c1114a3..b22ab02 100644
+--- a/node_modules/docusaurus-plugin-papersaurus/lib/generate.js
++++ b/node_modules/docusaurus-plugin-papersaurus/lib/generate.js
+@@ -217,13 +217,14 @@ async function createPdfFilesRecursive(sideBarItem, parentTitles, documentVersio
+ }
+ function readHtmlForItem(item, parentTitles, rootDocUrl, rootDocId, htmlDir, version, siteConfig) {
+     item.unVersionedId = item.id;
+-    if (item.unVersionedId.indexOf('/') >= 0) {
+-        item.unVersionedId = item.unVersionedId.substr(item.unVersionedId.indexOf('/') + 1);
+-    }
++    // if (item.unVersionedId.indexOf('/') >= 0) {
++    //     item.unVersionedId = item.unVersionedId.substr(item.unVersionedId.indexOf('/') + 1);
++    // }
+     let htmlFilePath = htmlDir;
+     if (item.unVersionedId !== rootDocId) {
+         htmlFilePath = join(htmlFilePath, item.unVersionedId);
+     }
++    console.log(`${pluginLogPrefix}Docs id is ${item.unVersionedId}`)
+     htmlFilePath = join(htmlFilePath, 'index.html');
+     let stylePath = '';
+     let scriptPath = '';

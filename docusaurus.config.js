@@ -51,6 +51,56 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      'docusaurus-plugin-papersaurus',
+      {
+        keepDebugHtmls: true,
+        sidebarNames: ['tutorialSidebar'],
+        rootDocIds: [
+          { version: 'default', rootDocId: '/intro'}
+        ],
+        addDownloadButton: false,
+        autoBuildPdfs: true,
+        downloadButtonText: 'Download as PDF',
+        ignoreDocs: ['licenses'],
+        stylesheets: [],
+        scripts: [],
+        coverPageHeader: `...`,
+        coverPageFooter: `...`,
+        getPdfCoverPage: (siteConfig, pluginConfig, pageTitle, version) => {
+          return `
+    <!DOCTYPE html>
+    <html>
+    <head>
+      
+    </head>
+      <body>
+        <div style="margin: 2cm;">
+          <h1 style="color:#005479;font-size:28px;font-family:sans-serif;font-weight:bold">SQLE 文档<h1>
+          <dl style="font-family:sans-serif;margin-top:10em;display: flex; flex-flow: row; flex-wrap: wrap; width: 600px; overflow: visible;color:#005479;font-size:12px;font-weight:normal;">
+            <dt style="margin-top:1em;flex: 0 0 20%; text-overflow: ellipsis; overflow: hidden;">Version:</dt>    
+            <dd style="margin-top:1em;flex:0 0 80%; margin-left: auto; text-align: left;text-overflow: ellipsis; overflow: hidden;">${version}</dd>
+            <dt style="margin-top:1em;flex: 0 0 20%; text-overflow: ellipsis; overflow: hidden;">Date:</dt>
+            <dd style="margin-top:1em;flex:0 0 80%; margin-left: auto; text-align: left;text-overflow: ellipsis; overflow: hidden;">${new Date().toISOString().substring(0,10)}</dd>
+          </dl>
+        </div>
+      </body>
+    </html>
+  `;
+        },
+        getPdfPageHeader: (siteConfig, pluginConfig, pageTitle) => {
+          return `...`;
+        },
+        getPdfPageFooter: (siteConfig, pluginConfig, pageTitle) => {
+          return `...`;
+        },
+        author: 'Author name',
+        footerParser: /© Your company\d{4}-\d{2}-\d{2}Page \d* \/ \d*/g,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
