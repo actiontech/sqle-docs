@@ -40,6 +40,7 @@ const sidebars = {
           label: '项目',
           items: [
             "user-manual/project/intro",
+            "user-manual/project/project_create",
             "user-manual/project/instance-manager",
             "user-manual/project/rule-template-manager",
             "user-manual/project/workflow-template-manager",
