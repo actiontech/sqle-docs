@@ -33,9 +33,6 @@ SQLE通过集成CloudBeaver，使得SQLE具备数据库操作的能力，方便�
 
 #### 步骤三 登录CloudBeaver
 自动登录说明：在登陆SQLE时会检测CloudBeaver是否处于登陆状态, SQLE将会自动使用当前SQLE用户登录CloudBeaver。 
-:::tip
-【这里需要补充一下ckoudbever 的登录过期机制】
-:::
 :::caution
 若当前用户无SQL查询权限，则无权登录。
 :::
