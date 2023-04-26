@@ -68,6 +68,36 @@ const sidebars = {
              }
           ],
         },
+        {
+          type: 'category',
+          label: '系统设置',
+          items: [
+            "user-manual/sys-configuration/intro",
+            "user-manual/sys-configuration/login_syn",
+            "user-manual/sys-configuration/message_syn",
+            "user-manual/sys-configuration/process_syn",
+            "user-manual/sys-configuration/instance_syn",
+          ],
+        },           
+        {
+          type: 'category',
+          label: '工作台',
+          items: [
+            "user-manual/sql-workbench/introduction",
+            "user-manual/sql-workbench/how-to-configure",
+            "user-manual/sql-workbench/how-to-use",
+          ],
+        },
+        {
+          type: 'category',
+          label: '用户管理',
+          items: [
+            "user-manual/user-manager/intro",
+            "user-manual/user-manager/user",
+            "user-manual/user-manager/user-group",
+            "user-manual/user-manager/role",
+          ],
+        },    
       ],
     },
     {
