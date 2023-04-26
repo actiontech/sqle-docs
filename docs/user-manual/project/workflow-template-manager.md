@@ -1,7 +1,5 @@
 ---
-id: doc5
 title: 审核流程模板
-sidebar_label: 审核流程模板
 ---
 
 # 流程模版

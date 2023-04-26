@@ -1,7 +1,5 @@
 ---
-id: doc6
 title: 白名单管理【企业版】
-sidebar_label: 白名单管理
 ---
 
 # 白名单【企业版】
