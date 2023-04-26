@@ -16,7 +16,7 @@ SQLE通过集成CloudBeaver，使得SQLE具备数据库操作的能力，方便�
 因而SQLe平台集成CloudBeaver数据库可视化管理工具，满足在线SQL查询需求的同时，进行业务人员的操作权限控制，并对业务人员的SQL进行审计，拒绝不合规的SQL运行。
 
 ### 前置条件
-安装CloudBeaver并完成配置，参考sql工作台配置方法。【超链缺失】
+安装CloudBeaver并完成配置，参考[sql工作台配置方法](how-to-configure.md)。
 
 ### 操作步骤
 #### 步骤一 SQLE平台配置用户

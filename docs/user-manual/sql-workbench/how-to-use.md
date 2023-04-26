@@ -5,7 +5,7 @@ title: 使用定制包快速搭建环境
 # 使用定制抱快速搭建环境
 SQLE在原有CloudBeaver release_22_2_0 分支的基础上, 增加了对OceanBase 和 TiDB 的支持, 用户无需再手动配置环境，可直接使用SQL工作台功能。
 
-img.png【图片缺失】
+![cb](img/appear.png)
 
 定制分支与原分支区别详情
 * 支持并默认启用 OceanBase 驱动
@@ -27,7 +27,7 @@ https://github.com/actiontech/cloudbeaver/releases/tag/sqle.22.2.0
 
 ### 使用说明
 #### 编译和运行项目
-与 原项目编译运行方式 保持一致【超链缺失，需要确认指向哪个超链】
+与 原项目编译运行方式 保持一致
 
 #### 编译docker镜像
 进入项目的 deploy/docker 目录, 然后执行 ./make-docker-container.sh
