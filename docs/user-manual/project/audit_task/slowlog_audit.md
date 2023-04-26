@@ -34,7 +34,9 @@ title: 慢日志
 
 示例如下：
 
-```./scannerd slowquery -H "127.0.0.1" -P "10000" -N "slowlog_of_GRADE1" -J "default" -A eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJzbG93bG9nX29mX0dSQURFMSIsImV4cCI6MTcwODA3MjMzNSwibmFtZSI6ImFkbWluIn0.ArU5HpU7aSSVrRutxSAwRFYahSx0_4RNzD4KB6LTfpM --log-file /var/lib/mysql/mysql-for-test-slow.log```
+```bash
+./scannerd slowquery -H "127.0.0.1" -P "10000" -N "slowlog_of_GRADE1" -J "default" -A eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJzbG93bG9nX29mX0dSQURFMSIsImV4cCI6MTcwODA3MjMzNSwibmFtZSI6ImFkbWluIn0.ArU5HpU7aSSVrRutxSAwRFYahSx0_4RNzD4KB6LTfpM --log-file /var/lib/mysql/mysql-for-test-slow.log
+```
 
 参数解释如下：
 
@@ -50,14 +52,10 @@ title: 慢日志
 
 ### 执行结果
 在扫描任务列表查看新建的扫描任务
-SQLe > 慢日志扫描 > image2023-2-16 19:38:32.png
-【图片缺失】
+![list](img/slowlog-list.png)
 在扫描任务详情查看扫描的SQL语句及审核报告
-
-SQLe > 慢日志扫描 > image2023-2-16 19:39:30.png
-
-SQLe > 慢日志扫描 > image2023-2-16 19:39:55.png
-【图片缺失】
+![result](img/slowlog-result.png)
+![result2](img/slowlog-result2.png)
 
 ### 后续步骤
 分析扫描任务报告中出现的慢SQL

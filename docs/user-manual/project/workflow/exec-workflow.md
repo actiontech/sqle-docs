@@ -31,7 +31,6 @@ title: 上线工单
 
 
 ### 执行结果
-SQLe > 3 上线工单 > image2023-2-3 17:6:56.png
-【图片缺失】
+![result](img/audit-result.png)
 
 

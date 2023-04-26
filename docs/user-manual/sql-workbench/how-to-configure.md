@@ -19,7 +19,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 |配置文件名 | 是否必须修改 | 修改内容 | 修改原因|
 |--|--|--|--|
 |cloudbeaver.conf|是|将server.rootURI的值改为'/sql_query'；将server.serviceURI 的值改为 '/api/'(server.serviceURI默认就是/api/)|SQLE目前只支持代理这个路由|
-img_1.png【图片缺失】
+![config](img/config.png)
 
 #### 步骤二 重启CloudBeaver
 配置cloudbeaver后，需要重启cloudbeaver以使配置项生效
@@ -57,7 +57,7 @@ img_1.png【图片缺失】
 
 配置文件内容参考：
 
-img.png【图片缺失】
+![sqleconfig](img/sqleconfig.png)
 
 #### 步骤二 重启SQLE
 需要重启以使配置项生效。
