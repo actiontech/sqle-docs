@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 登录对接
-sidebar_label: 登陆对接
 ---
 # 登录对接
 当前登录对接已实现LDAP方式及Oauth2.0方式

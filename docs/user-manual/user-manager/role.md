@@ -1,7 +1,5 @@
 ---
-id: doc4
 title: 角色管理
-sidebar_label: 角色管理
 ---
 
 # 角色管理

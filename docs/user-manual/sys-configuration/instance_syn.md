@@ -1,7 +1,5 @@
 ---
-id: doc5
 title: 外部数据源同步
-sidebar_label: 外部数据源同步
 ---
 
 # 外部数据源同步

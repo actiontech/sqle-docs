@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 库表元数据
-sidebar_label: 库表元数据
 ---
 
 # 库表元数据

@@ -1,7 +1,5 @@
 ---
-id: doc3
 title: 消息推送
-sidebar_label: 消息推送
 ---
 
 # 消息推送

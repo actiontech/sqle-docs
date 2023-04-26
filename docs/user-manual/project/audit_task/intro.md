@@ -1,7 +1,5 @@
 ---
-id: doc1
 title: 功能说明
-sidebar_label: 功能说明
 ---
 
 # 功能介绍

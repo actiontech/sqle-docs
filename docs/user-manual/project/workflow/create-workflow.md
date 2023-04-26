@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 创建工单
-sidebar_label: 创建工单
 ---
 
 # 创建工单

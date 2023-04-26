@@ -1,7 +1,5 @@
 ---
-id: doc3
 title: 慢日志
-sidebar_label: 慢日志
 ---
 
 # 慢日志

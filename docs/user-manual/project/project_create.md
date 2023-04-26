@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 创建项目
-sidebar_label: 创建项目
 ---
 # 创建项目【企业版】
 

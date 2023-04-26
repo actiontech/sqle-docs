@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 配置方法
-sidebar_label: 配置方法
 ---
 
 # 配置方法

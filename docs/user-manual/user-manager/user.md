@@ -1,7 +1,5 @@
 ---
-id: doc2
 title: 用户管理
-sidebar_label: 用户管理
 ---
 
 # 用户管理

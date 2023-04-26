@@ -1,5 +1,5 @@
 ---
-id: doc3
+id: doc4
 title: 审核规则模板
 sidebar_label: 审核规则模板
 ---

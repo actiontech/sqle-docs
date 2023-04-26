@@ -1,7 +1,5 @@
 ---
-id: doc4
 title: 上线工单
-sidebar_label: 上线工单
 ---
 
 # 上线工单

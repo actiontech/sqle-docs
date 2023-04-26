@@ -1,7 +1,5 @@
 ---
-id: doc4
 title: 流程对接
-sidebar_label: 流程对接
 ---
 
 # 流程对接

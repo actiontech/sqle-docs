@@ -1,7 +1,5 @@
 ---
-id: doc3
 title: 审核工单
-sidebar_label: 审核工单
 ---
 # 审核工单
 审核工单包含两部分
