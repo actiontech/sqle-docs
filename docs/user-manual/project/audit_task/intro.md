@@ -34,16 +34,17 @@ title: 功能说明
     * openapi推送
     * 自定义
 
-社区版和企业版的扫描任务区别
-|扫描任务类型|数据库类型|社区版可见|企业版可见|
-|--|--|--|--|
-|库表元数据	|MySQL	|√	|√|
-|Mybatis扫描|MySQL	|√	|√|
-|慢日志|MySQL	|√	|√|
-|阿里云RDS慢日志|MySQL	|√|	√|
-|阿里云RDS审计	| MySQL|√	|√|
-|应用程序SQL抓取|MySQL	|√|	√|
-|oracle top SQL|	Oracle	|√	|√|
-|tidb审计日志	|TiDB|	√|	√|
-|mybatis扫描 |Oceanbase for MySQL | | √|
-|top SQL |Oceanbase for MySQL | |√|
+| 扫描任务类型 | 社区版可见 | 企业版可见 |
+| -- | -- | -- |
+|IDE审核插件| √|√|
+|MySQL库表元数据	|√	|√|
+|MySQL Mybatis扫描|√|√|
+|MySQL 阿里云RDS慢日志|√|	√|
+|MySQL 阿里云RDS审计|√ |√|
+|MySQL 慢日志审核 | | √ |
+|应用程序SQL抓取| |	√|
+|Oracle TopSQL| |√|
+|TiDB审计日志|	|	√|
+|OceanBase for MySQL MyBatis 扫描| | √|
+|OceanBase for MySQL Top SQL| |√|
+|自定义（通过调用接口推送bash脚本、python程序中的SQL）| |√|

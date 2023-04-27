@@ -43,11 +43,13 @@ cloudbeaver.conf配置文件通常在conf路径下
 #### 步骤一 修改SQLE配置文件, 增加SQL工作台参数
 打开SQLE配置文件，配置文件一般位于SQLE工作目录的etc目录下, 文件名一般为sqled.yml
 配置文件新增参数sql_query_config
+
 |参数字段 | 参数说明 |
 |--|-----|
 |sql_query_config|sql工作台参数, 此参数与 sqle_config在同一级|
 
 在sql_query_config参数下增加子参数，子参数在 sql_query_config 的下一级, 需要注意缩进
+
 |参数字段 |	参数说明|
 |--|-----|
 |cloud_beaver_host|cloudbeaver IP地址|
