@@ -42,11 +42,11 @@ title: 社区版及企业版功能对比
 | |定时上线|√|√|
 | |线下执行，线上标记|√|√|
 |智能扫描|IDE 审核插件|√|√|
-| |MySQL|MyBatis 扫描|√|√|
-| |MySQL|库表元数据|√|√|
-| |MySQL|阿里云 RDS慢日志|√|√|
-| |MySQL|阿里云 RDS审计日志|√|√|
-| |MySQL|慢日志审核|√| |
+| |MySQL MyBatis 扫描|√|√|
+| |MySQL 库表元数据|√|√|
+| |MySQL 阿里云 RDS慢日志|√|√|
+| |MySQL 阿里云 RDS审计日志|√|√|
+| |MySQL 慢日志审核|√| |
 | |应用程序SQL抓取|√| |
 | |Oracle TopSQL|√| |
 | |OceanBase for MySQL|MyBatis 扫描|√| |
