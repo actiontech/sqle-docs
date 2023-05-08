@@ -3,61 +3,296 @@ title: 社区版及企业版功能对比
 ---
 
 # 社区版及企业版功能对比
-
-|模块|功能|企业版|社区版|
-|--|--|--|--|
-|平台基础能力|资源管理|√|√|
-| |权限管理|√|√|
-| |用户对接：LDAP|√|√|
-| |用户对接：OAuth2.0单点登录|√| |
-| |对接钉钉在线审批|√|√|
-| |支持爱可生云树DMP数据源同步|√|√|
-| |资源管理|√| |
-|量化管理|项目管理|√| |
-||报表统计|√| |
-| |Dashboard|√|√|
-|支持的数据库|MySQL|√|√|
-| |DB2|√| |
-| |TiDB|√| |
-| |OceanBase for MySQL|√| |
-| |PostgreSQL|√| |
-| |Oracle|√| |
-| |SQL Server|√| |
-|SQL审核|同一工单多数据源|√| |
-| |多种SQL上传方式|√|√|
-| |自助审核|√|√|
-| |审核白名单|√| |
-| |基于规则的审核建议|√|√|
-| |审核建议去重展示|√|√|
-| |SQL下钻分析|√| |
-| |大表进行 Online DDL|√|√|
-| |SQL上下文关联|√|√|
-| |生成回滚语句|√|√|
-| |审核评分|√|√|
-| |审核报告下载|√|√|
-| |SQL语句下载|√|√|
-|工单上线|自定义审核流程|√|√|
-| |多数据源批量上线|√|√|
-| |立即上线|√|√|
-| |定时上线|√|√|
-| |线下执行，线上标记|√|√|
-|智能扫描|IDE 审核插件|√|√|
-| |MySQL MyBatis 扫描|√|√|
-| |MySQL 库表元数据|√|√|
-| |MySQL 阿里云 RDS慢日志|√|√|
-| |MySQL 阿里云 RDS审计日志|√|√|
-| |MySQL 慢日志审核|√| |
-| |应用程序SQL抓取|√| |
-| |Oracle TopSQL|√| |
-| |OceanBase for MySQL|MyBatis 扫描|√| |
-| |OceanBase for MySQL|Top SQL|√| |
-| |自定义（通过调用接口推送bash脚本、python程序中的SQL）|√|√|
-| 告警通知|邮件告警|√|√|
-| |微信企业号告警|√|√|
-| |飞书告警|√|√|
-| |webhooks告警|√| |
-|SQL工作台|集成CloudBeaver-提供在线SQL客户端|√|√|
-| |安全管控|√|√|
-|OpenAPI|提供完整的标准接口方案|√|√|
-|专家服务|提供数据对接、SQL规范制定、SQL优化建议等7x24小时服务|√| |
-
+ <table border="0"  cellspacing="0" cellpadding="5">
+        <tr>
+            <td width="150">模块</td>
+            <td width="500">功能</td>
+            <td>企业版</td>
+            <td>社区版</td>
+        </tr>
+        <tr>
+            <td  rowspan="6">平台基础能力</td>
+            <td>资源管理</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>权限管理</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>用户对接:LDAP</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>用户对接:Oauth2.0单点登录</td>
+            <td>√</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>对接钉钉在线审批</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>支持爱可生云树DMP数据源同步</td>
+            <td>√</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td  rowspan="3">量化管理</td>
+            <td>项目管理</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>报表统计</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Dashboard</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td  rowspan="7">支持的数据库</td>
+            <td>MySQL</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>DB2</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TiDB</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OceanBase for MySQL</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>PostgreSQL</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Oracle</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SQL Server</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td  rowspan="14">SQL审核</td>
+            <td>同一工单多数据源</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>多种SQL上传方式</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>自助审核</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>动态配置审核规则模板</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>审核白名单</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>基于规则的审核建议</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>审核建议去重展示</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL下钻分析</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>大表进行 Online DDL</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL上下文关联</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>生成回滚语句</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>审核评分</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>审核报告下载</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL语句下载</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td  rowspan="5">工单上线</td>
+            <td>自定义审核流程</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>多数据源批量上线</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>立即上线</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>定时上线</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>线下执行，线上标记</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td  rowspan="12">智能扫描</td>
+            <td>IDE 审核插件</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|MyBatis 扫描</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|库表元数据</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|阿里云 RDS慢日志</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|阿里云 RDS审计日志</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|慢日志审核</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>应用程序SQL抓取</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Oracle TopSQL</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TiDB审计日志</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OceanBase for MySQL|MyBatis 扫描</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OceanBase for MySQL|Top SQL</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>自定义（通过调用接口推送bash脚本、python程序中的SQL）</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td  rowspan="4">告警通知</td>
+            <td>邮件告警</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>微信企业号告警</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>飞书告警</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>webhooks告警</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td  rowspan="2">SQL工作台</td>
+            <td>集成CloudBeaver-提供在线SQL客户端</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>安全管控</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OpenAPI</td>
+            <td>提供完整的标准接口方案</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>专家服务</td>
+            <td>提供数据对接、SQL规范制定、SQL优化建议等7x24小时服务</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+    </table>
