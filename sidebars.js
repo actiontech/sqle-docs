@@ -18,6 +18,7 @@ const sidebars = {
     "online-demo",
     "community-support",
     "commercial-support",
+    "compare",
     "quick-usage",
     {
       type: 'category',
