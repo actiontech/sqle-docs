@@ -49,13 +49,13 @@ SQLE中支持通过配置的方式接入OAUTH2系统, 如同其他系统一样�
 * 若选择启用，则须填写以下信息
     * 应用ID：应用的唯一标识, 从要对接的平台申请 , 在OAuth2.0认证过程中，appid的值即为oauth_consumer_key的值
     * 应用密钥：appid对应的密钥，访问用户资源时用来验证应用的合法性。在OAuth2.0认证过程中，appkey的值即为oauth_consumer_secret的值
-    * 外部访问sqle的地址：格式为 http(s)://ip:port
+    * 外部访问SQLE的地址：格式为 http(s)://ip:port
     * oauth2登录授权页面地址：格式类似于 http(s)://ip:port/xxx
     * oauth2 access_token 获取地址：格式类似于 http(s)://ip:port/xxx
     * oauth2 user id 获取地址：格式类似于 http(s)://ip:port/xxx
     * 请求资源范围：此范围由验证服务器定义
-    * access_token放置位置：sqle会在获取用户ID时将access_token放在这个key对应的value中, 此参数会作为get请求的参数发送给用户ID获取地址
-    * 用户ID保存位置：sqle会尝试使用此key从第三方平台的响应中解析出用户ID,用户ID应当为唯一ID
+    * access_token放置位置：SQLE会在获取用户ID时将access_token放在这个key对应的value中, 此参数会作为get请求的参数发送给用户ID获取地址
+    * 用户ID保存位置：SQLE会尝试使用此key从第三方平台的响应中解析出用户ID,用户ID应当为唯一ID
     * 登录按钮文字
 
 #### 后续操作

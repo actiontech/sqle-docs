@@ -92,12 +92,12 @@ const config = {
           {
             type: "doc",
             label: "社区支持",
-            docId: 'community-support',
+            docId: 'support/community-support',
           },
           {
             type: "doc",
             label: "商业支持",
-            docId: 'commercial-support',
+            docId: 'support/commercial-support',
           },
           {
             type: 'docsVersionDropdown',

@@ -29,7 +29,7 @@ title: 慢日志
 
 #### 步骤二：执行scannerd文件
 :::tip
-注意：scannerd文件通常在sqle的bin目录下，需将scannerd文件与数据源放置在同一环境下执行
+注意：scannerd文件通常在SQLE的bin目录下，需将scannerd文件与数据源放置在同一环境下执行
 ::: 
 
 示例如下：
@@ -41,9 +41,9 @@ title: 慢日志
 参数解释如下：
 
 * -J, --project：说明扫描任务所在项目，例“default”
-* -H, --host string：指定SQLe主机所在地址
+* -H, --host string：指定SQLE主机所在地址
 * -N, --name string：指定扫描任务名称，scannerd会将获得的慢SQL传至指定的任务池中审核
-* -P, --port string：指定SQLe所在端口
+* -P, --port string：指定SQLE所在端口
 * -A, --token string：输入扫描任务凭证token
 * --log-file：指定慢日志文件，scannerd从该文件中获取慢SQL
 

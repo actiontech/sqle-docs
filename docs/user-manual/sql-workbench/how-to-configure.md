@@ -5,7 +5,7 @@ title: 配置方法
 # 配置方法
 ### 安装CloudBeaver
 :::tip
-SQLe目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1版本
+SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1版本
 :::
 
 docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
@@ -26,7 +26,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 
 #### 步骤三 初始化CloudBeaver
 * 使用 http://{IP}:8978/sql_query#/ 可以进入CloudBeaver即代表配置正确
-* 设置管理员用户名及密码：该用户名及密码将用于后续sqle配置文件中
+* 设置管理员用户名及密码：该用户名及密码将用于后续SQLE配置文件中
 * 确认security服务开启
 * 完成设置，登录管理员账号成功，则初始化成功
 
@@ -36,7 +36,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 * 确认没有冲突用户:[访问管理] - [用户] 处不应当有名称格式为 sqle-xxx的用户存在, 这会与SQLE自动创建的用户冲突
 
 :::tip
-用admin 跳转Cloudbeaver的时候，sqle会在Cloudbeaver创建一个新的用户叫sqle-admin ，同时把这个用户缓存到数据库里，每次跳转先去数据库里找这个用户，如果已经存在，就会拿这个用户直接去登陆cb 
+用admin 跳转Cloudbeaver的时候，SQLE会在Cloudbeaver创建一个新的用户叫sqle-admin ，同时把这个用户缓存到数据库里，每次跳转先去数据库里找这个用户，如果已经存在，就会拿这个用户直接去登陆cb 
 :::
 
 ### 配置SQLE
@@ -65,7 +65,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 需要重启以使配置项生效。
 
 #### 步骤三 检查SQLE是否已成功集成CloudBeaver
-SQLe重启后进入平台，点击打开sql工作台，若成功跳转，则说明当前SQLe平台已成功集成CloudBeaver。
+SQLE重启后进入平台，点击打开sql工作台，若成功跳转，则说明当前SQLE平台已成功集成CloudBeaver。
 
 :::tip
 * 平台管理员账户需要有 [添加/修改/删除] [用户/实例/权限] 的权限

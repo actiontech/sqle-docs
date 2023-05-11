@@ -16,9 +16,15 @@ const sidebars = {
   tutorialSidebar: [
     "intro",
     "online-demo",
-    "community-support",
-    "commercial-support",
-    "compare",
+    {
+      type: 'category',
+      label: '产品支持',
+      items: [
+        "support/compare",
+        "support/community-support",
+        "support/commercial-support",
+      ],
+    },
     "quick-usage",
     {
       type: 'category',
