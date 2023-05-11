@@ -113,6 +113,13 @@ const sidebars = {
         "dev-manual/intro",
       ],
     },
+    {
+      type: 'category',
+      label: 'FAQ',
+      items: [
+        "FAQ/whichdatabase",
+      ],
+    },
   ],
 };
 

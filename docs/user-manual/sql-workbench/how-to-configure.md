@@ -65,7 +65,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 需要重启以使配置项生效。
 
 #### 步骤三 检查SQLE是否已成功集成CloudBeaver
-SQLE重启后进入平台，点击打开sql工作台，若成功跳转，则说明当前SQLE平台已成功集成CloudBeaver。
+SQLE重启后进入平台，点击打开SQL工作台，若成功跳转，则说明当前SQLE平台已成功集成CloudBeaver。
 
 :::tip
 * 平台管理员账户需要有 [添加/修改/删除] [用户/实例/权限] 的权限
