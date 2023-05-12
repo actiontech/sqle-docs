@@ -100,6 +100,10 @@ const config = {
             docId: 'support/commercial-support',
           },
           {
+            type: 'search',
+            position: 'left',
+          },
+          {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownItemsAfter: [
@@ -163,6 +167,12 @@ const config = {
           },
         ],
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      },
+      algolia: {
+        appId: 'BMN0MQAXMQ',
+        apiKey: '10585e856469906cc4708f541ae86204',
+        indexName: 'sqle-docs',
+        contextualSearch: true,
       },
       prism: {
         theme: lightCodeTheme,
