@@ -32,6 +32,7 @@
         * [登录对接](user-manual/sys-configuration/login_syn.md)
         * [消息推送](user-manual/sys-configuration/message_syn.md)
         * [流程对接](user-manual/sys-configuration/process_syn.md)
+        * [webhook配置](user-manual/sys-configuration/webhook.md)
         * [外部数据源同步【企业版】](user-manual/sys-configuration/instance_syn.md)
     * [工作台](user-manual/sql-workbench/introduction.md)
         * [配置方法](user-manual/sql-workbench/how-to-configure.md)
