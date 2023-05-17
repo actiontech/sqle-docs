@@ -169,9 +169,9 @@ const config = {
         // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       algolia: {
-        appId: 'BMN0MQAXMQ',
-        apiKey: '10585e856469906cc4708f541ae86204',
-        indexName: 'sqle-docs',
+        appId: 'U4XTB1C653',
+        apiKey: 'ea64691127ce74f0def2b1e0ea6a05f2',
+        indexName: 'sqle',
         contextualSearch: true,
       },
       prism: {
