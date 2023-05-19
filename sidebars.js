@@ -36,6 +36,7 @@ const sidebars = {
         "deploy-manual/rpm",
         "deploy-manual/docker",
         "deploy-manual/docker-compose",
+        "deploy-manual/cluster",
       ],
     },
     {
@@ -112,6 +113,15 @@ const sidebars = {
       label: '开发手册',
       items: [
         "dev-manual/intro",
+        {
+          type: 'category',
+          label: '数据库审核插件',
+          items: [
+            "dev-manual/plugins/intro",
+            "dev-manual/plugins/howtouse",
+            "dev-manual/plugins/howtodev",
+          ],
+        },
       ],
     },
     {
