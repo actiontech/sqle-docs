@@ -16,4 +16,6 @@ SQLE支持对网站logo及标题进行自定义设置，满足企业用户的个
 * 编辑个性化logo：用户点击上传及更新icon，选择需要的图片，点击打开后，页面logo将变更为所选图片；
   * 限制：图片大小不可超过102,400 Bytes；
 
+![customize](img/customize.png)
+
 
