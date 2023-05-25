@@ -36,12 +36,14 @@ const sidebars = {
         "deploy-manual/rpm",
         "deploy-manual/docker",
         "deploy-manual/docker-compose",
+        "deploy-manual/cluster",
       ],
     },
     {
       type: 'category',
       label: '用户手册',
       items: [
+        "user-manual/operation_records",
         {
           type: 'category',
           label: '项目',
