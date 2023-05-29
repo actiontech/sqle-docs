@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SQLE 文档',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://actiontech.github.io',
   baseUrl: '/sqle-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -35,7 +35,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/actiontech/sqle-docs/tree/main/packages/', // TODO
+          editUrl: 'https://github.com/actiontech/sqle-docs/tree/main/',
           // lastVersion: 'v2',
           versions: {
             current: {
