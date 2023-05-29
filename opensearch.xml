@@ -4,8 +4,8 @@
   <ShortName>SQLE 文档</ShortName>
   <Description>Search SQLE 文档</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://your-docusaurus-test-site.com/sqle-docs/img/favicon.png</Image>
-  <Url type="text/html" method="get" template="https://your-docusaurus-test-site.com/sqle-docs/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://your-docusaurus-test-site.com/sqle-docs/opensearch.xml" />
-  <moz:SearchForm>https://your-docusaurus-test-site.com/sqle-docs/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://actiontech.github.io/sqle-docs/img/favicon.png</Image>
+  <Url type="text/html" method="get" template="https://actiontech.github.io/sqle-docs/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://actiontech.github.io/sqle-docs/opensearch.xml" />
+  <moz:SearchForm>https://actiontech.github.io/sqle-docs/</moz:SearchForm>
 </OpenSearchDescription>
