@@ -27,7 +27,7 @@ title: 快速开始
 使用 admin 用户进入项目界面，录入一个MySQL类型的数据源 `test`，并可以绑定上一步骤中创建的规则模版，这里绑定系统内置的全局默认规则模版。如何管理数据源，可参考：[数据源](./user-manual/project/instance-manager)。
 ![project-instance](./img/project-instance.png)
 ### 给项目添加成员
-使用 admin 用户进入项目界面，给项目添加成员，本次的重点是要讲上述创建的全局用户添加到项目内，给用户 A 授予数据源 `test` 上的 `dev` 角色，给用户 B 授予数据源 `test` 上的 `dba` 角色。
+使用 admin 用户进入项目界面，给项目添加成员，本次的重点是要将上述创建的全局用户添加到项目内，给用户 A 授予数据源 `test` 上的 `dev` 角色，给用户 B 授予数据源 `test` 上的 `dba` 角色。
 ![project-member-1](./img/project-member-1.png)
 ![project-member-2](./img/project-member-2.png)
 ## SQL 上线
