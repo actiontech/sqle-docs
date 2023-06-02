@@ -2,7 +2,7 @@
 title: webhook配置
 ---
 # webhook配置
-Webhooks是您定义的自定义HTTP回调。它们通常由事件触发，例如SQLE中存在工单状态的变化，则会自动向用户配置的webhook URL发送HTTP请求。
+Webhook是用户定义的自定义HTTP回调。它们通常由事件触发，例如SQLE中存在工单状态的变化，则会自动向用户配置的webhook URL发送HTTP请求。
 
 ### 使用场景
 当用户配置了自定义API服务，想要在API服务中实时获取工单执行状态时，可在系统设置中配置webhook服务。在SQLE中配置回调地址后，工单状态一旦发生变更，即可在API服务中获取状态通知信息，无需定时登录SQLE平台以查询结果。
