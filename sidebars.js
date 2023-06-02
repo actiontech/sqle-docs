@@ -72,6 +72,7 @@ const sidebars = {
                 "user-manual/project/audit_task/intro",
                 "user-manual/project/audit_task/metadata_audit",
                 "user-manual/project/audit_task/slowlog_audit",
+                "user-manual/project/audit_task/processlist_audit",
               ],
              }
           ],
