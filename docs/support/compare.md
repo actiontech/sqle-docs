@@ -190,6 +190,11 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
         </tr>
+         <tr>
+            <td>中止上线</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
         <tr>
             <td  rowspan="12">智能扫描</td>
             <td>IDE 审核插件</td>
@@ -220,6 +225,11 @@ title: 功能对比
             <td>MySQL|慢日志审核</td>
             <td>√</td>
             <td></td>
+        </tr>
+        <tr>
+            <td>MySQL|会话SQL扫描</td>
+            <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>应用程序SQL抓取</td>
@@ -268,7 +278,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td>webhooks告警</td>
+            <td>webhook告警</td>
             <td>√</td>
             <td></td>
         </tr>

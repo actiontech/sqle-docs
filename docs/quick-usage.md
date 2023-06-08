@@ -12,7 +12,7 @@ title: 快速开始
 4. A 作为开发人员提交SQL审核并创建工单；
 5. B 作为 DBA 进行审核并上线。
 ## 搭建环境
-首先参考[部署文档](./deploy-manual/intro)快速搭建一个SQLE服务。
+首先参考[部署文档](./deploy-manual/intro.md)快速搭建一个SQLE服务。
 ## 配置资源
 ### 创建全局用户
 使用 admin 用户进入用户中心界面添加全局用户 A 和 B；点击SQLE顶部菜单右侧`三个点`下拉菜单即可进入。
@@ -21,10 +21,10 @@ title: 快速开始
 使用 admin 用户进入用户中心界面添加全局角色 dev 和 dba，使得 dev 至少具备权限`创建/编辑工单`, dba 至少具备权限`审核/驳回工单`，`上线工单`；点击SQLE顶部菜单右侧`三个点`下拉菜单即可进入。
 ![role-manager](./img/role-manager.png)
 ### 给项目配置SQL审核规则
-使用 admin 用户进入项目界面，根据自身公司的审核标准配置审核规则，本次试用不再新建规则模版，将使用提供的全局默认规则模版进行测试。如何设置规则模版，参考：[规则模版](./user-manual/project/rule-template-manager)。
+使用 admin 用户进入项目界面，根据自身公司的审核标准配置审核规则，本次试用不再新建规则模版，将使用提供的全局默认规则模版进行测试。如何设置规则模版，参考：[规则模版](./user-manual/project/rule-template-manager.md)。
 ![project-rule-template](./img/project-rule-template.png)
 ### 给项目创建数据源
-使用 admin 用户进入项目界面，录入一个MySQL类型的数据源 `test`，并可以绑定上一步骤中创建的规则模版，这里绑定系统内置的全局默认规则模版。如何管理数据源，可参考：[数据源](./user-manual/project/instance-manager)。
+使用 admin 用户进入项目界面，录入一个MySQL类型的数据源 `test`，并可以绑定上一步骤中创建的规则模版，这里绑定系统内置的全局默认规则模版。如何管理数据源，可参考：[数据源](./user-manual/project/instance-manager.md)。
 ![project-instance](./img/project-instance.png)
 ### 给项目添加成员
 使用 admin 用户进入项目界面，给项目添加成员，本次的重点是要将上述创建的全局用户添加到项目内，给用户 A 授予数据源 `test` 上的 `dev` 角色，给用户 B 授予数据源 `test` 上的 `dba` 角色。

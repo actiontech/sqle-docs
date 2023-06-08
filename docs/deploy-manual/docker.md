@@ -31,7 +31,7 @@ actiontech/sqle-ce:latest
 
 ## 注意点
 :::tip
-使用 docker 命令运行容器需要提前准备 MySQL 服务并且创建对应的数据库 schema，创建数据库的SQL可参考：[RPM 部署](./rpm)。
+使用 docker 命令运行容器需要提前准备 MySQL 服务并且创建对应的数据库 schema，创建数据库的SQL可参考：[RPM 部署](./rpm.md)。
 :::
 :::tip
 如果 SQLE 容器启动失败可以使用 `docker logs sqle-server` 查看启用日志，其中 `sqle-server`是容器名称。

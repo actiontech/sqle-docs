@@ -28,7 +28,7 @@ CREATE DATABASE IF NOT EXISTS sqle default character set utf8mb4 collate utf8mb4
 :::
 
 ## 修改 SQLE 配置文件
-安装完 SQLE 后，需要根据实际情况修改SQLE的配置，参考：[配置文件说明](./config)。SQLE安装完成后提供一个配置模版可直接修改。
+安装完 SQLE 后，需要根据实际情况修改SQLE的配置，参考：[配置文件说明](./config.md)。SQLE安装完成后提供一个配置模版可直接修改。
 ```sh
 cd /opt/sqle/etc
 mv sqled.yml.template sqled.yml
