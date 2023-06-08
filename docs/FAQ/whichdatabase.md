@@ -11,6 +11,7 @@ title: 支持哪些数据库
 |SQL server|2008、2012、2016|
 |DB2|11.5|
 |TiDB|4.0.8| 
+|OceanBase For MySQL|3.5|
 
 :::tip
 当前版本为SQLE验证确认可用的版本，若需要使用其他版本，需自行验证
