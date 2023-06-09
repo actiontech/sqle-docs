@@ -196,7 +196,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="12">智能扫描</td>
+            <td  rowspan="13">智能扫描</td>
             <td>IDE 审核插件</td>
             <td>√</td>
             <td>√</td>
