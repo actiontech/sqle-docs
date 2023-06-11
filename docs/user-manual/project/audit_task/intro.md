@@ -34,17 +34,3 @@ title: 功能说明
     * openapi推送
     * 自定义
 
-| 扫描任务类型 | 社区版可见 | 企业版可见 |
-| -- | -- | -- |
-|IDE审核插件| √|√|
-|MySQL库表元数据	|√	|√|
-|MySQL Mybatis扫描|√|√|
-|MySQL 阿里云RDS慢日志|√|	√|
-|MySQL 阿里云RDS审计|√ |√|
-|MySQL 慢日志审核 | | √ |
-|应用程序SQL抓取| |	√|
-|Oracle TopSQL| |√|
-|TiDB审计日志|	|	√|
-|OceanBase for MySQL MyBatis 扫描| | √|
-|OceanBase for MySQL Top SQL| |√|
-|自定义（通过调用接口推送bash脚本、python程序中的SQL）| |√|
