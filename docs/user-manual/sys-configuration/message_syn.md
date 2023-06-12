@@ -59,7 +59,7 @@ title: 消息推送
 
 ### 飞书推送
 
-#### 前置操作
+#### 前置步骤
 * 用户需要创建企业应用， 开通机器人功能，可参考[飞书官方文档](https://open.feishu.cn/document/client-docs/bot-v3/add-custom-bot)
 * 需要为该应用开启如下权限
 ![feishu](img/feishu-syn.png)
@@ -94,7 +94,7 @@ AppID及Secret来自于[飞书应用凭证](https://open.feishu.cn/document/serv
 ## 实践案例
 以飞书推送为例
 
-1. 用户需创建一个飞书应用，参考[前置操作](#前置操作)
+1. 用户需创建一个飞书应用，参考[前置操作](#前置步骤)
 
 2. 用户以管理员身份进入SQLE平台，点击系统设置，配置飞书推送信息
 
