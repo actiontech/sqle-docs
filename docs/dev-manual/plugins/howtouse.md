@@ -37,7 +37,7 @@ server:
       mysql_password: 'mysqlpass'
       mysql_schema: 'sqle'
 ```
-```jsx title="sqled.yml # 针对Oracle和DB2类型的数据源"
+```jsx title="sqled.yml # 针对Oracle和DB2类型的数据源，须先在SQLE环境中安装JDK，yum install java-1.8.0-openjdk* -y"
 server:
   sqle_config:
     server_port: 10000
@@ -53,7 +53,7 @@ server:
       mysql_schema: 'sqle'
   plugin_config:
       - plugin_name: 'sqle-db2-plugin-main.jar' # 填写插件名称
-        cmd: 'java -jar /opt/sqle/plugins/sqle-db2-plugin-main.jar' # 填写
+        cmd: 'java -jar /opt/sqle/plugins/sqle-db2-plugin-main.jar' # 填写插件启动指令及插件绝对路径
 ```
 
 ## 集成插件
