@@ -58,10 +58,25 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="7">支持的数据库</td>
+            <td  rowspan="9">支持的数据源类型</td>
             <td>MySQL</td>
             <td>√</td>
             <td>√</td>
+        </tr>
+        <tr>
+            <td>Mycat</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TDSQL for InnoDB</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OceanBase for MySQL</td>
+            <td>√</td>
+            <td></td>
         </tr>
         <tr>
             <td>DB2</td>
@@ -70,11 +85,6 @@ title: 功能对比
         </tr>
         <tr>
             <td>TiDB</td>
-            <td>√</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>OceanBase for MySQL</td>
             <td>√</td>
             <td></td>
         </tr>
@@ -94,7 +104,7 @@ title: 功能对比
             <td></td>
         </tr>
         <tr>
-            <td  rowspan="14">SQL审核</td>
+            <td  rowspan="15">SQL审核</td>
             <td>同一工单多数据源</td>
             <td>√</td>
             <td></td>
@@ -106,6 +116,11 @@ title: 功能对比
         </tr>
         <tr>
             <td>自助审核</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL美化</td>
             <td>√</td>
             <td>√</td>
         </tr>
@@ -196,7 +211,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="13">智能扫描</td>
+            <td  rowspan="14">智能扫描</td>
             <td>IDE 审核插件</td>
             <td>√</td>
             <td>√</td>
@@ -228,6 +243,11 @@ title: 功能对比
         </tr>
         <tr>
             <td>MySQL|会话SQL扫描</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|百度云RDS慢日志</td>
             <td>√</td>
             <td>√</td>
         </tr>
