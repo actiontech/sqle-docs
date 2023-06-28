@@ -2,7 +2,7 @@
 title: 功能对比
 ---
 
-# 社区版及企业版功能对比
+## 社区版及企业版功能对比
  <table border="0"  cellspacing="0" cellpadding="5">
         <tr>
             <td width="150">模块</td>
@@ -324,5 +324,232 @@ title: 功能对比
             <td>提供数据对接、SQL规范制定、SQL优化建议等7x24小时服务</td>
             <td>√</td>
             <td></td>
+        </tr>
+    </table>
+
+## 各数据源支持程度对比
+:::tip
+目前支持的数据源类型中，除MySQL为社区版，其他均为企业版。
+:::
+<table border="0"  cellspacing="0" cellpadding="5">
+     <tr>
+            <td width="150"> </td>
+            <td width="500"> </td>
+            <td>MySQL</td>
+            <td>Mycat</td>
+            <td>TDSQL for InnoDB</td>
+            <td>OceanBase For MySQL</td>
+            <td>Oracle</td>
+            <td>DB2</td>
+            <td>PostgreSQL</td>
+            <td>TiDB</td>
+            <td>SQL server</td>
+        </tr>
+        <tr>
+            <td  rowspan="5">功能</td>
+            <td>SQL分析</td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL上下文</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>基础对象验证</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>SQL回滚</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>上线中止</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td  rowspan="11">扫描任务</td>
+            <td>库表元数据</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>慢日志</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>Processlist</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>TopSQL</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>TiDB审计日志</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>MyBatis</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>阿里RDS MySQL慢日志</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>阿里RDS MySQL审计日志</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>百度云RDS MySQL慢日志扫描</td>
+            <td>√</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>应用程序抓取</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>自定义</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>其他</td>
+            <td>规则数量</td>
+            <td>133</td>
+            <td>122</td>
+            <td>129</td>
+            <td>117</td>
+            <td>85</td>
+            <td>60</td>
+            <td>21</td>
+            <td>119</td>
+            <td>23</td>
         </tr>
     </table>
