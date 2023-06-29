@@ -42,6 +42,14 @@ title: 创建工单
 
 :::tip
 在线输入SQL的场景下，平台支持对输入框中的SQL进行美化，以此提高SQL可读性。
+
+注：当前支持SQL美化的数据源类型包括：
+* MySQL
+* DB2
+* SQL Server
+* Oceanbase For MySQL
+* Oracle
+* PostgreSQL
 :::
 
 
