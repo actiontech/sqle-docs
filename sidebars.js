@@ -117,7 +117,6 @@ const sidebars = {
       type: 'category',
       label: '开发手册',
       items: [
-        "dev-manual/intro",
         {
           type: 'category',
           label: '数据库审核插件',
