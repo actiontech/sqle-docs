@@ -104,7 +104,7 @@ title: 功能对比
             <td></td>
         </tr>
         <tr>
-            <td  rowspan="15">SQL审核</td>
+            <td  rowspan="16">SQL审核</td>
             <td>同一工单多数据源</td>
             <td>√</td>
             <td></td>
@@ -113,6 +113,11 @@ title: 功能对比
             <td>多种SQL上传方式</td>
             <td>√</td>
             <td>√</td>
+        </tr>
+        <tr>
+            <td>IDE审核插件</td>
+            <td>√</td>
+            <td></td>
         </tr>
         <tr>
             <td>自助审核</td>
@@ -211,12 +216,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="14">智能扫描</td>
-            <td>IDE 审核插件</td>
-            <td>√</td>
-            <td>√</td>
-        </tr>
-        <tr>
+            <td  rowspan="13">智能扫描</td>
             <td>MySQL|MyBatis 扫描</td>
             <td>√</td>
             <td>√</td>
