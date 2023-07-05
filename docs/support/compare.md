@@ -371,7 +371,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td>基础对象验证</td>
+            <td>元数据检查</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
