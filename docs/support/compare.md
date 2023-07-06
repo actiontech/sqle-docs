@@ -117,7 +117,7 @@ title: 功能对比
         <tr>
             <td>IDE审核插件</td>
             <td>√</td>
-            <td></td>
+            <td>√</td>
         </tr>
         <tr>
             <td>自助审核</td>

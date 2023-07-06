@@ -43,7 +43,6 @@ const sidebars = {
       type: 'category',
       label: '用户手册',
       items: [
-        "user-manual/operation_records",
         {
           type: 'category',
           label: '项目',
@@ -110,7 +109,9 @@ const sidebars = {
             "user-manual/user-manager/user-group",
             "user-manual/user-manager/role",
           ],
-        },    
+        }, 
+        "user-manual/operation_records",
+        "user-manual/jetbrains",   
       ],
     },
     {
