@@ -71,3 +71,6 @@ SQLE重启后进入平台，点击打开SQL工作台，若成功跳转，则说�
 * 平台管理员账户需要有 [添加/修改/删除] [用户/实例/权限] 的权限
 * SQLE集成CloudBeaver后请勿使用CloudBeaver的管理员账户直接操作CloudBeaver的用户/实例/权限
 :::
+
+### 常见问题
+如果在配置CloudBeaver时，出现跳转不正确等问题，可参考[如何解决CloudBeaver跳转不正确的问题](https://github.com/actiontech/sqle/discussions/1521)。
