@@ -69,7 +69,7 @@ long_query_time = 1  //设置慢查询时间阈值，当前示例时间为1s，�
 ```
 set global long_query_time=1; // 需根据实际业务调整慢查询时间阈值，此处仅供参考
 set global slow_query_log=1; // 开启慢日志查询
-SET GLOBAL log_output='FILE,TABLE'；// 开启 MySQL 的慢日志收集功能，并且确认将慢日志内容写入文件 mysql-slow.log 和表 mysql.slow_log
+SET GLOBAL log_output='FILE,TABLE';// 开启 MySQL 的慢日志收集功能，并且确认将慢日志内容写入文件 mysql-slow.log 和表 mysql.slow_log
 ```
 :::tip
 为了优化查询性能，使用这一采集方式时，需要用户手动运行下面的SQL，将mysql.slow_log表的引擎改为MyISAM，并添加索引。
