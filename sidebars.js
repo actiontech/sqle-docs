@@ -111,6 +111,7 @@ const sidebars = {
             "user-manual/user-manager/role",
           ],
         }, 
+        "user-manual/customrule",
         "user-manual/operation_records",
         "user-manual/jetbrains",   
       ],
