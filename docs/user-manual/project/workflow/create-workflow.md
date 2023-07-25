@@ -66,6 +66,26 @@ title: 创建工单
     * 下载SQL语句：下载文件，可查看当前数据源下审核的SQL语句及其审核结果；
     * 设置是否去重：若SQL语句结构一致，去重后将仅显示去重后的SQL；
 
+```jsx title="审核通过率计算方式"
+审核通过率=正常sql/sql总数
+审核结果等级为notice,warn,err的sql均为非正常sql
+```
+
+```jsx title="审核结果评分计算方式"
+1.Error以上级别SQL出现率 = Error级别SQL数 / 总SQL数
+2.Warn以上级别SQL出现率 = (Error级别SQL数 + Warn级别SQL数) / 总SQL数
+3.Warn以上级别SQL出现率 = (Error级别SQL数 + Warn级别SQL数 + Notice级别SQL数) / 总SQL数
+4.总分 = 审核通过率 x 30 +
+(1 - Error以上级别SQL出现率) x 15 +
+(1 - Warn以上级别SQL出现率) x 10 +
+(1 - Notice以上级别SQL出现率) x 5 +
+(Error以上级别SQL出现概率 == 0 ? 15 : 0) +
+(Warn以上级别SQL出现概率 == 0 ? 10 : 0) +
+(Notice以上级别SQL出现概率 == 0 ? 5 : 0) +
+(Error以上级别SQL出现概率 <0.1 ? 5 : 0) +
+(Warn以上级别SQL出现概率 <0.1? 3 : 0) +
+(Notice以上级别SQL出现概率 <0.1 ? 2 : 0)
+```
 
 ### 步骤四：点击创建工单
 完成创建后，进入工单列表，即可看到该工单显示为待审核。
