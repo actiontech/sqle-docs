@@ -25,5 +25,5 @@ title: 会话SQL扫描
 
 ### 执行结果
 * 用户进入扫描任务详情，可以查看已采集到的processlist列表中的SQL信息；
-* 用户点击`立即审核`，可以在扫描任务报告中获取processlist列表中当前采集周期内产生的SQL；
+* 用户点击`立即审核`，可以在扫描任务报告中获取processlist列表中当前采集周期内产生的SQL及审核结果；
 ![processlist-audit](img/processlist-audit.png)
