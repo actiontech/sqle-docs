@@ -16,6 +16,10 @@ title: 自定义审核规则
 ![customrule-info](img/customrule-info.png)
 ![customrule-regex](img/customrule-regex.png)
 
+:::tip
+当前支持golang正则语法。
+:::
+
 ### 应用自定义规则
 1.编辑数据源应用的规则模板，启用新建的自定义规则；
 ![customrule-usetemplate](img/customrule-usetemplate.png)
