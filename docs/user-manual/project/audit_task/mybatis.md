@@ -8,12 +8,12 @@ title: MyBatis扫描
 * OceanBase For MySQL
 
 ## 使用场景
-应用开发阶段可以通过审核任务的 MyBatis 扫描类型的任务对应用代码做实时审核，MyBatis 扫描的审核任务需要通过 SQLE 提供的 Scanner 工具进行SQL采集并推送到SQLE进行SQL审核。
+应用开发阶段可以通过MyBatis扫描任务对应用代码中SQL做实时审核，MyBatis扫描任务需要通过SQLE提供的Scannerd进行SQL采集并推送到SQLE进行SQL审核。
 
-当前支持用户直接执行Scannerd文件进行扫描，也支持用户利用CI/CD平台进行持续集成，例如 Jenkins ，GoCD ，git平台的 CI/CD 等，以此实现标准化开发流程，减少复杂的工作量。
+当前支持用户直接执行Scannerd进行扫描，也支持用户利用CI/CD平台进行持续集成，例如 Jenkins ，GoCD ，git平台的 CI/CD 等，以此实现标准化开发流程，及时发现SQL问题。
 
 
-## 基础使用场景
+## 基础使用方式
 
 ### 新建智能扫描任务
 进入智能扫描任务列表，点击新建，选择MyBatis扫描任务类型。
@@ -24,7 +24,7 @@ title: MyBatis扫描
 
 #### 2.执行Scannerd文件
 :::tip
-注意：scannerd文件通常在SQLE的bin目录下。
+注意：使用rpm或docker部署的情况下，scannerd通常在SQLE的bin目录下。
 ::: 
 
 示例如下：
@@ -47,7 +47,7 @@ title: MyBatis扫描
 * 用户点击`立即审核`，可以在扫描任务报告中获取当前SQL的审核结果；
 ![mybatisresult](img/mybatisresult.png)
 
-## 利用腾讯CODING持续集成
+## 在腾讯云CODING上集成SQL审核
 
 ### 新建智能扫描任务
 进入智能扫描任务列表，点击新建，选择MyBatis扫描任务类型。
