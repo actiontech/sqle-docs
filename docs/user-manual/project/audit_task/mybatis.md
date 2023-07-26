@@ -47,7 +47,7 @@ title: MyBatis扫描
 * 用户点击`立即审核`，可以在扫描任务报告中获取当前SQL的审核结果；
 ![mybatisresult](img/mybatisresult.png)
 
-### 利用腾讯CODING持续集成
+## 利用腾讯CODING持续集成
 
 ### 新建智能扫描任务
 进入智能扫描任务列表，点击新建，选择MyBatis扫描任务类型。
