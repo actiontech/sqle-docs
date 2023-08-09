@@ -57,9 +57,9 @@ server:
 ```
 
 ## 集成插件
-将插件的二进制文件放在一、配置插件中创建的目录 plugins/内，其中插件的可以由第三方提供或者自行编译，参考：[sqle-pg-plugin](https://github.com/actiontech/sqle-pg-plugin)
+将插件的二进制文件放在[配置插件](#配置插件)中创建的 plugins/目录内，其中插件可以由第三方提供或者自行编译，参考：[sqle-pg-plugin](https://github.com/actiontech/sqle-pg-plugin)
 
-ps：在重启 SQLE 前，需要确保 SQLE 的运行用户拥有插件二进制的执行权限，如果没有，可以通过以下命令来设置：
+ps：在重启 SQLE 前，需要确保 SQLE 的运行用户拥有对二进制文件的执行权限，如果没有，可以通过以下命令来设置：
 ```
 chmod +x /opt/sqle/plugins/sqle-pg-plugin
 ```
