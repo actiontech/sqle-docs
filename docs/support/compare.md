@@ -58,7 +58,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="9">支持的数据源类型</td>
+            <td  rowspan="10">支持的数据源类型</td>
             <td>MySQL</td>
             <td>√</td>
             <td>√</td>
@@ -74,7 +74,7 @@ title: 功能对比
             <td></td>
         </tr>
         <tr>
-            <td>OceanBase for MySQL</td>
+            <td>OceanBase For MySQL</td>
             <td>√</td>
             <td></td>
         </tr>
@@ -95,6 +95,11 @@ title: 功能对比
         </tr>
         <tr>
             <td>Oracle</td>
+            <td>√</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OceanBase For Oracle</td>
             <td>√</td>
             <td></td>
         </tr>
@@ -216,7 +221,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="13">智能扫描</td>
+            <td  rowspan="15">智能扫描</td>
             <td>MySQL|MyBatis 扫描</td>
             <td>√</td>
             <td>√</td>
@@ -252,7 +257,17 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
+            <td>SQL文件扫描</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
             <td>应用程序SQL抓取</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>支持JAVA探针采集JAVA应用SQL</td>
             <td>√</td>
             <td></td>
         </tr>
@@ -340,6 +355,7 @@ title: 功能对比
             <td>TDSQL for InnoDB</td>
             <td>OceanBase For MySQL</td>
             <td>Oracle</td>
+            <td>OceanBase For Oracle</td>
             <td>DB2</td>
             <td>PostgreSQL</td>
             <td>TiDB</td>
@@ -353,6 +369,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td> </td>
             <td>√</td>
@@ -365,6 +382,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -376,6 +394,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td>√</td>
             <td> </td>
@@ -389,6 +408,7 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -398,18 +418,20 @@ title: 功能对比
             <td>上线中止</td>
             <td>√</td>
             <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
         </tr>
         <tr>
-            <td  rowspan="11">扫描任务</td>
+            <td  rowspan="12">扫描任务</td>
             <td>库表元数据</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -430,10 +452,12 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>Processlist</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -450,6 +474,7 @@ title: 功能对比
             <td> </td>
             <td>√</td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -462,7 +487,8 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
-            <td></td>
+            <td> </td>
+            <td> </td>
             <td> </td>
             <td>√</td>
             <td> </td>
@@ -478,10 +504,12 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>阿里RDS MySQL慢日志</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -502,6 +530,7 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>百度云RDS MySQL慢日志扫描</td>
@@ -514,6 +543,20 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>SQL文件扫描</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>应用程序抓取</td>
@@ -522,6 +565,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -534,6 +578,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
+            <td> </td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -547,6 +592,7 @@ title: 功能对比
             <td>129</td>
             <td>117</td>
             <td>85</td>
+            <td>83</td>
             <td>60</td>
             <td>21</td>
             <td>119</td>
