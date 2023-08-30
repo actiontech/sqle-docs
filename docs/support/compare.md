@@ -198,7 +198,7 @@ title: 功能对比
         <tr>
             <td>多数据源批量上线</td>
             <td>√</td>
-            <td>√</td>
+            <td> </td>
         </tr>
         <tr>
             <td>立即上线</td>
