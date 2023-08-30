@@ -2,7 +2,7 @@
 title: IDEA审核插件
 ---
 
-该项目是SQLE 的 [IDEA](https://github.com/actiontech/sqle-jetbrains-plugin) 审核插件 , 该插件满足开发人员在开发阶段进行实时自助式的静态SQL审核，实现开发阶段审核上线等各个SQL开发阶段的SQL开发规范。
+该项目是SQLE 的 [IDEA审核插件](https://github.com/actiontech/sqle-jetbrains-plugin)  , 该插件满足开发人员在开发阶段进行实时自助式的静态SQL审核，实现开发阶段审核上线等各个SQL开发阶段的SQL开发规范。
 
 :::tip
 为保证SQLE审核插件正常运行，IDEA版本需大于等于 2021.1.3
@@ -44,13 +44,16 @@ title: IDEA审核插件
 |Test Connection|测试连接是否成功, 将会尝试登录|
 |DB Type|当其他配置正确时，该下拉框会自动获取支持审核的实例类型。选择实例类型后，平台将使用该实例类型应用的审核规则进行审核。|
 
-### 使用插件
-1.选中需要审核的SQL, 可以同时选中多条SQL；
+### 使用方式
 
-2.点击右键, 选中 [SQLE] - [Audit] , 也可以使用快捷键 [Ctrl] + [Shift] + [H]
+1.用户可以选中需要审核的SQL，点击右键, 选中 [SQLE] - [Audit]后，进行SQL审核，支持同时选中多条SQL；
 ![ide-install-use](img/ide-install-use.png)
 
-3.插件会以弹窗的形式将审核结果进行展示
+2.用户也可以选中文件后，点击右键, 选中 [SQLE] - [Audit]，将获得对文件中SQL的审核结果，支持一次性审核整个文件夹下的MyBatis文件；
+![ide-install-use2](img/ide-install-use2.png)
+
+### 审核结果
+插件会以弹窗的形式将审核结果进行展示
 ![ide-install-result](img/ide-install-result.png)
 
 ## 常见问题解答
