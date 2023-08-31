@@ -1,7 +1,7 @@
 ---
-title: 应用程序SQL抓取【企业版】
+title: Java探针版应用程序SQL抓取【企业版】
 ---
-本节介绍如何利用SQLE平台抓取JAVA应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
+本节介绍如何利用SQLE平台抓取java应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
 
 ## 支持的数据源类型
 * MySQL
@@ -28,9 +28,9 @@ sudo apt install default-jdk
 
 * 准备Java应用
 * 准备Java应用SQL初始化文件
-* 准备SQLE定制的JDBC jar 包
+* 准备SQLE定制的JAVA agent JAR包
 :::tip
-JDBC jar包为企业版功能，如有使用需求，请联系[SQLE商业支持](../../../support/community-support.md)。
+JAVA agent JAR包为企业版功能，如有使用需求，请联系[SQLE商业支持](../../../support/community-support.md)。
 :::
 
 ### Java应用前置步骤
@@ -45,22 +45,8 @@ root@ubuntu:/opt/surveyking# pwd
 /opt/surveyking
 root@ubuntu:/opt/surveyking# ls -l
 total 55652
--rw-r--r-- 1 root root  2477925 Feb 24 08:38 mysql-connector-java-8.0.28-SQLE.jar
+-rw-r--r-- 1 root root  2932784 Feb 24 08:38 sql-agent-1.0-SNAPSHOT.jar
 -rw-r--r-- 1 root root 54508748 Feb 24 08:37 surveyking-v0.3.0-beta.4.jar
-```
-3、替换Java应用Jar包的MySQL jdbc jar 包
-```
-cd /opt/surveyking/
-mkdir jar
-cp surveyking-v0.3.0-beta.4.jar jar/
-cd jar/
-jar xvf surveyking-v0.3.0-beta.4.jar # 解压jar包，如果执行失败也可使用 unzip surveyking-v0.3.0-beta.4.jar 代替
-cp ../mysql-connector-java-8.0.28-SQLE.jar BOOT-INF/lib/mysql-connector-java-8.0.26.jar # 替换jdbc
-rm -rf surveyking-v0.3.0-beta.4.jar
-jar cvfM0 surveyking-v0.3.0-beta.4.sqle.jar * # 打包
-mv surveyking-v0.3.0-beta.4.sqle.jar ../
-cd ..
-rm -rf jar/
 ```
 
 ## 使用方式
@@ -72,9 +58,14 @@ rm -rf jar/
 以下命令需要在本地编辑替换完参数后，一次性拷贝到环境内执行 
 :::
 ```
-cd /opt/surveyking/
-SQLE_COLLECT_ENABLE=true SQLE_HOST=10.186.62.18:10000 SQLE_TASK_NAME=jw_app SQLE_TASK_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJqd19hcHAiLCJleHAiOjE2NzcyMjYxNzcsIm5hbWUiOiJhZG1pbiJ9.3d0pA1hiVnFEWJokSFBwCT8d1pKOYV6SViENj4GFqgI \
-java -jar surveyking-v0.3.0-beta.4.sqle.jar \
+SQLE_COLLECT_ENABLE=true \
+SQLE_BASE_URL=http://10.186.62.16:10000 \
+SQLE_TASK_NAME=jw_app \
+SQLE_TASK_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJqd19hcHAiLCJleHAiOjE2NzcyMjYxNzcsIm5hbWUiOiJhZG1pbiJ9.3d0pA1hiVnFEWJokSFBwCT8d1pKOYV6SViENj4GFqgI \
+SQLE_EXCLUDE_JAVA_FILE=UserServiceImpl.java \
+SQLE_LOG_FILE=/tmp/collect.log \
+java -javaagent:sql-agent-1.0-SNAPSHOT.jar \
+-jar surveyking-v0.3.0-beta.4.sqle.jar \
 --server.port=1991 \
 --spring.datasource.url=jdbc:mysql://10.186.62.18:3306/jw \
 --spring.datasource.username=root \
@@ -82,18 +73,25 @@ java -jar surveyking-v0.3.0-beta.4.sqle.jar \
 & >>/opt/surveyking/std.log
 ```
 
-#### 参数说明（环境变量）：
-* SQLE_COLLECT_ENABLE：是否开启SQL采集
-* SQLE_HOST=10.186.62.18:10000：SQLE 服务地址 ip:port
-* SQLE_TASK_NAME=jw_app ：审核任务的名称
+#### 参数说明（环境变量）
+* SQLE_COLLECT_ENABLE=true ：是否开启SQL采集，默认不推送到SQLE只输出本地日志
+* SQLE_BASE_URL：SQLE 服务地址，格式“http://ip:port”
+* SQLE_TASK_NAME：SQLE 审核任务的名称
 * SQLE_TASK_TOKEN：审核任务的token，从SQLE页面复制
 * SQLE_PROJECT_NAME：SQLE JDBC配置：项目名
+* SQLE_LOG_FILE：指定SQLE 采集日志文件，不指定则代表输出到标准输出
+* SQLE_EXCLUDE_JAVA_FILE：忽略部分JAVA文件不插桩，主要是兼容性问题，当修改字节码失败时为了保障能运行抓取。文件按逗号分隔
 #### 参数说明（java 参数）
 * server.port：web服务启用端口
 * spring.datasource.url：jdbc url
 * spring.datasource.username：jdbc user name
 * spring.datasource.password：jdbc password
+
 ### 访问Java应用
 * 访问地址：如果配置的网页端口是1991则通过网页访问http://xx.xx.xx.xx:1991
 * 用户名：admin
 * 密码：123456
+
+
+
+

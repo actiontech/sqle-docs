@@ -75,6 +75,8 @@ const sidebars = {
                 "user-manual/project/audit_task/baiduyunrds",
                 "user-manual/project/audit_task/mybatis",
                 "user-manual/project/audit_task/SQLfile_audit",
+                "user-manual/project/audit_task/java_application_audit",
+                "user-manual/project/audit_task/java_agent_audit",
               ],
              }
           ],
