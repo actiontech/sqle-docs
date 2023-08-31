@@ -74,6 +74,7 @@ const sidebars = {
                 "user-manual/project/audit_task/processlist_audit",
                 "user-manual/project/audit_task/baiduyunrds",
                 "user-manual/project/audit_task/mybatis",
+                "user-manual/project/audit_task/SQLfile_audit",
               ],
              }
           ],
