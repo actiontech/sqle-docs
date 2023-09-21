@@ -31,6 +31,10 @@
             * [慢日志](user-manual/project/audit_task/slowlog_audit.md)
             * [会话SQL扫描任务](user-manual/project/audit_task/processlist_audit.md)
             * [百度云RDS慢日志](/docs/user-manual/project/audit_task/baiduyunrds.md)
+            * [应用程序SQL抓取·企业版](/docs/user-manual/project/audit_task/java_application_audit.md)
+            * [Java探针版应用程序SQL抓取·企业版](/docs/user-manual/project/audit_task/java_agent_audit.md)
+            * [SQL文件扫描](/docs/user-manual/project/audit_task/SQLfile_audit.md)
+            * [MyBatis扫描](/docs/user-manual/project/audit_task/mybatis.md)
     * [系统设置](user-manual/sys-configuration/intro.md)
         * [登录对接](user-manual/sys-configuration/login_syn.md)
         * [消息推送](user-manual/sys-configuration/message_syn.md)
@@ -46,3 +50,5 @@
         * [用户管理](user-manual/user-manager/user.md)
         * [用户组管理](user-manual/user-manager/user-group.md)
         * [角色管理](user-manual/user-manager/role.md)
+    * [自定义审核规则](user-manual/customrule.md.md)
+    * 
