@@ -28,7 +28,7 @@ SQLE平台提供对应数据库类型的默认审核规则模板，是在长期�
 
 * 模板名称：命名当前规则模板，须以字母开头，只能包含字母、数字、中划线和下划线。如：test
 * 模板描述：补充描述模板的其他信息。如：用于测试规则模板触发的告警等级
-* 数据库类型：选择该规则模板应用的数据库类型，当前支持的数据库类型包括MySQL、TiDB、DB2、SQL Server、OceanBase For MySQL、Oracle、PostgreSQL。
+* 数据库类型：选择该规则模板应用的数据库类型，当前支持的数据库类型包括MySQL、TiDB、DB2、SQL Server、OceanBase For MySQL、Oracle、PostgreSQL、达梦。
 
 #### 步骤二：选择要启用/禁用的规则
 
