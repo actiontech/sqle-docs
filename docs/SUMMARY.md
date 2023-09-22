@@ -51,4 +51,5 @@
         * [用户组管理](user-manual/user-manager/user-group.md)
         * [角色管理](user-manual/user-manager/role.md)
     * [自定义审核规则](user-manual/customrule.md)
-    * [FAQ](/docs/FAQ/whichdatabase.md)
+* [FAQ](/docs/FAQ/intro.md)
+    * [支持的数据库及版本](/docs/FAQ/whichdatabase.md)
