@@ -36,11 +36,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/actiontech/sqle-docs/tree/main/',
-          // lastVersion: 'v2',
+          lastVersion: 'current',
           versions: {
             current: {
+              label: 'v3',
+            },
+            v2: {
               label: 'v2',
-              path: '/',
+              path: '/v2',
             },
           },
         },
@@ -108,7 +111,7 @@ const config = {
             position: 'right',
             dropdownItemsAfter: [
               {
-                label: 'v1 版本',
+                label: 'v1',
                 href: 'https://actiontech.github.io/sqle-docs-cn/',
               }
             ],

@@ -32,11 +32,7 @@ const sidebars = {
       items: [
         "deploy-manual/intro",
         "deploy-manual/config",
-        "deploy-manual/source",
         "deploy-manual/rpm",
-        "deploy-manual/docker",
-        "deploy-manual/docker-compose",
-        "deploy-manual/cluster",
       ],
     },
     {

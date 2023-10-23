@@ -22,6 +22,7 @@ rpm -ivh /path/to/sqle-ce-${version}.qa.el7.x86_64.rpm --prefix=/opt/sqle
 准备一台 MySQL5.7 作为 SQLE 的后端存储数据库。执行下面命令创建 SQLE 需要的 schema：
 ```sql
 CREATE DATABASE IF NOT EXISTS sqle default character set utf8mb4 collate utf8mb4_unicode_ci
+CREATE DATABASE IF NOT EXISTS dms default character set utf8mb4 collate utf8mb4_unicode_ci
 ```
 :::tip
 创建好的 Schema 将在下面修改SQLE配置时使用到。
@@ -31,17 +32,18 @@ CREATE DATABASE IF NOT EXISTS sqle default character set utf8mb4 collate utf8mb4
 安装完 SQLE 后，需要根据实际情况修改SQLE的配置，参考：[配置文件说明](./config.md)。SQLE安装完成后提供一个配置模版可直接修改。
 ```sh
 cd /opt/sqle/etc
-mv sqled.yml.template sqled.yml
-vim sqled.yml
+vim config.yml
 ```
 :::tip
-确保 sqled.yml 的文件 owner 为 actiontech-universe:actiontech
+确保 config.yml 的文件 owner 为 actiontech-universe:actiontech
 :::
 
 ## 启动 SQLE
 SQLE 进程通过 Systemd 管理。在成功安装 RPM 后，执行启动命令：
 ```sh
-systemctl start sqled
+cd /opt/sqle
+chmod +x scripts/init_start.sh
+./scripts/init_start.sh
 ```
 
 ## 启动失败问题诊断

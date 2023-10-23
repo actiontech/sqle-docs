@@ -1,0 +1,294 @@
+{
+  "version-v2/tutorialSidebar": [
+    {
+      "type": "doc",
+      "id": "intro"
+    },
+    {
+      "type": "doc",
+      "id": "online-demo"
+    },
+    {
+      "type": "category",
+      "label": "产品支持",
+      "items": [
+        {
+          "type": "doc",
+          "id": "support/compare"
+        },
+        {
+          "type": "doc",
+          "id": "support/community-support"
+        },
+        {
+          "type": "doc",
+          "id": "support/commercial-support"
+        }
+      ]
+    },
+    "quick-usage",
+    {
+      "type": "category",
+      "label": "安装部署",
+      "items": [
+
+        {
+          "type": "doc",
+          "id": "deploy-manual/intro"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/config"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/source"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/rpm"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/docker"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/docker-compose"
+        },
+        {
+          "type": "doc",
+          "id": "deploy-manual/cluster"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "用户手册",
+      "items": [
+        {
+          "type": "category",
+          "label": "项目",
+          "items": [
+            {
+              "type": "doc",
+              "id": "user-manual/project/intro"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/project_create"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/instance-manager"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/group_member"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/rule-template-manager"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/workflow-template-manager"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/project/whitelist-manager"
+            },
+            {
+              "type": "category",
+              "label": "工单",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/workflow/intro"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/workflow/create-workflow"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/workflow/audit-workflow"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/workflow/exec-workflow"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "扫描任务",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/intro"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/metadata_audit"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/slowlog_audit"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/processlist_audit"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/baiduyunrds"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/mybatis"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/SQLfile_audit"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/java_application_audit"
+                },
+                {
+                  "type": "doc",
+                  "id": "user-manual/project/audit_task/java_agent_audit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "系统设置",
+          "items": [
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/intro"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/login_syn"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/message_syn"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/process_syn"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/webhook"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/configuration"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/instance_syn"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sys-configuration/customize"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "工作台",
+          "items": [
+            {
+              "type": "doc",
+              "id": "user-manual/sql-workbench/introduction"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sql-workbench/how-to-configure"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/sql-workbench/how-to-use"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "用户管理",
+          "items": [
+            {
+              "type": "doc",
+              "id": "user-manual/user-manager/intro"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/user-manager/user"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/user-manager/user-group"
+            },
+            {
+              "type": "doc",
+              "id": "user-manual/user-manager/role"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "user-manual/customrule"
+        },
+        {
+          "type": "doc",
+          "id": "user-manual/operation_records"
+        },
+        {
+          "type": "doc",
+          "id": "user-manual/jetbrains"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "开发手册",
+      "items": [
+        {
+          "type": "category",
+          "label": "数据库审核插件",
+          "items": [
+            {
+              "type": "doc",
+              "id": "dev-manual/plugins/intro"
+            },
+            {
+              "type": "doc",
+              "id": "dev-manual/plugins/howtouse"
+            },
+            {
+              "type": "doc",
+              "id": "dev-manual/plugins/howtodev"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "FAQ",
+      "items": [
+        {
+          "type": "doc",
+          "id": "FAQ/whichdatabase"
+        }
+      ]
+    }
+  ]
+}
