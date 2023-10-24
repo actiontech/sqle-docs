@@ -10,67 +10,63 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'SQL审核规范',
-    Svg: require('@site/static/img/book.svg').default,
-    description: (
-      <>
-1. 审核规则自定义（400+条）<br />
-2. 支持审核结果分级展示，支持生成下载审核报告<br />
-3. 支持规则模版，灵活组合规则<br />
-4. 审核白名单，跳过特例SQL<br />
-5. 支持集成 IDE 自助审核
-      </>
-    ),
-  },
-  {
-    title: '标准化上线流程',
-    Svg: require('@site/static/img/diagram-3.svg').default,
-    description: (
-      <>
-1. SQL审核流程按需自定义，满足企业内部不同流程管理要求<br />
-2. 支持定时上线<br />
-3 .支持设置运维时间<br />
-4. 支持Online DDL
-      </>
-    ),
-  },
-  {
-    title: '多数据库类型支持',
+    title: '更丰富的数据源支持',
     Svg: require('@site/static/img/database-add.svg').default,
     description: (
       <>
-1. 统一接口，可通过插件进行多数据库审核扩展<br />
-2. 内置MySQL审核插件，官方支持常用数据库类型，包括PostgreSQL、Db2、SQL Server、Oracle、TiDB、OceanBase
+1. 支持十余种主流商业和开源数据库<br />
+2. 持续支持新的数据源类型，以满足您不同的需求
       </>
     ),
   },
   {
-    title: '多场景审核',
-    Svg: require('@site/static/img/recycle.svg').default,
+    title: '更全面的审核规则',
+    Svg: require('@site/static/img/book.svg').default,
     description: (
       <>
-        支持事前事后审核，覆盖开发、测试、上线、生产等环节
+1. 拥有规则 700+，并持续增加中<br />
+2. 源自DBA运维专家团队多年的技术积累<br />
+      </>
+    ),
+  },
+  {
+    title: '更智能的 SQL 采集',
+    Svg: require('@site/static/img/fingerprint.svg').default,
+    description: (
+      <>
+1. 提供多种智能扫描任务<br />
+2. 满足事前和事后 SQL 持续采集需求
+      </>
+    ),
+  },
+  {
+    title: '更高效的审批路径',
+    Svg: require('@site/static/img/diagram-3.svg').default,
+    description: (
+      <>
+1. 提供标准化工作流<br />
+2. 通过消息对接，及时了解更新进度
+      </>
+    ),
+  },
+  {
+    title: '更便捷的数据操作',
+    Svg: require('@site/static/img/layers.svg').default,
+    description: (
+      <>
+1. 集成在线数据库客户端 CloudBeaver<br />
+2. 通过可视化界面进行数据库管理和查询
       </>
     ),
     // description: React.createElement(),
   },
   {
-    title: '安全管控的SQL客户端入口',
-    Svg: require('@site/static/img/fingerprint.svg').default,
+    title: '全生命周期SQL管控',
+    Svg: require('@site/static/img/recycle.svg').default,
     description: (
       <>
-提供审核管控的SQL客户端，杜绝执行不合规SQL
-      </>
-    ),
-  },
-  {
-    title: '丰富的集成能力',
-    Svg: require('@site/static/img/layers.svg').default,
-    description: (
-      <>
-1. 标准HTTP API接口可与客户内部流程系统对接<br />
-2. 支持LDAP，Oauth2用户对接<br />
-3. 支持邮件、微信企业号、webhook 告警对接
+1. 提供 SQL 全流程的管控视角<br />
+2. 追踪问题SQL的解决进度
       </>
     ),
   },
