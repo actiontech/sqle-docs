@@ -21,8 +21,8 @@ rpm -ivh /path/to/sqle-ce-${version}.qa.el7.x86_64.rpm --prefix=/opt/sqle
 ## 创建数据库
 准备一台 MySQL5.7 作为 SQLE 的后端存储数据库。执行下面命令创建 SQLE 需要的 schema：
 ```sql
-CREATE DATABASE IF NOT EXISTS sqle default character set utf8mb4 collate utf8mb4_unicode_ci
-CREATE DATABASE IF NOT EXISTS dms default character set utf8mb4 collate utf8mb4_unicode_ci
+CREATE DATABASE IF NOT EXISTS sqle default character set utf8mb4 collate utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS dms default character set utf8mb4 collate utf8mb4_unicode_ci;
 ```
 :::tip
 创建好的 Schema 将在下面修改SQLE配置时使用到。
