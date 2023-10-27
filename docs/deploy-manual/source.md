@@ -29,7 +29,7 @@ cd dms && git checkout -b release-3.2310.x
 
 ```sh
 cd ~/sqle-build/
-git clone https://github.com/actiontech/sqle-ui.git
+git clone https://github.com/actiontech/dms-ui.git
 ```
 
 ## 编译源码
