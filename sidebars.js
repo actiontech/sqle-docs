@@ -109,7 +109,6 @@ const sidebars = {
           items: [
             "user-manual/user-manager/intro",
             "user-manual/user-manager/user",
-            "user-manual/user-manager/user-group",
             "user-manual/user-manager/role",
           ],
         }, 
