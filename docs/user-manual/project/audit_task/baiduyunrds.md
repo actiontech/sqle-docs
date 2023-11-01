@@ -36,5 +36,3 @@ title: 百度云RDS慢日志扫描
 ### 执行结果
 * 用户进入扫描任务详情，可以查看扫描任务抓取到的慢SQL。
 * 点击`立即审核`，可查看对慢SQL的审核结果。
-
-![baiduyunrdsaudit](img/baiduyunrdsaudit.png)
