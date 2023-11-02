@@ -14,7 +14,7 @@
     * [项目](user-manual/project/intro.md)
         * [创建项目【企业版】](user-manual/project/project_create.md)
         * [数据源管理](user-manual/project/instance-manager.md)
-        * [外部数据源同步【企业版】](user-manual/sys-configuration/instance_syn.md)
+        * [外部数据源同步【企业版】](user-manual/project/instance_syn.md)
         * [成员/成员组管理](user-manual/project/group_member.md)
         * [审核规则模板](user-manual/project/rule-template-manager.md)
         * [审核流程模板](user-manual/project/workflow-template-manager.md)
