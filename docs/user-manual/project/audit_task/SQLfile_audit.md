@@ -47,4 +47,3 @@ title: SQL文件扫描
 ### 平台查看执行结果
 * 用户进入扫描任务详情，可以查看SQLw文件中已采集到的SQL信息；
 * 用户点击`立即审核`，可以在扫描任务报告中获取当前SQL的审核结果；
-![sqlfile_result](img/sqlfile_result.png)
