@@ -14,7 +14,7 @@ docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
 
 ### 配置CloudBeaver
 #### 步骤一 修改CloudBeaver配置文件cloudbeaver.conf
-cloudbeaver.conf配置文件通常在conf路径下
+CloudBeaver.conf配置文件通常在conf路径下
 
 |配置文件名 | 是否必须修改 | 修改内容 | 修改原因|
 |--|--|--|--|

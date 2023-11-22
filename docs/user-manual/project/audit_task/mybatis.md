@@ -1,6 +1,8 @@
 ---
 title: MyBatis扫描
 ---
+# MyBatis扫描
+
 本节介绍MyBatis扫描的应用场景及配置方法。
 
 ## 支持的数据源类型
@@ -8,7 +10,7 @@ title: MyBatis扫描
 * OceanBase For MySQL
 
 ## 使用场景
-应用开发阶段可以通过MyBatis扫描任务对应用代码中SQL做实时审核，MyBatis扫描任务需要通过SQLE提供的Scannerd进行SQL采集并推送到SQLE进行SQL审核。
+应用开发阶段可以通过MyBatis扫描任务对应用代码中SQL做实时审核，MyBatis扫描任务需要通过DMS提供的Scannerd进行SQL采集并推送到DMS进行SQL审核。
 
 当前支持用户直接执行Scannerd进行扫描，也支持用户利用CI/CD平台进行持续集成，例如 Jenkins ，GoCD ，git平台的 CI/CD 等，以此实现标准化开发流程，及时发现SQL问题。
 
@@ -24,7 +26,7 @@ title: MyBatis扫描
 
 #### 2.执行Scannerd文件
 :::tip
-注意：使用rpm或docker部署的情况下，scannerd通常在SQLE的bin目录下。
+注意：使用rpm或docker部署的情况下，scannerd通常在DMS的bin目录下。
 ::: 
 
 示例如下：
@@ -36,8 +38,8 @@ title: MyBatis扫描
 参数解释如下：
 
 * -J, --project：说明扫描任务所在项目，例如“default”；
-* -H, --host string：指定SQLE主机所在地址；
-* -P, --port string：指定SQLE所在端口；
+* -H, --host string：指定DMS主机所在地址；
+* -P, --port string：指定DMS所在端口；
 * -N, --name string：指定扫描任务名称，scannerd会将获得的SQL传至指定的任务池中审核；
 * -D, --dir string：指定要扫描的XML文件路径
 * -A, --token string：输入扫描任务凭证token；
@@ -57,12 +59,12 @@ title: MyBatis扫描
 #### 2.创建代码仓库，此处放置XML文件
 ![coding-createcodebase](img/coding-createcodebase.png)
 ![coding-codebaseexample](img/coding-codebaseexample.png)
-#### 3.上传SQLE插件，插件将用于扫描MyBatis文件
+#### 3.上传DMS插件，插件将用于扫描MyBatis文件
 
 左边栏进入"团队设置中心"->"功能设置" ；
 ![coding-pluginroute](img/coding-pluginroute.png)
 
-点击"新建构建插件"，选择sqle-scannerd.zip，发布插件；
+点击"新建构建插件"，选择DMS-scannerd.zip，发布插件；
 ![coding-pluginupload](img/coding-pluginupload.png)
 
 配置关联项目；
@@ -83,7 +85,7 @@ title: MyBatis扫描
 添加一个SQL审核节点，点击加号，选择 其他 -> 团队插件 -> SQL扫描插件； 
 ![coding-chooseplugin](img/coding-chooseplugin.png)
 
-填写SQLE相关参数，点击参数名右边的问号可以查看参数说明，此处以SQLE社区演示环境的信息为例；
+填写DMS相关参数，点击参数名右边的问号可以查看参数说明，此处以DMS社区演示环境的信息为例；
 ![coding-editinfo](img/coding-editinfo.png)
 
 编辑后点击保存，完成构建计划。
@@ -93,6 +95,6 @@ title: MyBatis扫描
 在构建计划中点击立即构建按钮；
 ![coding-do](img/coding-do.png)
 
-可以在在构建过程中查看构建结果，也可以在SQLE平台的扫描任务中查看审核结果。
+可以在在构建过程中查看构建结果，也可以在DMS平台的扫描任务中查看审核结果。
 ![coding-result](img/coding-result.png)
 

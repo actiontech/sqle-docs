@@ -1,11 +1,12 @@
 ---
 title: IDEA审核插件
 ---
+# IDEA审核插件
 
-该项目是SQLE 的 [IDEA审核插件](https://github.com/actiontech/sqle-jetbrains-plugin)  , 该插件满足开发人员在开发阶段进行实时自助式的静态SQL审核，实现开发阶段审核上线等各个SQL开发阶段的SQL开发规范。
+该项目是DMS 的 [IDEA审核插件](https://github.com/actiontech/sqle-jetbrains-plugin)  , 该插件满足开发人员在开发阶段进行实时自助式的静态SQL审核，实现开发阶段审核上线等各个SQL开发阶段的SQL开发规范。
 
 :::tip
-为保证SQLE审核插件正常运行，IDEA版本需大于等于 2021.1.3
+为保证DMS审核插件正常运行，IDEA版本需大于等于 2021.1.3
 :::
 
 ## 下载地址
@@ -58,18 +59,18 @@ title: IDEA审核插件
 
 ## 常见问题解答
 #### 为什么插件配置项中的 [DB Type] 点击时偶尔会卡一下
-这是因为点击下拉框时下拉框会连接SQLE获取支持的实例类型, 这个过程可能会出现网络延迟
+这是因为点击下拉框时下拉框会连接DMS获取支持的实例类型, 这个过程可能会出现网络延迟
 
-#### SQLE在审核时使用的规则模板是什么
-SQLE会根据设置中指定的数据库类型, 选择对应类型的默认模板进行审核, 且只会使用默认模板中的静态审核规则
+#### DMS在审核时使用的规则模板是什么
+DMS会根据设置中指定的数据库类型, 选择对应类型的默认模板进行审核, 且只会使用默认模板中的静态审核规则
 
-#### 我没有SQLE环境可以使用这个插件吗
-SQLE有演示环境, 如果只是想尝试一下这个插件可以连接[演示环境](/docs/online-demo.md)
+#### 我没有DMS环境可以使用这个插件吗
+DMS有演示环境, 如果只是想尝试一下这个插件可以连接[演示环境](/docs/online-demo.md)
 
 #### 插件支持哪些IDE
 Jetbrains家的所有软件和 [Android Studio] 都是支持的
 
-#### SQLE插件的配置存在什么地方
+#### DMS插件的配置存在什么地方
 ```
  {用户根目录}\AppData\Roaming\JetBrains\{idea版本号对应目录}\options\SQLESettings.xml
 ```

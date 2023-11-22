@@ -1,7 +1,8 @@
 ---
-title: Java探针版应用程序SQL抓取【企业版】
+title: Java探针版应用程序SQL抓取
 ---
-本节介绍如何利用SQLE平台抓取java应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
+#  Java探针版应用程序SQL抓取
+本节介绍如何利用DMS平台抓取java应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
 
 ## 支持的数据源类型
 * MySQL
@@ -28,9 +29,9 @@ sudo apt install default-jdk
 
 * 准备Java应用
 * 准备Java应用SQL初始化文件
-* 准备SQLE定制的JAVA agent JAR包
+* 准备DMS定制的JAVA agent JAR包
 :::tip
-JAVA agent JAR包为企业版功能，如有使用需求，请联系[SQLE商业支持](../../../support/community-support.md)。
+JAVA agent JAR包为企业版功能，如有使用需求，请联系商务获取。
 :::
 
 ### Java应用前置步骤
@@ -74,12 +75,12 @@ java -javaagent:sql-agent-1.0-SNAPSHOT.jar \
 ```
 
 #### 参数说明（环境变量）
-* SQLE_COLLECT_ENABLE=true ：是否开启SQL采集，默认不推送到SQLE只输出本地日志
-* SQLE_BASE_URL：SQLE 服务地址，格式“http://ip:port”
-* SQLE_TASK_NAME：SQLE 审核任务的名称
-* SQLE_TASK_TOKEN：审核任务的token，从SQLE页面复制
-* SQLE_PROJECT_NAME：SQLE JDBC配置：项目名
-* SQLE_LOG_FILE：指定SQLE 采集日志文件，不指定则代表输出到标准输出
+* SQLE_COLLECT_ENABLE=true ：是否开启SQL采集，默认不推送到DMS只输出本地日志
+* SQLE_BASE_URL：DMS 服务地址，格式“http://ip:port”
+* SQLE_TASK_NAME：DMS 审核任务的名称
+* SQLE_TASK_TOKEN：审核任务的token，从DMS页面复制
+* SQLE_PROJECT_NAME：DMS JDBC配置：项目名
+* SQLE_LOG_FILE：指定DMS采集日志文件，不指定则代表输出到标准输出
 * SQLE_EXCLUDE_JAVA_FILE：忽略部分JAVA文件不插桩，主要是兼容性问题，当修改字节码失败时为了保障能运行抓取。文件按逗号分隔
 #### 参数说明（java 参数）
 * server.port：web服务启用端口

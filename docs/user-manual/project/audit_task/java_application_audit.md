@@ -1,7 +1,9 @@
 ---
-title: 应用程序SQL抓取【企业版】
+title: 应用程序SQL抓取
 ---
-本节介绍如何利用SQLE平台抓取JAVA应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
+# 应用程序SQL抓取
+
+本节介绍如何利用DMS平台抓取JAVA应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
 
 ## 支持的数据源类型
 * MySQL
@@ -28,9 +30,9 @@ sudo apt install default-jdk
 
 * 准备Java应用
 * 准备Java应用SQL初始化文件
-* 准备SQLE定制的JDBC jar 包
+* 准备DMS定制的JDBC jar 包
 :::tip
-JDBC jar包为企业版功能，如有使用需求，请联系[SQLE商业支持](../../../support/community-support.md)。
+JDBC jar包为企业版功能，如有使用需求，请联系商务。
 :::
 
 ### Java应用前置步骤
@@ -84,10 +86,10 @@ java -jar surveyking-v0.3.0-beta.4.sqle.jar \
 
 #### 参数说明（环境变量）：
 * SQLE_COLLECT_ENABLE：是否开启SQL采集
-* SQLE_HOST=10.186.62.18:10000：SQLE 服务地址 ip:port
+* SQLE_HOST=10.186.62.18:10000：DMS 服务地址 ip:port
 * SQLE_TASK_NAME=jw_app ：审核任务的名称
-* SQLE_TASK_TOKEN：审核任务的token，从SQLE页面复制
-* SQLE_PROJECT_NAME：SQLE JDBC配置：项目名
+* SQLE_TASK_TOKEN：审核任务的token，从DMS页面复制
+* SQLE_PROJECT_NAME：DMS JDBC配置：项目名
 #### 参数说明（java 参数）
 * server.port：web服务启用端口
 * spring.datasource.url：jdbc url

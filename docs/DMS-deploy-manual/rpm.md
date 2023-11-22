@@ -4,14 +4,30 @@ title: RPM 安装
 # RPM安装
 
 ## 环境准备
-* CentOS 7
-* MySQL 5.7
+* CentOS 7；
+* MySQL 5.7；
+* JDK11.0：Provision依赖neo4j数据库，neo4j需要在jdk11.0版本下（官方推荐）才能运行；
+
+```
+JDK安装可参考如下命令
+echo "Prepare env..."
+cd /opt
+wget ftp://ftpuser:ftpuser@10.186.18.90/actiontech-provision/openjdk-11.0.2_linux-x64_bin.tar.gz
+tar -zxvf openjdk-11.0.2_linux-x64_bin.tar.gz
+cat >> /etc/profile <<EOF
+export JAVA_HOME=/opt/jdk-11.0.2
+export CLASSPATH=$:CLASSPATH:$JAVA_HOME/lib/
+export PATH=$PATH:$JAVA_HOME/bin
+EOF
+source /etc/profile;java -version
+ln -s /opt/jdk-11.0.2/bin/java /usr/bin/java
+```
 
 ## 下载安装包
 
-* 下载 DMS 的 RPM 安装包: wget ftp://ftpadmin:KFQsB9g0aut7@10.186.18.90/actiontech-dms/ee/qa/main/dms-ee-main.qa.el7.x86_64.rpm
-* 下载 SQLE 的 RPM 安装包: wget ftp://ftpadmin:KFQsB9g0aut7@10.186.18.90/actiontech-sqle/ee/qa/main/sqle-ee-main.qa.el7.x86_64.rpm
-* 下载 Provision 的 RPM 安装包: wget ftp://ftpadmin:KFQsB9g0aut7@10.186.18.90/actiontech-provision/qa/main/provision-main.qa.el7.x86_64.rpm
+* 下载 DMS 的 RPM 安装包: wget ftp://ftpuser:ftpuser@10.186.18.90/actiontech-dms/ee/qa/main/dms-ee-main.qa.el7.x86_64.rpm
+* 下载 SQLE 的 RPM 安装包: wget ftp://ftpuser:ftpuser@10.186.18.90/actiontech-sqle/ee/qa/main/sqle-ee-main.qa.el7.x86_64.rpm
+* 下载 Provision 的 RPM 安装包: wget ftp://ftpuser:ftpuser@10.186.18.90/actiontech-provision/qa/main/provision-main.qa.el7.x86_64.rpm
 
 ## 创建后台数据库
 ```sh
@@ -43,7 +59,7 @@ systemctl start dms.service
 
 1. 执行 RPM 的安装命令：
 ```sh
-rpm-ivh --prefix=/opt/sqle sqle-ee-main.qa.el7.x86_64.rpm
+rpm -ivh --prefix=/opt/sqle sqle-ee-main.qa.el7.x86_64.rpm
 ```
 2. 配置跟新
 ```sh
@@ -89,7 +105,7 @@ provision:
 ```
 参考[配置文件](./config.md)
 
-3. 启动SQLE
+3. 启动Provision
 ```sh
 sh ./init_start.sh
 ```

@@ -1,6 +1,8 @@
 ---
 title: SQL文件扫描
 ---
+# SQL文件扫描
+
 本节介绍SQL文件扫描的应用场景及配置方法。
 
 :::note
@@ -21,7 +23,7 @@ title: SQL文件扫描
 
 ### 执行Scannerd文件
 :::tip
-注意：使用rpm或docker部署的情况下，scannerd通常在SQLE的bin目录下。
+注意：使用rpm或docker部署的情况下，scannerd通常在DMS的bin目录下。
 ::: 
 
 示例如下：
@@ -33,8 +35,8 @@ title: SQL文件扫描
 参数解释如下：
 
 * -J, --project：说明扫描任务所在项目，例如“default”；
-* -H, --host string：指定SQLE主机所在地址；
-* -P, --port string：指定SQLE所在端口；
+* -H, --host string：指定DMS主机所在地址；
+* -P, --port string：指定DMS所在端口；
 * -N, --name string：指定扫描任务名称，scannerd会将获得的SQL传至指定的任务池中审核；
 * -D, --dir string：指定要扫描的SQL文件路径；
 * -A, --token string：输入扫描任务凭证token；
