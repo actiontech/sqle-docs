@@ -66,7 +66,7 @@ sqle:
 #### 通用配置.api
 |参数|说明|
 |-|-|
-|addr|server id，辨识集群节点，集群内不重复即可|
+|addr|访问服务器时需要的网络地址|
 |port|当前服务的web接口参数|
 |enable_https|是否开启https，默认不开启|
 |cert_file_path|https 证书路径|
