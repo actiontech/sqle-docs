@@ -30,6 +30,23 @@ dms:
     port: 8978
     admin_user: "cbadmin"
     admin_password: "123456"
+  database_driver_options:
+    - db_type: MySQL
+      logo_path: "/logo/mysql.png"
+      params:  
+    - db_type: Postgres
+      logo_path: "/static/logo/pg.png"
+      params:   
+    - db_type: Oracle
+      logo_path: "/static/logo/oracle.png"
+      params: [
+       {
+        "key":"param1",
+        "value":"XE",
+        "desc":"service name",
+        "type":"string"
+       },    
+      ]   
 
 sqle:
   id: 1
@@ -128,3 +145,5 @@ SQL工作台的配置，配置则代表开启SQL工作台。
 |mysql_user|SQLE存储库的数据库用户|
 |mysql_password|SQLE存储库的数据库密码|
 |mysql_schema|SQLE存储库的数据库 schema|
+
+数据库插件配置请参考：[如何配置数据库审核插件](../dev-manual/plugins/howtouse.md)

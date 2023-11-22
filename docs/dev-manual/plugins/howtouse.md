@@ -22,38 +22,59 @@ drwxr-x--- 3 actiontech-universe actiontech 4096 Oct  8 09:30 ui
 根据数据源类型的不同，目前有两种不同的配置文件书写方式。用户应根据实际情况选择相应的配置方式进行填写。
 :::
 ```jsx title="sqled.yml # 针对PostgreSQL、SQL server、TiDB、OceanBase For MySQL类型的数据源"
-server:
-  sqle_config:
-    server_port: 10000
-    auto_migrate_table: true
+sqle:
+  id: 1
+  dms_server_address: http://127.0.0.1:7601
+  api:
+    addr: 127.0.0.1
+    port: 10000
+    enable_https: false
+    cert_file_path: './etc/cert.pem'
+    key_file_path: './etc/key.pem'  
+  secret_key:     
+  service:
+    auto_migrate_table: true   
     debug_log: false
     log_path: './logs'
-    plugin_path: './plugins'   # 此处填写插件目录，也可以填写绝对路径
-  db_config:
-    mysql_cnf:
-      mysql_host: '127.0.0.1'
+    log_max_size_mb: 1024
+    log_max_backup_number: 2    
+    enable_cluster_mode:
+    plugin_path: '/plugins'# 此处填写插件目录，也可以填写绝对路径    
+    database:
+      mysql_host: '10.186.56.59'
       mysql_port: '3306'
       mysql_user: 'root'
-      mysql_password: 'mysqlpass'
+      mysql_password: '123456'
       mysql_schema: 'sqle'
 ```
 ```jsx title="sqled.yml # 针对Oracle和DB2类型的数据源，须先在SQLE环境中安装JDK，yum install java-1.8.0-openjdk* -y"
-server:
-  sqle_config:
-    server_port: 10000
-    auto_migrate_table: true
+sqle:
+  id: 1
+  dms_server_address: http://127.0.0.1:7601
+  api:
+    addr: 127.0.0.1
+    port: 10000
+    enable_https: false
+    cert_file_path: './etc/cert.pem'
+    key_file_path: './etc/key.pem'  
+  secret_key:     
+  service:
+    auto_migrate_table: true   
     debug_log: false
     log_path: './logs'
-  db_config:
-    mysql_cnf:
-      mysql_host: '127.0.0.1'
+    log_max_size_mb: 1024
+    log_max_backup_number: 2    
+    enable_cluster_mode:
+    plugin_path: '/root/workspace/dms/sqle-ee/bin/plugins'# 此处填写插件目录，也可以填写绝对路径
+    plugin_config:    
+      - plugin_name: 'sqle-db2-plugin-main.jar' # 填写插件文件名称
+        cmd: 'java -jar /opt/sqle/plugins/sqle-db2-plugin-main.jar' # 填写插件启动指令及插件绝对路径      
+    database:
+      mysql_host: '10.186.56.59'
       mysql_port: '3306'
       mysql_user: 'root'
-      mysql_password: 'mysqlpass'
+      mysql_password: '123456'
       mysql_schema: 'sqle'
-  plugin_config:
-      - plugin_name: 'sqle-db2-plugin-main.jar' # 填写插件名称
-        cmd: 'java -jar /opt/sqle/plugins/sqle-db2-plugin-main.jar' # 填写插件启动指令及插件绝对路径
 ```
 
 ## 集成插件
