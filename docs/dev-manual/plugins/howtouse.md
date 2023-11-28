@@ -76,6 +76,9 @@ sqle:
       mysql_password: '123456'
       mysql_schema: 'sqle'
 ```
+:::tip
+配置插件时，注意需要同时更新 database_driver_options ，详细配置信息请参考[配置文件说明](/docs/DMS-deploy-manual/config.md)
+:::
 
 ## 集成插件
 将插件的二进制文件放在[配置插件](#配置插件)中创建的 plugins/目录内，其中插件可以由第三方提供或者自行编译，参考：[sqle-pg-plugin](https://github.com/actiontech/sqle-pg-plugin)
