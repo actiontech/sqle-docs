@@ -78,6 +78,8 @@ ALTER TABLE mysql.slow_log ENGINE = MyISAM;
 ALTER TABLE mysql.slow_log ADD INDEX idx_start_time (start_time);
 ```
 :::
+
+
 #### 新建智能扫描任务
 
 新建智能扫描任务，填写以下字段信息：
