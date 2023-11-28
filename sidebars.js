@@ -54,6 +54,7 @@ const sidebars = {
             "user-manual/project/rule-template-manager",
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
+            "user-manual/project/operation_records",
              {
                type: 'category',
                label: '工单',
@@ -113,7 +114,6 @@ const sidebars = {
           ],
         }, 
         "user-manual/customrule",
-        "user-manual/operation_records",
         "user-manual/jetbrains",   
       ],
     },
