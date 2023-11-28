@@ -24,6 +24,11 @@ dms:
       password: "123456"
       database: "dms"
       debug: true
+    log:
+      level: DEBUG
+      path: logs
+      max_size_mb: 100
+      max_backup_number: 10
   cloudbeaver:
     enable_https: false
     host: "127.0.0.1"
@@ -107,6 +112,14 @@ sqle:
 |password|DMS 后端数据库密码|
 |database|DMS 后端数据库 schema|
 |debug||
+
+#### DMS.service.log
+|参数|说明|
+|-|-|
+|level|DMS日志级别|
+|path|DMS日志存在路径|
+|max_size_mb|DMS日志文件大小|
+|max_backup_number|DMS保留日志文件数|
 
 #### DMS.cloudbeaver
 SQL工作台的配置，配置则代表开启SQL工作台。
