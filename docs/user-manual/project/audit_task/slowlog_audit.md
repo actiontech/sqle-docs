@@ -98,8 +98,6 @@ ALTER TABLE mysql.slow_log ADD INDEX idx_start_time (start_time);
 
 ## 执行结果
 在扫描任务详情查看扫描的SQL语句及审核报告。
-![result](img/slowlog-result.png)
-![result2](img/slowlog-result2.png)
 
 
 ## 后续步骤
