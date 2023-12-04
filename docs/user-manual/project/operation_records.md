@@ -14,4 +14,4 @@ SQLE平台提供操作记录，当审核/上线产生问题时，用户需要从
 ![操作记录](./img/operation.png)
 
 ### 更多操作
-SQLE会定时回收已产生的操作记录，目前该过期时间默认为90天。如果用户需要自定义过期时间，可以在[全局配置](../user-manual/sys-configuration/configuration.md)中修改。
+SQLE会定时回收已产生的操作记录，目前该过期时间默认为90天。如果用户需要自定义过期时间，可以在[全局配置](../sys-configuration/configuration.md)中修改。
