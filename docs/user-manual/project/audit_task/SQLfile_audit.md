@@ -27,7 +27,7 @@ title: SQL文件扫描
 示例如下：
 
 ```
-./scannerd sqlfile -H127.0.0.1 -N"SQLfile" -P"10000" -J"default" -D/root/sqle/sqle/cmd/scannerd/scanners/mybatis/testdata/ -A"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJ0ZXN0MDcyNCIsImV4cCI6MTcyMTcyODU0NywibmFtZSI6ImFkbWluIn0.CojdTvBkr-iN_26tWI-Kr6mMnJt1NIDr-Y3v7m9ySuM"
+./scannerd sqlFile -H127.0.0.1 -N"SQLfile" -P"10000" -J"default" -D/root/sqle/sqle/cmd/scannerd/scanners/mybatis/testdata/ -A"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJ0ZXN0MDcyNCIsImV4cCI6MTcyMTcyODU0NywibmFtZSI6ImFkbWluIn0.CojdTvBkr-iN_26tWI-Kr6mMnJt1NIDr-Y3v7m9ySuM"
 ```
 
 参数解释如下：
