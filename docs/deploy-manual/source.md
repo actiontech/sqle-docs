@@ -36,7 +36,7 @@ git clone https://github.com/actiontech/dms-ui.git
 编译前端代码，并将前端代码拷贝至后端代码目录：
 ```sh
 cd ~/sqle-build/dms-ui
-docker run --rm -v $PWD:/app -w /app r/gplane/pnpm:8.3.1 sh -c "git config --global --add safe.directory /app && pnpm config set registry https://registry.npm.taobao.org && pnpm install --no-frozen-lockfile && pnpm build"
+docker run --rm -v $PWD:/app -w /app gplane/pnpm:8.3.1 sh -c "git config --global --add safe.directory /app && pnpm config set registry https://registry.npm.taobao.org && pnpm install --no-frozen-lockfile && pnpm build"
 rm -rf ~/sqle-build/sqle/static && cp -r ~/sqle-build/dms-ui/packages/base/dist ~/sqle-build/sqle/static
 ```
 
