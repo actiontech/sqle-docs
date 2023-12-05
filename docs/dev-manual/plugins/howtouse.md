@@ -77,7 +77,7 @@ sqle:
       mysql_schema: 'sqle'
 ```
 :::tip
-配置插件时，注意需要同时更新 database_driver_options ，详细配置信息请参考[配置文件说明](/docs/DMS-deploy-manual/config.md)
+配置插件时，注意需要同时更新 database_driver_options ，详细配置信息请参考[配置文件说明](/docs/deploy-manual/config.md)
 :::
 
 ## 集成插件
