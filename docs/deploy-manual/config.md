@@ -47,7 +47,7 @@ dms:
       logo_path: "/static/logo/oracle.png"
       params: [
        {
-        "key":"param1",
+        "key":"service_name",
         "value":"XE",
         "desc":"service name",
         "type":"string"
