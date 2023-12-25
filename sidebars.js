@@ -114,7 +114,8 @@ const sidebars = {
           ],
         }, 
         "user-manual/customrule",
-        "user-manual/jetbrains",   
+        "user-manual/jetbrains",
+        "user-manual/knowledgebase",   
       ],
     },
     {
