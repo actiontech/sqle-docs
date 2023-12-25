@@ -27,10 +27,7 @@ title: IDEA审核插件
 
 ![ide-install-edit](img/ide-install-edit.png)
 
-2.点击在左侧菜单最下方 `SQLE`
-![ide-install-setting2](img/ide-install-setting2.png)
-
-3.填写SQLE环境信息, 点击 `OK` 保存
+2.点击在左侧菜单最下方 `SQLE`，填写SQLE环境信息, 点击 `OK` 保存
 ![ide-install-setting3](img/ide-install-setting3.png)
 
 #### 配置参数说明
@@ -42,9 +39,15 @@ title: IDEA审核插件
 |UserName|登录SQLE使用的用户名|
 |Password|登录SQLE使用的密码|
 |Test Connection|测试连接是否成功, 将会尝试登录|
-|DB Type|当其他配置正确时，该下拉框会自动获取支持审核的实例类型。选择实例类型后，平台将使用该实例类型应用的审核规则进行审核。|
+|DB Type|当其他配置正确时，该下拉框会自动获取支持审核的实例类型。选择实例类型后，平台将使用该实例类型应用的审核规则进行审核|
+|Data Source|选择使用的数据源|
+|Schema|选择使用的Schema|
 
-### 使用方式
+### 切换数据源
+用户可以轻松查看和更改当前的数据源，省去了繁琐的全局配置步骤，以满足多项目或多环境的场景。
+![ide-install-use](img/ide-source-change.png)
+
+### 快捷审核
 
 1.用户可以选中需要审核的SQL，点击右键, 选中 [SQLE] - [Audit]后，进行SQL审核，支持同时选中多条SQL；
 ![ide-install-use](img/ide-install-use.png)
@@ -53,7 +56,7 @@ title: IDEA审核插件
 ![ide-install-use2](img/ide-install-use2.png)
 
 ### 审核结果
-插件会以弹窗的形式将审核结果进行展示
+插件会以弹窗的形式将审核结果进行展示，用户可查看SQL触发的审核规则，并查看对应的知识库说明。
 ![ide-install-result](img/ide-install-result.png)
 
 ## 常见问题解答
