@@ -44,7 +44,7 @@ title: SQL审核
 
 ## 执行结果
 审核完成后，用户可以查看审核结果并在SQL审核列表中查看生成的审核记录。
-
+![quick-audit](img/quick-audit.png)
 
 ## 后续操作
 添加了标签的SQL审核记录将进入SQL管控列表页面，用户可以在[管控列表](./sqlmanage.md)页面统一管理SQL。
