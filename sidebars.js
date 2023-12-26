@@ -55,6 +55,7 @@ const sidebars = {
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
             "user-manual/project/operation_records",
+            "user-manual/project/quick_audit",
              {
                type: 'category',
                label: '工单',
