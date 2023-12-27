@@ -43,7 +43,7 @@ title: 功能对比
             <td> </td>
         </tr>
         <tr>
-            <td  rowspan="3">量化管理</td>
+            <td  rowspan="4">量化管理</td>
             <td>项目管理</td>
             <td>√</td>
             <td></td>
@@ -57,6 +57,11 @@ title: 功能对比
             <td>Dashboard</td>
             <td>√</td>
             <td>√</td>
+        </tr>
+        <tr>
+            <td>SQL管控</td>
+            <td>√</td>
+            <td></td>
         </tr>
         <tr>
             <td  rowspan="11">支持的数据源类型</td>
@@ -115,7 +120,7 @@ title: 功能对比
             <td></td>
         </tr>
         <tr>
-            <td  rowspan="16">SQL审核</td>
+            <td  rowspan="18">SQL审核</td>
             <td>同一工单多数据源</td>
             <td>√</td>
             <td></td>
@@ -131,7 +136,12 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td>自助审核</td>
+            <td>快捷审核</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>工单审核</td>
             <td>√</td>
             <td>√</td>
         </tr>
@@ -144,6 +154,11 @@ title: 功能对比
             <td>动态配置审核规则模板</td>
             <td>√</td>
             <td>√</td>
+        </tr>
+        <tr>
+            <td>规则知识库</td>
+            <td>√</td>
+            <td> </td>
         </tr>
         <tr>
             <td>审核白名单</td>
@@ -227,7 +242,7 @@ title: 功能对比
             <td>√</td>
         </tr>
         <tr>
-            <td  rowspan="15">智能扫描</td>
+            <td  rowspan="16">智能扫描</td>
             <td>MySQL|MyBatis 扫描</td>
             <td>√</td>
             <td>√</td>
@@ -247,6 +262,16 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
         </tr>
+                <tr>
+            <td>MySQL|百度云RDS慢日志</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
+        <tr>
+            <td>MySQL|华为云RDS慢日志</td>
+            <td>√</td>
+            <td>√</td>
+        </tr>
         <tr>
             <td>MySQL|慢日志审核</td>
             <td>√</td>
@@ -254,11 +279,6 @@ title: 功能对比
         </tr>
         <tr>
             <td>MySQL|会话SQL扫描</td>
-            <td>√</td>
-            <td>√</td>
-        </tr>
-        <tr>
-            <td>MySQL|百度云RDS慢日志</td>
             <td>√</td>
             <td>√</td>
         </tr>
