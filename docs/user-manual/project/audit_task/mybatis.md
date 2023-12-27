@@ -4,8 +4,8 @@ title: MyBatis扫描
 本节介绍MyBatis扫描的应用场景及配置方法。
 
 ## 支持的数据源类型
-* MySQL
-* OceanBase For MySQL
+
+目前所有数据源均已支持MyBatis扫描任务类型。
 
 ## 使用场景
 应用开发阶段可以通过MyBatis扫描任务对应用代码中SQL做实时审核，MyBatis扫描任务需要通过SQLE提供的Scannerd进行SQL采集并推送到SQLE进行SQL审核。
