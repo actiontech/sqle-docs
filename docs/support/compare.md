@@ -524,9 +524,9 @@ title: 功能对比
         <tr>
             <td>其他</td>
             <td>规则数量</td>
-            <td>133</td>
+            <td>155</td>
             <td>122</td>
-            <td>129</td>
+            <td>146</td>
             <td>117</td>
             <td>119</td>
         </tr>
