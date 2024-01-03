@@ -103,7 +103,8 @@ ALTER TABLE mysql.slow_log ADD INDEX idx_start_time (start_time);
 
 
 ## 后续步骤
-分析扫描任务报告中出现的慢SQL。
+1. 分析扫描任务报告中出现的慢SQL：用户可以重点关注慢SQL的部分，这些SQL可能需要进行性能优化或数据库结构调整，以提升系统的响应速度。
+2. 过滤不关心的SQL：用户可以通过在sqle.black_list_audit_plan_sqls表中添加需要过滤的SQL片段，实现对scanner扫描任务中不关心的SQL的过滤。这样，在SQLE的增量和全量接口中包含了指定关键字的SQL将被自动过滤掉，减少冗余的结果展示。
 
 
 

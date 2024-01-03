@@ -55,6 +55,8 @@ const sidebars = {
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
             "user-manual/project/operation_records",
+            "user-manual/project/sqlmanage",
+            "user-manual/project/quick_audit",
              {
                type: 'category',
                label: '工单',
@@ -74,6 +76,7 @@ const sidebars = {
                 "user-manual/project/audit_task/slowlog_audit",
                 "user-manual/project/audit_task/processlist_audit",
                 "user-manual/project/audit_task/baiduyunrds",
+                "user-manual/project/audit_task/huaweiyunrds",
                 "user-manual/project/audit_task/mybatis",
                 "user-manual/project/audit_task/SQLfile_audit",
                 "user-manual/project/audit_task/java_application_audit",
@@ -114,7 +117,8 @@ const sidebars = {
           ],
         }, 
         "user-manual/customrule",
-        "user-manual/jetbrains",   
+        "user-manual/jetbrains",
+        "user-manual/knowledgebase",   
       ],
     },
     {

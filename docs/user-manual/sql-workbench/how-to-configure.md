@@ -5,7 +5,7 @@ title: 配置方法
 # 配置方法
 ### 安装CloudBeaver
 :::tip
-SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1版本
+SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1版本
 :::
 
 docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
