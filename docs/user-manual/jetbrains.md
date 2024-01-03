@@ -2,7 +2,7 @@
 title: IDEA审核插件
 ---
 
-该项目是SQLE 的 [IDEA审核插件](https://github.com/actiontech/sqle-jetbrains-plugin)  , 该插件满足开发人员在开发阶段进行实时自助式的静态SQL审核，实现开发阶段审核上线等各个SQL开发阶段的SQL开发规范。
+该项目是SQLE 的 [IDEA审核插件](https://github.com/actiontech/sqle-jetbrains-plugin)  ，旨在帮助开发人员在SQL开发的各个阶段进行实时自助式的静态SQL审核，并引入SQL开发规范。
 
 :::tip
 为保证SQLE审核插件正常运行，IDEA版本需大于等于 2021.1.3
