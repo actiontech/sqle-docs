@@ -12,7 +12,7 @@ dms:
   id: 1
   api:
     addr: "0.0.0.0"
-    port: 7601
+    port: 10000
     enable_https: false
     cert_file_path: './etc/cert.pem'
     key_file_path: './etc/key.pem'
@@ -58,7 +58,7 @@ sqle:
   dms_server_address: "http://127.0.0.1:10000"
   api:
     addr: "127.0.0.1"
-    port: 10000
+    port: 10001
     enable_https: false
     cert_file_path: './etc/cert.pem'
     key_file_path: './etc/key.pem'
