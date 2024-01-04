@@ -46,5 +46,8 @@ chmod +x scripts/init_start.sh
 ./scripts/init_start.sh
 ```
 
+## 访问SQLE
+SQLE 对外提供 web 服务，在程序部署完成后，即可通过 SQLE UI 访问：http://127.0.0.1:10000, 地址和端口为配置文件内 dms.api 配置项。
+
 ## 启动失败问题诊断
 参考：https://github.com/actiontech/sqle/discussions/1239
