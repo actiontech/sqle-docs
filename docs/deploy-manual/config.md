@@ -25,6 +25,7 @@ dms:
       password: "123456"
       database: "dms"
       debug: true
+      auto_migrate: true
     log:
       level: DEBUG
       path: logs

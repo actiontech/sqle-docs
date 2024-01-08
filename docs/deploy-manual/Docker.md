@@ -22,12 +22,12 @@ actiontech/sqle-ce:latest
 ```
 
 ### 参数说明
-使用环境变量传递参数，这些指定的配置会映射到 sqled.yml 配置内，指定数据库的配置等。
+使用环境变量传递参数，这些指定的配置会映射到 /opt/sqle/etc/config.yaml 配置内，指定数据库的配置等。
 
 |变量|说明|
 |-|-|
-|MYSQL_HOST| 数据库地址|
-|MYSQL_PORT| 数据库端口|
+|MYSQL_HOST| 访问地址|
+|MYSQL_PORT| 访问端口|
 |MYSQL_USER| 数据库用户|
 |MYSQL_PASSWORD| 数据库密码|
 |MYSQL_DMS_SCHEMA| SQLE 服务使用的指定的 schema|
