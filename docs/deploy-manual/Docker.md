@@ -18,8 +18,13 @@ docker run -d -it \
 -e MYSQL_PASSWORD="123456" \
 -e MYSQL_DMS_SCHEMA="dms" \
 -e MYSQL_SQLE_SCHEMA="sqle" \
-actiontech/sqle-ce:latest
+actiontech/sqle-ce:latest   
 ```
+
+```tip
+默认提供最新版本的下载镜像，如果需要使用其他版本的镜像，可以访问SQLE的DockerHub选用想要的版本。
+```
+
 
 ### 参数说明
 使用环境变量传递参数，这些指定的配置会映射到 /opt/sqle/etc/config.yaml 配置内，指定数据库的配置等。
