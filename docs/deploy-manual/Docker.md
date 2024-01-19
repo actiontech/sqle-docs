@@ -21,9 +21,9 @@ docker run -d -it \
 actiontech/sqle-ce:latest   
 ```
 
-```tip
+:::tip
 默认提供最新版本的下载镜像，如果需要使用其他版本的镜像，可以访问SQLE的DockerHub选用想要的版本。
-```
+:::
 
 
 ### 参数说明
