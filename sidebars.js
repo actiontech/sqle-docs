@@ -134,6 +134,13 @@ const sidebars = {
             "dev-manual/plugins/howtodev",
           ],
         },
+        {
+          type: 'category',
+          label: 'OpenAPI',
+          items: [
+            "dev-manual/OpenAPI/dmstoken",
+          ],
+        },
       ],
     },
     {
