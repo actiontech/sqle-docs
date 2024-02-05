@@ -45,7 +45,7 @@ title: IDEA审核插件
 
 ### 切换数据源
 用户可以轻松查看和更改当前的数据源，省去了繁琐的全局配置步骤，以满足多项目或多环境的场景。
-![ide-install-use](img/ide-source-change.png)
+![ide-install-use](img/ide-install-use.png)
 
 ### 快捷审核
 

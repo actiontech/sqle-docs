@@ -117,7 +117,6 @@ const sidebars = {
           ],
         }, 
         "user-manual/customrule",
-        "user-manual/jetbrains",
         "user-manual/knowledgebase",   
       ],
     },
@@ -127,11 +126,19 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '数据库审核插件',
+          label: '数据源审核插件',
           items: [
             "dev-manual/plugins/intro",
             "dev-manual/plugins/howtouse",
             "dev-manual/plugins/howtodev",
+          ],
+        },
+        {
+          type: 'category',
+          label: '开发工具审核插件',
+          items: [
+            "dev-manual/auditplugins/jetbrains",
+            "dev-manual/auditplugins/eclipse",
           ],
         },
         {

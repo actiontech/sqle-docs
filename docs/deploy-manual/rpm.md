@@ -35,7 +35,7 @@ cd /opt/sqle/etc
 vim config.yml
 ```
 :::tip
-确保 config.yml 的文件 owner 为 actiontech-universe:actiontech
+确保 config.yaml 的文件 owner 为 actiontech-universe:actiontech
 :::
 
 ## 启动 SQLE
