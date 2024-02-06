@@ -16,7 +16,7 @@ systemctl stop dms
 systemctl stop sqled
 ```
 
-2. 确认sqle和dms的服务是否已停止
+2. 确认SQLE和DMS的服务是否已停止
 ```
 systemctl status sqled
 systemctl status dms
