@@ -56,6 +56,7 @@ const sidebars = {
             "user-manual/project/whitelist-manager",
             "user-manual/project/operation_records",
             "user-manual/project/sqlmanage",
+            "user-manual/project/dataexport",
             "user-manual/project/quick_audit",
              {
                type: 'category',
