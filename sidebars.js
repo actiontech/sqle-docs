@@ -36,6 +36,7 @@ const sidebars = {
         "deploy-manual/rpm",
         "deploy-manual/Docker",
         "deploy-manual/DockerCompose",
+        "deploy-manual/upgrade",
       ],
     },
     {
