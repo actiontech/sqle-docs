@@ -35,8 +35,8 @@ actiontech/sqle-ce:latest
 |MYSQL_PORT| 访问端口|
 |MYSQL_USER| 数据库用户|
 |MYSQL_PASSWORD| 数据库密码|
-|MYSQL_DMS_SCHEMA| SQLE 服务使用的指定的 schema|
-|MYSQL_SQLE_SCHEMA| DMS服务使用的指定的 schema|
+|MYSQL_DMS_SCHEMA| DMS 服务使用的指定的 schema|
+|MYSQL_SQLE_SCHEMA| SQLE 服务使用的指定的 schema|
 |DEBUG| 是否输出 debug 日志，默认为false|
 |AUTO_MIGRATE_TABLE| 是否自动创建表格和初始化数据，默认为true|
 
