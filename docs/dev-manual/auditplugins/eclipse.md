@@ -20,11 +20,19 @@ Eclipse审核插件可以在开发阶段实时进行自助式的SQL审核，确�
 ![eclipse-install](img/eclipse-install.png)
 
 ### 配置插件
-1. 点击`Eclipse菜单栏`-`Window`-`Preferences`-`SQLE`。
-2. 在SQLE Addr栏中输入SQLE服务的地址、用户名和密码以连接到SQLE。
-3. 点击`Test Connection`按钮，确保能够成功连接到SQLE并获取项目和数据库类型列表。
-4. 依次选择Project、DB Type、Data Source和Schema下拉框，配置要进行审核的数据库信息。
-5. 点击`Apply and Close`按钮保存配置并退出配置界面，完成配置。
+1. 进入配置页面
+   1. 点击`Eclipse菜单栏`-`Window`-`Preferences`-`SQLE`。
+2. 输入连接信息
+   1. 在SQLE Addr栏中输入SQLE服务的地址
+   2. 选择HTTP连接方式
+   3. 输入登录信息
+      1. 选择账号密码登录时，需要填写用于登录的账密信息
+      2. 选择token登录时，需要填写在个人中心生成的访问令牌
+   4. 点击`Test Connection`按钮，确保能够成功连接到SQLE并获取项目和数据库类型列表。
+3. 选择审核的数据对象
+   1. 依次选择Project、DB Type、Data Source和Schema下拉框，配置要进行审核的数据库信息。
+4. 保存配置
+   1. 点击`Apply and Close`按钮保存配置并退出配置界面，完成配置。
 
 ![eclipse-install-edit](img/eclipse-install-edit.png)
 
@@ -43,7 +51,6 @@ Eclipse审核插件可以在开发阶段实时进行自助式的SQL审核，确�
 | Schema          | 数据库名称                                            |
 
 
-
 ### 使用说明
 按照以下步骤使用插件：
 
@@ -57,3 +64,5 @@ Eclipse审核插件可以在开发阶段实时进行自助式的SQL审核，确�
 目前还支持对文件夹进行SQL审核，但仅支持审核文件夹中的XML文件。
 :::
 
+### 后续操作
+Eclipse中产生的审核操作，将同步记录到SQLE平台，您可以在平台查看历史审核记录。
