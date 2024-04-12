@@ -55,5 +55,5 @@ title: 数据导出
 ![exportresult](img/exportresult.png)
 
 ### 后续操作
-当您需要审计导出语句时，可以进入导出工单详情，下载SQL语句
+当您需要线下人工审核SQL语句，或是事后审计时，可以进入导出工单详情，下载SQL语句
 ![exportdownload](img/exportdownload.png)
