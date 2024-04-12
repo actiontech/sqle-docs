@@ -55,7 +55,7 @@ long_query_time = 1  //设置慢查询时间阈值，当前示例时间为1s，�
 参数解释如下：
 
 * -J, --project：说明扫描任务所在项目，例“default”；
-* -H, --host string：指定SQLE主机所在地址；
+* -H, --host string：指定dms主机所在地址；
 * -N, --name string：指定扫描任务名称，scannerd会将获得的慢SQL传至指定的任务池中审核；
 * -P, --port string：指定SQLE所在端口；
 * -A, --token string：输入扫描任务凭证token；
