@@ -59,6 +59,7 @@ const sidebars = {
             "user-manual/project/sqlmanage",
             "user-manual/project/dataexport",
             "user-manual/project/quick_audit",
+            "user-manual/project/IDEaudit",
              {
                type: 'category',
                label: '工单',
