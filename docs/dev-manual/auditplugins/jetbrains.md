@@ -38,6 +38,7 @@ title: IDEA审核插件
 |http/https按钮|指定连接SQLE的方式|
 |UserName|登录SQLE使用的用户名|
 |Password|登录SQLE使用的密码|
+|token|登录SQLE时使用的访问令牌|
 |Test Connection|测试连接是否成功, 将会尝试登录|
 |DB Type|当其他配置正确时，该下拉框会自动获取支持审核的实例类型。选择实例类型后，平台将使用该实例类型应用的审核规则进行审核|
 |Data Source|选择使用的数据源|
