@@ -25,7 +25,7 @@ drwxr-x--- 4 actiontech-universe actiontech    112 12月  8 03:19 static
 * dms组件中，需要在database_driver_options部分配置数据库logo存储路径、变量信息，详细配置信息请参考[配置文件说明](/docs/deploy-manual/config.md)
 * sqle组件中，根据数据源类型的不同，目前有两种不同的配置文件书写方式。用户应根据实际情况选择相应的配置方式进行填写。
 :::
-```jsx title="config.yaml # 针对PostgreSQL、SQL server、TiDB、OceanBase For MySQL类型的数据源"
+```jsx title="config.yaml "
 dms:
   id: 1
   api:
@@ -84,78 +84,10 @@ sqle:
       mysql_schema: 'sqle'
 ```
 
-```jsx title="config.yaml # 针对Oracle和DB2类型的数据源，须先在SQLE环境中安装JDK"
-dms:
-  id: 1
-  api:
-    addr: 0.0.0.0
-    port: 7601
-  service:
-    database:
-      username: root
-      password: root
-      host: 127.0.0.1
-      port: 3306
-      database: dms
-      debug: true
-    log:
-      level: DEBUG
-      path: logs
-      max_size_mb: 100
-      max_backup_number: 10
-  cloudbeaver:
-    enable_https: false
-    host: 172.41.134.5
-    port: 8978
-    admin_user: administrator
-    admin_password: 123456
-  secret_key:
-  database_driver_options: ## 需要配置数据库logo存储路径、变量信息
-    - db_type: MySQL
-      logo_path: "/logo/mysql.png"
-      params:
-    - db_type: DB2
-      logo_path: "/static/logo/db2.png"
-      params: [
-       {
-        "key":"database_name",
-        "value":"",
-        "desc":"数据库名",
-        "type":"string"
-       },
-      ]
-sqle:
-  id: 1
-  dms_server_address: http://127.0.0.1:7601
-  api:
-    addr: 127.0.0.1
-    port: 10000
-    enable_https: false
-    cert_file_path: './etc/cert.pem'
-    key_file_path: './etc/key.pem'
-  secret_key:
-  service:
-    auto_migrate_table: true
-    debug_log: false
-    log_path: './logs'
-    log_max_size_mb: 1024
-    log_max_backup_number: 2
-    plugin_path: './plugins'  ## 插件所在路径，也可以填写绝对路径
-    plugin_config:
-      - plugin_name: 'sqle-db2-plugin.jar'  ## 填写插件文件名称
-        cmd: 'java -jar /opt/sqle/plugins/sqle-db2-plugin.jar' ## 填写插件启动指令及插件绝对路径 
-    enable_cluster_mode:
-    database:
-      mysql_host: '127.0.0.1'
-      mysql_port: '3306'
-      mysql_user: 'root'
-      mysql_password: 'root'
-      mysql_schema: 'sqle'
-```
 :::tip
 1. 针对Oracle和DB2类型的数据源，须先在SQLE环境中安装JDK
 yum install java-1.8.0-openjdk* -y
-2. 针对Sql-Server类型的数据源，需要安装 .net 6.0 版本
+1. 针对Sql-Server类型的数据源，需要安装 .net 6.0 版本
 * unbuntu
   * apt-get install -y dotnet-sdk-6.0
 * centos
