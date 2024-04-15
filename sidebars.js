@@ -117,6 +117,7 @@ const sidebars = {
             "user-manual/user-manager/intro",
             "user-manual/user-manager/user",
             "user-manual/user-manager/role",
+            "user-manual/user-manager/account",
           ],
         }, 
         "user-manual/customrule",
