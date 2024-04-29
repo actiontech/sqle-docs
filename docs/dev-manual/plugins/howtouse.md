@@ -21,9 +21,7 @@ drwxr-x--- 4 actiontech-universe actiontech    112 12月  8 03:19 static
 ```
 ### 修改配置文件config.yaml
 :::tip
-配置插件时，主要注意两个方面的配置
-* dms组件中，需要在database_driver_options部分配置数据库logo存储路径、变量信息，详细配置信息请参考[配置文件说明](/docs/deploy-manual/config.md)
-* sqle组件中，根据数据源类型的不同，目前有两种不同的配置文件书写方式。用户应根据实际情况选择相应的配置方式进行填写。
+注意：dms组件中，需要在database_driver_options部分配置数据库logo存储路径、变量信息，详细配置信息请参考[配置文件说明](/docs/deploy-manual/config.md)
 :::
 ```jsx title="config.yaml "
 dms:
