@@ -59,6 +59,7 @@ const sidebars = {
             "user-manual/project/sqlmanage",
             "user-manual/project/dataexport",
             "user-manual/project/quick_audit",
+            "user-manual/project/IDEaudit",
              {
                type: 'category',
                label: '工单',
@@ -116,6 +117,7 @@ const sidebars = {
             "user-manual/user-manager/intro",
             "user-manual/user-manager/user",
             "user-manual/user-manager/role",
+            "user-manual/user-manager/account",
           ],
         }, 
         "user-manual/customrule",

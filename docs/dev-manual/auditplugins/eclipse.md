@@ -27,7 +27,7 @@ Eclipse审核插件可以在开发阶段实时进行自助式的SQL审核，确�
    2. 选择HTTP连接方式
    3. 输入登录信息
       1. 选择账号密码登录时，需要填写用于登录的账密信息
-      2. 选择token登录时，需要填写在个人中心生成的访问令牌
+      2. 选择token登录时，需要填写在个人中心生成的[访问令牌](../../user-manual/user-manager/account.md)
    4. 点击`Test Connection`按钮，确保能够成功连接到SQLE并获取项目和数据库类型列表。
 3. 选择审核的数据对象
    1. 依次选择Project、DB Type、Data Source和Schema下拉框，配置要进行审核的数据库信息。
@@ -65,4 +65,4 @@ Eclipse审核插件可以在开发阶段实时进行自助式的SQL审核，确�
 :::
 
 ### 后续操作
-Eclipse中产生的审核操作，将同步记录到SQLE平台，您可以在平台查看历史审核记录。
+Eclipse中产生的审核操作，将同步记录到SQLE平台，您可以在平台查看[历史审核记录](../../user-manual/project/IDEaudit.md)。

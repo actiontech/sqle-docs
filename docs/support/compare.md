@@ -13,7 +13,7 @@ title: 功能对比
             <td>企业版</td>
         </tr>
         <tr>
-            <td  rowspan="11">支持的数据源类型</td>
+            <td  rowspan="12">支持的数据源类型</td>
             <td>MySQL</td>
             <td>✅</td>
             <td>✅</td>
@@ -75,6 +75,12 @@ title: 功能对比
         </tr>
         <tr>
             <td>达梦</td>
+            <td></td>
+            <td></td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>GoldenDB</td>
             <td></td>
             <td></td>
             <td>✅</td>
@@ -167,8 +173,8 @@ title: 功能对比
         </tr>
         <tr>
             <td>SQL下钻分析</td>
-            <td></td>
-            <td></td>
+            <td>✅</td>
+            <td>✅</td>
             <td>✅</td>
         </tr>
         <tr>
@@ -374,7 +380,7 @@ title: 功能对比
             <td>✅</td>
         </tr>
         <tr>
-            <td  rowspan="10">对接能力</td>
+            <td  rowspan="11">对接能力</td>
             <td>用户对接:LDAP</td>
             <td>✅</td>
             <td>✅</td>
@@ -387,43 +393,49 @@ title: 功能对比
             <td>✅</td>
         </tr>
         <tr>
-            <td>消息通知：邮件告警</td>
+            <td>邮件告警</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
         </tr>
         <tr>
-            <td>消息通知：微信企业号告警</td>
+            <td>微信企业号告警</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
         </tr>
         <tr>
-            <td>消息通知：飞书告警</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-        </tr>
-        <tr>
-            <td>流程对接：钉钉在线审批</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-        </tr>
-        <tr>
-            <td>流程对接：飞书在线审批</td>
+            <td>微信企业号审批</td>
             <td></td>
             <td></td>
             <td>✅</td>
         </tr>
         <tr>
-            <td>OpenAPI：提供完整的标准接口方案</td>
+            <td>飞书告警</td>
             <td>✅</td>
             <td>✅</td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>飞书在线审批</td>
+            <td></td>
+            <td></td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>钉钉在线审批</td>
+            <td></td>
+            <td></td>
             <td>✅</td>
         </tr>
         <tr>
             <td>webhook告警</td>
+            <td>✅</td>
+            <td>✅</td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>OpenAPI：提供完整的标准接口方案</td>
             <td>✅</td>
             <td>✅</td>
             <td>✅</td>
@@ -633,7 +645,7 @@ title: 功能对比
     </table>
 
 ### 非MySQL系
-<table border="0"  cellspacing="0" cellpadding="5">
+<table border="0"  cellspacing="0" cellpadding="6">
      <tr>
             <td width="150"> </td>
             <td width="500"> </td>
@@ -652,7 +664,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>SQL上下文</td>
@@ -661,7 +673,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>元数据检查</td>
@@ -670,7 +682,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>SQL回滚</td>
@@ -679,7 +691,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>上线中止</td>
@@ -688,7 +700,7 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td  rowspan="12">扫描任务</td>
@@ -698,7 +710,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>慢日志</td>
@@ -725,7 +737,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>TiDB审计日志</td>
@@ -779,7 +791,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>应用程序抓取</td>
@@ -788,7 +800,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>自定义</td>
@@ -797,7 +809,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>其他</td>
@@ -807,6 +819,6 @@ title: 功能对比
             <td>60</td>
             <td>21</td>
             <td>23</td>
-            <td> </td>
+            <td>83</td>
         </tr>
     </table>

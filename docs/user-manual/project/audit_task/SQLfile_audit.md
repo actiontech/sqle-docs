@@ -33,8 +33,8 @@ title: SQL文件扫描
 参数解释如下：
 
 * -J, --project：说明扫描任务所在项目，例如“default”；
-* -H, --host string：指定SQLE主机所在地址；
-* -P, --port string：指定SQLE所在端口；
+* -H, --host string：指定dms主机所在地址；
+* -P, --port string：指定dms所在端口；
 * -N, --name string：指定扫描任务名称，scannerd会将获得的SQL传至指定的任务池中审核；
 * -D, --dir string：指定要扫描的SQL文件路径；
 * -A, --token string：输入扫描任务凭证token；
