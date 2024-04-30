@@ -501,7 +501,7 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
         </tr>
         <tr>
@@ -531,7 +531,7 @@ title: 功能对比
         <tr>
             <td>上线中止</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -660,7 +660,7 @@ title: 功能对比
             <td  rowspan="5">功能</td>
             <td>SQL分析</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td> </td>
             <td>√</td>
@@ -669,7 +669,7 @@ title: 功能对比
         <tr>
             <td>SQL上下文</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td> </td>
             <td>√</td>
@@ -678,7 +678,7 @@ title: 功能对比
         <tr>
             <td>元数据检查</td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -687,7 +687,7 @@ title: 功能对比
         <tr>
             <td>SQL回滚</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -696,7 +696,7 @@ title: 功能对比
         <tr>
             <td>上线中止</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -733,7 +733,7 @@ title: 功能对比
         <tr>
             <td>TopSQL</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td> </td>
             <td> </td>
@@ -796,7 +796,7 @@ title: 功能对比
         <tr>
             <td>应用程序抓取</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -805,7 +805,7 @@ title: 功能对比
         <tr>
             <td>自定义</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
