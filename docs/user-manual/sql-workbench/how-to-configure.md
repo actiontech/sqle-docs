@@ -5,16 +5,20 @@ title: 配置方法
 # 配置方法
 ### 安装CloudBeaver
 :::tip
-SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1版本
+SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1版本,推荐使用23.2.1版本
 :::
 
 docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
 
 源码安装：https://github.com/dbeaver/cloudbeaver/wiki/Build-and-deploy
 
+```
+docker run -d --restart unless-stopped --name cloudbeaver --privileged -it -p 8978:8978 dbeaver/cloudbeaver:23.2.1
+```
+
 ### 配置CloudBeaver
 #### 步骤一 修改CloudBeaver配置文件cloudbeaver.conf
-cloudbeaver.conf配置文件通常在conf路径下
+cloudbeaver.conf配置文件通常在docker容器的 /opt/cloudbeaver/conf 目录下
 
 |配置文件名 | 是否必须修改 | 修改内容 | 修改原因|
 |--|--|--|--|
@@ -24,11 +28,14 @@ cloudbeaver.conf配置文件通常在conf路径下
 #### 步骤二 重启CloudBeaver
 配置CloudBeaver后，需要重启CloudBeaver以使配置项生效
 
+
 #### 步骤三 初始化CloudBeaver
-* 使用 http://{IP}:8978/sql_query#/ 可以进入CloudBeaver即代表配置正确
-* 设置管理员用户名及密码：该用户名及密码将用于后续SQLE配置文件中
-* 确认security服务开启
-* 完成设置，登录管理员账号成功，则初始化成功
+1.使用 http://{IP}:8978/sql_query#/ 可以进入CloudBeaver即代表配置正确
+![config](img/CBconfig1.png)
+2.设置管理员用户名及密码：该用户名及密码将用于后续SQLE配置文件中，并确认security服务开启
+![config](img/CBconfig2.png)
+3.完成设置，登录管理员账号成功，则初始化成功
+![config](img/CBconfig3.png)
 
 #### 步骤四 配置完成后检查
 * 确认角色正确:[访问管理] - [角色] 处应当只有admin和user两个角色
@@ -40,14 +47,14 @@ cloudbeaver.conf配置文件通常在conf路径下
 :::
 
 ### 配置SQLE
-#### 步骤一 修改SQLE配置文件, 增加SQL工作台参数
+#### 步骤一 修改SQLE配置文件中CloudBeaver参数
 打开SQLE配置文件，配置文件一般位于SQLE工作目录的etc目录下, 文件名一般为config.yaml
 
 |参数字段 | 参数说明 |
 |--|-----|
 |cloudbeaver|sql工作台参数|
 
-子参数在cloudbeaver的下一级, 需要注意缩进
+子参数在下一级, 需要注意缩进
 
 |参数字段 |	参数说明|
 |--|-----|
