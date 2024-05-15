@@ -22,7 +22,7 @@ cloudbeaver.conf配置文件通常在conf路径下
 ![config](img/config.png)
 
 #### 步骤二 重启CloudBeaver
-配置cloudbeaver后，需要重启cloudbeaver以使配置项生效
+配置CloudBeaver后，需要重启CloudBeaver以使配置项生效
 
 #### 步骤三 初始化CloudBeaver
 * 使用 http://{IP}:8978/sql_query#/ 可以进入CloudBeaver即代表配置正确
@@ -36,26 +36,25 @@ cloudbeaver.conf配置文件通常在conf路径下
 * 确认没有冲突用户:[访问管理] - [用户] 处不应当有名称格式为 sqle-xxx的用户存在, 这会与SQLE自动创建的用户冲突
 
 :::tip
-用admin 跳转Cloudbeaver的时候，SQLE会在Cloudbeaver创建一个新的用户叫sqle-admin ，同时把这个用户缓存到数据库里，每次跳转先去数据库里找这个用户，如果已经存在，就会拿这个用户直接去登陆cb 
+用admin 跳转CloudBeaver的时候，SQLE会在CloudBeaver创建一个新的用户叫sqle-admin ，同时把这个用户缓存到数据库里，每次跳转先去数据库里找这个用户，如果已经存在，就会拿这个用户直接去登陆cb 
 :::
 
 ### 配置SQLE
 #### 步骤一 修改SQLE配置文件, 增加SQL工作台参数
-打开SQLE配置文件，配置文件一般位于SQLE工作目录的etc目录下, 文件名一般为sqled.yml
-配置文件新增参数sql_query_config
+打开SQLE配置文件，配置文件一般位于SQLE工作目录的etc目录下, 文件名一般为config.yaml
 
 |参数字段 | 参数说明 |
 |--|-----|
-|sql_query_config|sql工作台参数, 此参数与 sqle_config在同一级|
+|cloudbeaver|sql工作台参数|
 
-在sql_query_config参数下增加子参数，子参数在 sql_query_config 的下一级, 需要注意缩进
+子参数在cloudbeaver的下一级, 需要注意缩进
 
 |参数字段 |	参数说明|
 |--|-----|
-|cloud_beaver_host|cloudbeaver IP地址|
-|cloud_beaver_port | cloudbeaver访问端口|
-|cloud_beaver_admin_user | cloudbeaver管理员账户 |
-|cloud_beaver_admin_password|cloudbeaver管理员密码|
+|host|cloudbeaver IP地址|
+|port | cloudbeaver访问端口|
+|admin_user | cloudbeaver管理员账户 |
+|admin_password|cloudbeaver管理员密码|
 
 配置文件内容参考：
 
