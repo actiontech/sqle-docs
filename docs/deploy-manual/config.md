@@ -3,7 +3,7 @@ title: 配置文件说明
 ---
 # 配置文件说明
 :::tip
-SQLE的配置文件采用yml的格式，默认情况下位于SQLE安装目录下，路径为`./etc/config.yml`
+SQLE的配置文件采用yml的格式，默认情况下位于SQLE安装目录下，路径为`./etc/config.yaml`
 :::
 
 ## 默认文件参考
