@@ -103,7 +103,7 @@ const sidebars = {
         },           
         {
           type: 'category',
-          label: '工作台',
+          label: 'SQL工作台',
           items: [
             "user-manual/sql-workbench/introduction",
             "user-manual/sql-workbench/how-to-configure",
