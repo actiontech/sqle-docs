@@ -2,7 +2,7 @@
 title: 使用定制包快速搭建环境
 ---
 
-SQLE在原有CloudBeaver release_22_2_0 分支的基础上, 增加了对OceanBase 和 TiDB 的支持, 用户无需再手动配置环境，可直接使用SQL工作台功能。
+SQLE在原有CloudBeaver release_23_2_1 分支的基础上, 增加了对OceanBase 和 TiDB 的支持, 用户无需再手动配置环境，可直接使用SQL工作台功能。
 
 ![cb](img/appear.png)
 
@@ -12,17 +12,16 @@ SQLE在原有CloudBeaver release_22_2_0 分支的基础上, 增加了对OceanBas
 * 默认访问路由调整为 /sql_query, 便于与SQLE集成
 * 默认会话超时时间调整为12小时(之前是30分钟)
 * 移除了默认创建的 PG 演示实例和 SQLite 演示实例
-* docker镜像名调整为 actiontech/sqle-cloudbeaver:22_2_0
+* docker镜像名调整为 actiontech/sqle-cloudbeaver:23_2_1
 * 优化打包方式, 大幅提高打包效率
 * 默认主题改为暗色
 
 ### 项目地址
-* 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/sqle_22_2_0
+* 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/release_23_2_1_sqle
 
-* 定制DBeaver分支: https://github.com/actiontech/dbeaver/tree/sqle_22_2_0
 
 ### 定制包下载地址
-https://github.com/actiontech/cloudbeaver/releases/tag/sqle.22.2.0
+https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.1
 
 ### 使用说明
 #### 编译和运行项目
