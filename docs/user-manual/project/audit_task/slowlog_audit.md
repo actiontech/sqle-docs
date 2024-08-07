@@ -39,6 +39,7 @@ ALTER TABLE mysql.slow_log ADD INDEX idx_start_time (start_time);
 
 ### 步骤二 获取采集结果及审核结果
 在扫描详情中查看从慢日志表中采集的SQL信息及审核结果。
+![list](img/slowlog_list.png)
 
 
 
