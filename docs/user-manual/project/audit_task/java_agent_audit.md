@@ -4,13 +4,7 @@ title: Java探针版应用程序SQL抓取【企业版】
 本节介绍如何利用SQLE平台抓取java应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
 
 ## 支持的数据源类型
-* MySQL
-* Oracle
-* DB2
-* OceanBase for MySQL
-* PostgreSQL
-* TiDB
-* SQL Server
+* All
 
 ## 前置准备
 
@@ -51,7 +45,10 @@ total 55652
 
 ## 使用方式
 ### 创建扫描任务
-进入智能扫描任务列表，点击新建，扫描任务类型选择应用程序SQL抓取。
+在SQL管控配置中为数据源开启智能扫描，扫描类型选择“应用程序SQL抓取”，并填写以下字段信息：
+* 审核规则模板：选择对应的审核规则模板；
+
+点击`提交`，完成数据源上的应用程序SQL抓取扫描任务配置。
 
 ### 启动Java应用
 :::tip

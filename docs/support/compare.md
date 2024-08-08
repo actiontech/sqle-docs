@@ -580,10 +580,10 @@ title: 功能对比
         <tr>
             <td>MyBatis</td>
             <td>√</td>
-            <td> </td>
-            <td> </td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>阿里RDS MySQL慢日志</td>
@@ -636,11 +636,11 @@ title: 功能对比
         <tr>
             <td>其他</td>
             <td>规则数量</td>
-            <td>155</td>
-            <td>122</td>
+            <td>175</td>
             <td>146</td>
-            <td>117</td>
-            <td>119</td>
+            <td>162</td>
+            <td>150</td>
+            <td>153</td>
         </tr>
     </table>
 
@@ -662,7 +662,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
         </tr>
@@ -671,7 +671,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
         </tr>
@@ -680,7 +680,7 @@ title: 功能对比
             <td> </td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td>√</td>
         </tr>
@@ -689,7 +689,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td>√</td>
         </tr>
@@ -698,7 +698,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td> </td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td>√</td>
         </tr>
@@ -708,7 +708,7 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td>√</td>
         </tr>
@@ -735,7 +735,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td> </td>
             <td>√</td>
         </tr>
@@ -750,12 +750,12 @@ title: 功能对比
         </tr>
         <tr>
             <td>MyBatis</td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>阿里RDS MySQL慢日志</td>
@@ -814,10 +814,10 @@ title: 功能对比
         <tr>
             <td>其他</td>
             <td>规则数量</td>
-            <td>85</td>
+            <td>114</td>
             <td>83</td>
             <td>60</td>
-            <td>21</td>
+            <td>72</td>
             <td>23</td>
             <td>83</td>
         </tr>

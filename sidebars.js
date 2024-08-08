@@ -45,47 +45,62 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '项目',
+          label: '项目配置',
           items: [
             "user-manual/project/intro",
             "user-manual/project/project_create",
             "user-manual/project/instance-manager",
-            "user-manual/project/instance_syn",
             "user-manual/project/group_member",
             "user-manual/project/rule-template-manager",
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
             "user-manual/project/operation_records",
-            "user-manual/project/sqlmanage",
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SQL开发',
+          items: [
             "user-manual/project/dataexport",
             "user-manual/project/quick_audit",
             "user-manual/project/IDEaudit",
-             {
-               type: 'category',
-               label: '工单',
-               items: [
-                 "user-manual/project/workflow/intro",
-                 "user-manual/project/workflow/create-workflow",
-                 "user-manual/project/workflow/audit-workflow",
-                 "user-manual/project/workflow/exec-workflow",
-               ],
-             },
-             {
-              type: 'category',
-              label: '扫描任务',
-              items: [
-                "user-manual/project/audit_task/intro",
-                "user-manual/project/audit_task/metadata_audit",
-                "user-manual/project/audit_task/slowlog_audit",
-                "user-manual/project/audit_task/processlist_audit",
-                "user-manual/project/audit_task/baiduyunrds",
-                "user-manual/project/audit_task/huaweiyunrds",
-                "user-manual/project/audit_task/mybatis",
-                "user-manual/project/audit_task/SQLfile_audit",
-                "user-manual/project/audit_task/java_application_audit",
-                "user-manual/project/audit_task/java_agent_audit",
-              ],
-             }
+            "user-manual/project/audit_task/mybatis",
+            "user-manual/project/audit_task/SQLfile_audit",
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SQL上线',
+          items: [
+            "user-manual/project/workflow/intro",
+            "user-manual/project/workflow/create-workflow",
+            "user-manual/project/workflow/audit-workflow",
+            "user-manual/project/workflow/exec-workflow",
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SQL管控',
+          items: [
+            "user-manual/project/audit_task/intro",
+            "user-manual/project/audit_task/sqlmanage",
+            "user-manual/project/audit_task/metadata_audit",
+            "user-manual/project/audit_task/slowlog_audit",
+            "user-manual/project/audit_task/processlist_audit",
+            "user-manual/project/audit_task/topsql",
+            "user-manual/project/audit_task/baiduyunrds",
+            "user-manual/project/audit_task/huaweiyunrds",
+            "user-manual/project/audit_task/java_application_audit",
+            "user-manual/project/audit_task/java_agent_audit",
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SQL工作台',
+          items: [
+            "user-manual/sql-workbench/introduction",
+            "user-manual/sql-workbench/how-to-configure",
+            "user-manual/sql-workbench/how-to-use",
           ],
         },
         {
@@ -103,15 +118,6 @@ const sidebars = {
         },           
         {
           type: 'category',
-          label: 'SQL工作台',
-          items: [
-            "user-manual/sql-workbench/introduction",
-            "user-manual/sql-workbench/how-to-configure",
-            "user-manual/sql-workbench/how-to-use",
-          ],
-        },
-        {
-          type: 'category',
           label: '用户管理',
           items: [
             "user-manual/user-manager/intro",
@@ -122,6 +128,8 @@ const sidebars = {
         }, 
         "user-manual/customrule",
         "user-manual/knowledgebase",   
+        "user-manual/allinstance", 
+        "user-manual/project/instance_syn",
       ],
     },
     {
