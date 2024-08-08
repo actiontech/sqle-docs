@@ -1,5 +1,5 @@
 ---
-title: SQL管控
+title: SQL管控【企业版】
 ---
 
 # SQL全生命周期管控
