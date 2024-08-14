@@ -29,7 +29,7 @@ TOP SQL 语句可能会导致数据库性能下降。为此，我们提供了TOP
 
 :::tip
 对PG类型的数据源开启TOPSQ智能扫描时，PG需要保证两个前提：
-* 确保`pg_stat_statements`扩展已安装，参考SQL语句CREATE EXTENSION pg_stat_statements;
+* 确保pg_stat_statements扩展已安装，参考SQL语句`CREATE EXTENSION pg_stat_statements`;
 * 将参数`shared_preload_libraries`的值设置为 pg_stat_statements来指定在启动时加载pg_stat_statements扩展
 ```
 docker run --name': docker run --name postgres -e POSTGRES_PASSWORD=123456 -d -p 5432:5432 -v /my/local/dir:/var/lib/postgresql/data postgres:13 -c shared_preload_libraries=pg_stat_statements
