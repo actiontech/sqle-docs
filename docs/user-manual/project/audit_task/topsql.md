@@ -28,9 +28,9 @@ TOP SQL 语句可能会导致数据库性能下降。为此，我们提供了TOP
 
 
 :::tip
-对PG类型的数据源开启TOPSQ智能扫描时，PG需要开一个配置shared_preload_libraries
-* 该参数是 PostgreSQL 配置参数，用于在数据库启动时预加载指定的共享库。这样可以确保这些库在数据库运行期间可用。为了启用 pg_stat_statements 扩展并使其可以收集查询统计信息，你需要将其添加到 shared_preload_libraries 参数中。
-* 以下是docker启动PG时的参数配置示例
+对PG类型的数据源开启TOPSQ智能扫描时，PG需要保证两个前提：
+* 确保`pg_stat_statements`扩展已安装，参考SQL语句CREATE EXTENSION pg_stat_statements;
+* 将参数`shared_preload_libraries`的值设置为 pg_stat_statements来指定在启动时加载pg_stat_statements扩展
 ```
 docker run --name': docker run --name postgres -e POSTGRES_PASSWORD=123456 -d -p 5432:5432 -v /my/local/dir:/var/lib/postgresql/data postgres:13 -c shared_preload_libraries=pg_stat_statements
 ```
