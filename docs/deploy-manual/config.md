@@ -41,7 +41,7 @@ dms:
     - db_type: MySQL
       logo_path: "/logo/mysql.png"
       params:  
-    - db_type: Postgres
+    - db_type: PostgreSQL
       logo_path: "/static/logo/pg.png"
       params:   
     - db_type: Oracle
