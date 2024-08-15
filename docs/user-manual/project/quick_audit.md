@@ -47,4 +47,4 @@ title: SQL审核
 ![quick-audit](img/quick-audit.png)
 
 ## 后续操作
-添加了标签的SQL审核记录将进入SQL管控列表页面，用户可以在[管控列表](./sqlmanage.md)页面统一管理SQL。
+添加了标签的SQL审核记录将进入SQL管控列表页面，用户可以在[管控列表](user-manual/project/audit_task/sqlmanage.md)页面统一管理SQL。
