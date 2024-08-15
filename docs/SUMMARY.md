@@ -23,7 +23,7 @@
         * [审核规则模板](user-manual/project/rule-template-manager.md)
         * [审核流程模板](user-manual/project/workflow-template-manager.md)
         * [白名单管理【企业版】](user-manual/project/whitelist-manager.md)
-        * [SQL管控【企业版】](user-manual/project/sqlmanage.md)
+        * [SQL管控【企业版】](user-manual/project/audit_task/sqlmanage.md)
         * [数据导出【企业版】](/docs/user-manual/project/dataexport.md)
         * [SQL审核](user-manual/project/quick_audit.md)
         * [工单](user-manual/project/workflow/intro.md)
