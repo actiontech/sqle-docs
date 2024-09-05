@@ -167,6 +167,7 @@ const sidebars = {
       label: 'FAQ',
       items: [
         "FAQ/whichdatabase",
+        "FAQ/rollback",
       ],
     },
   ],
