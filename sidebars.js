@@ -168,6 +168,7 @@ const sidebars = {
       items: [
         "FAQ/whichdatabase",
         "FAQ/rollback",
+        "FAQ/mirror",
       ],
     },
   ],
