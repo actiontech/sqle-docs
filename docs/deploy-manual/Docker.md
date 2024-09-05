@@ -6,6 +6,10 @@ title: Docker部署
 ## Docker hub 地址
 [actiontech/sqle-ce](https://hub.docker.com/r/actiontech/sqle-ce)
 
+:::tip
+推荐配置国内镜像，参考[镜像推荐](/docs/FAQ/mirror.md)
+:::
+
 ## Docker 参考命令
 ```sh
 docker run -d -it \
