@@ -636,7 +636,7 @@ title: 功能对比
         <tr>
             <td>其他</td>
             <td>规则数量</td>
-            <td>175</td>
+            <td>176</td>
             <td>146</td>
             <td>162</td>
             <td>150</td>
@@ -818,7 +818,7 @@ title: 功能对比
             <td>83</td>
             <td>60</td>
             <td>72</td>
-            <td>23</td>
+            <td>24</td>
             <td>83</td>
         </tr>
     </table>
