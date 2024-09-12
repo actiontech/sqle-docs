@@ -78,6 +78,7 @@ const sidebars = {
             "user-manual/project/workflow/exec-workflow",
           ],
         },
+            "user-manual/project/CICDintegration",
         {
           type: 'category',
           label: 'SQL管控',
