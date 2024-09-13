@@ -54,6 +54,7 @@ const sidebars = {
             "user-manual/project/rule-template-manager",
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
+            "user-manual/project/blacklist-manager",
             "user-manual/project/operation_records",
           ],
         },
