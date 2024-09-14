@@ -56,6 +56,7 @@ const sidebars = {
             "user-manual/project/whitelist-manager",
             "user-manual/project/blacklist-manager",
             "user-manual/project/operation_records",
+            "user-manual/project/push-rule",
           ],
         },
         {
