@@ -7,7 +7,7 @@ title: Docker部署
 [actiontech/sqle-ce](https://hub.docker.com/r/actiontech/sqle-ce)
 
 :::tip
-推荐配置国内镜像，参考[镜像推荐](/docs/FAQ/mirror.md)
+推荐配置国内镜像源，参考[镜像推荐](/docs/FAQ/mirror.md)
 :::
 
 ## Docker 参考命令
