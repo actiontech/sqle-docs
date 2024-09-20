@@ -72,8 +72,8 @@ sqle:
     log_max_backup_number: 2
     plugin_path: './plugins'
     database:
-      mysql_host: '127.0.0.1'  # 请修改为实际连接信息
-      mysql_port: 3306   # 请修改为实际连接信息
+      mysql_host: '127.0.0.1'  # 请修改为实际监听的IP
+      mysql_port: 3306   # 请修改为实际监听的端口
       mysql_user: 'root'  # 请修改为实际连接信息
       mysql_password: '123456'   # 请修改为实际连接信息
       mysql_schema: 'sqle'
