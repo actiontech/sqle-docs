@@ -54,7 +54,9 @@ const sidebars = {
             "user-manual/project/rule-template-manager",
             "user-manual/project/workflow-template-manager",
             "user-manual/project/whitelist-manager",
+            "user-manual/project/blacklist-manager",
             "user-manual/project/operation_records",
+            "user-manual/project/push-rule",
           ],
         },
         {
@@ -78,6 +80,7 @@ const sidebars = {
             "user-manual/project/workflow/exec-workflow",
           ],
         },
+            "user-manual/project/CICDintegration",
         {
           type: 'category',
           label: 'SQL管控',
@@ -167,6 +170,8 @@ const sidebars = {
       label: 'FAQ',
       items: [
         "FAQ/whichdatabase",
+        "FAQ/rollback",
+        "FAQ/mirror",
       ],
     },
   ],

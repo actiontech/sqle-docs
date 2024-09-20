@@ -3,11 +3,11 @@ title: 配置文件说明
 ---
 # 配置文件说明
 :::tip
-SQLE的配置文件采用yml的格式，默认情况下位于SQLE安装目录下，路径为`./etc/config.yaml`
+SQLE的配置文件采用yaml的格式，默认情况下位于SQLE安装目录下，路径为`./etc/config.yaml`
 :::
 
 ## 默认文件参考
-```yml
+```yaml
 dms:
   id: 1
   api:
@@ -19,11 +19,11 @@ dms:
   secret_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   service:
     database:
-      host: "127.0.0.1"
-      port: 3306
-      username: "root"
-      password: "123456"
-      database: "dms"
+      host: "127.0.0.1"  # 请修改为实际监听的IP
+      port: 3306   # 请修改为实际监听的端口
+      username: "root"   # 请修改为实际连接信息
+      password: "123456"   # 请修改为实际连接信息
+      database: "dms"  
       debug: true
       auto_migrate: true
     log:
@@ -33,7 +33,7 @@ dms:
       max_backup_number: 10
   cloudbeaver:
     enable_https: false
-    host: "127.0.0.1"
+    host: "127.0.0.1"  
     port: 8978
     admin_user: "cbadmin"
     admin_password: "123456"
@@ -72,10 +72,10 @@ sqle:
     log_max_backup_number: 2
     plugin_path: './plugins'
     database:
-      mysql_host: '127.0.0.1'
-      mysql_port: 3306
-      mysql_user: 'root'
-      mysql_password: '123456'
+      mysql_host: '127.0.0.1'  # 请修改为实际监听的IP
+      mysql_port: 3306   # 请修改为实际监听的端口
+      mysql_user: 'root'  # 请修改为实际连接信息
+      mysql_password: '123456'   # 请修改为实际连接信息
       mysql_schema: 'sqle'
 ```
 ## 配置说明
