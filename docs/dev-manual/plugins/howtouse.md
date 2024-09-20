@@ -15,7 +15,7 @@ title: 数据库审核插件使用
 
 ### 完整操作流程参考
 
-执行脚本运行命令并选择数据源插件序号 ./scripts/init_config.sh
+执行脚本运行命令并选择数据源插件序号 ./init_config.sh
 ![scripts](img/scriptsexec.png)
 脚本自动执行环境校验
 ![check](img/environmentcheck.png)
