@@ -19,8 +19,8 @@ dms:
   secret_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   service:
     database:
-      host: "127.0.0.1"  # 请修改为实际连接信息
-      port: 3306   # 请修改为实际连接信息
+      host: "127.0.0.1"  # 请修改为实际监听的IP
+      port: 3306   # 请修改为实际监听的端口
       username: "root"   # 请修改为实际连接信息
       password: "123456"   # 请修改为实际连接信息
       database: "dms"  
