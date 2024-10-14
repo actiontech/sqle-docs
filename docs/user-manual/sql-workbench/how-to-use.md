@@ -15,13 +15,14 @@ SQLE在原有CloudBeaver release_23_2_1 分支的基础上, 增加了对OceanBas
 * docker镜像名调整为 actiontech/sqle-cloudbeaver:23_2_1
 * 优化打包方式, 大幅提高打包效率
 * 默认主题改为暗色
+* 支持全局水印展示用户名
 
 ### 项目地址
 * 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/release_23_2_1_sqle
 
 
 ### 定制包下载地址
-https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.1
+https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.2
 
 ### 使用说明
 #### 编译和运行项目
