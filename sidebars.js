@@ -78,6 +78,7 @@ const sidebars = {
             "user-manual/project/workflow/create-workflow",
             "user-manual/project/workflow/audit-workflow",
             "user-manual/project/workflow/exec-workflow",
+            "user-manual/project/workflow/version-management",
           ],
         },
             "user-manual/project/CICDintegration",
