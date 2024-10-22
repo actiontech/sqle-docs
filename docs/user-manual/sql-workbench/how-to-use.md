@@ -4,17 +4,17 @@ title: 使用定制包快速搭建环境
 
 
 ## 项目地址
-* 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/release_23_2_2_sqle
 
-
-## 定制包下载地址
-https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.2
+Release: https://github.com/actiontech/cloudbeaver/releases
 
 ## 使用说明
-### 定制包启动
-#### 定制包下载地址
+### 方式一 使用定制包启动
 
-[Release v23.2.2 · actiontech/cloudbeaver](Release v23.2.2 · actiontech/cloudbeaver)
+以23-2-2版本为例：
+
+#### 下载定制包
+
+定制包下载地址https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.2
 
 #### 安装与启动
 
@@ -24,7 +24,7 @@ cd cloudbeaver
 ./run-server.sh
 ```
 
-### 定制Docker镜像启动（推荐）
+### 方式二 使用定制Docker镜像启动（推荐）
 
 ```bash
 docker run -d --restart unless-stopped --name cloudbeaver --privileged -it -p 8978:8978 actiontech/cloudbeaver:latest
