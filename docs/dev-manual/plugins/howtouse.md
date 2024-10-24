@@ -44,7 +44,7 @@ title: 数据库审核插件使用
 1. 针对Oracle和DB2类型的数据源，须先在SQLE环境中安装JDK
 yum install java-1.8.0-openjdk* -y
 1. 针对Sql Server类型的数据源，需要安装 .net 6.0 版本
-* unbuntu
+* ubuntu
   * apt-get install -y dotnet-sdk-6.0
 * centos
   * rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
