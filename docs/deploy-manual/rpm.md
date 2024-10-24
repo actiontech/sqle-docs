@@ -32,7 +32,7 @@ CREATE DATABASE IF NOT EXISTS dms default character set utf8mb4 collate utf8mb4_
 安装完 SQLE 后，需要根据实际情况修改SQLE的配置，参考：[配置文件说明](./config.md)。SQLE安装完成后提供一个配置模版可直接修改。
 ```sh
 cd /opt/sqle/etc
-vim config.yml
+vim config.yaml
 ```
 :::tip
 确保 config.yaml 的文件 owner 为 actiontech-universe:actiontech
