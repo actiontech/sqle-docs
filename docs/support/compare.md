@@ -314,13 +314,13 @@ title: 功能对比
         <tr>
             <td>慢日志审核</td>
             <td></td>
-            <td>✅</td>
+            <td></td>
             <td>✅</td>
         </tr>
         <tr>
             <td>TopSQL</td>
             <td></td>
-            <td>✅</td>
+            <td></td>
             <td>✅</td>
         </tr>
         <tr>
