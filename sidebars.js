@@ -131,6 +131,7 @@ const sidebars = {
             "user-manual/user-manager/account",
           ],
         }, 
+        "user-manual/Dashboard",
         "user-manual/customrule",
         "user-manual/knowledgebase",   
         "user-manual/allinstance", 
