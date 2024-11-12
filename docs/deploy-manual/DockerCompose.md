@@ -13,3 +13,7 @@ title: Docker Compose 部署
 ```
 SQLE_IMAGE=actiontech/sqle-ce:latest docker-compose up -d
 ```
+
+:::tip
+自2024年10月起，平台为docker-compose集成了CloudBeaver部署功能。现在，当用户选择使用docker-compose进行部署时，系统将自动处理CloudBeaver的部署工作，用户无需进行任何额外的手动操作。
+:::

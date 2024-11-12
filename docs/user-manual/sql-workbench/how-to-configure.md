@@ -8,13 +8,18 @@ title: 配置方法
 SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1版本,推荐使用23.2.1版本
 :::
 
-docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
+* docker 部署：https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
+* 源码安装：https://github.com/dbeaver/cloudbeaver/wiki/Build-and-deploy
 
-源码安装：https://github.com/dbeaver/cloudbeaver/wiki/Build-and-deploy
 
-```
+
+:::note
+1. docker启动指令参考
+``` 
 docker run -d --restart unless-stopped --name cloudbeaver --privileged -it -p 8978:8978 dbeaver/cloudbeaver:23.2.1
 ```
+2. 自2024年10月起，平台为docker-compose集成了CloudBeaver部署功能。现在，当用户选择使用[docker-compose](/docs/deploy-manual/DockerCompose.md)进行部署时，系统将自动处理CloudBeaver的部署工作，用户无需进行任何额外的手动操作。
+:::
 
 ### 配置CloudBeaver
 #### 步骤一 修改CloudBeaver配置文件cloudbeaver.conf

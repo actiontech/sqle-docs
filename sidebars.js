@@ -64,6 +64,7 @@ const sidebars = {
           label: 'SQL开发',
           items: [
             "user-manual/project/dataexport",
+            "user-manual/project/Structure-Comparison",
             "user-manual/project/quick_audit",
             "user-manual/project/IDEaudit",
             "user-manual/project/audit_task/mybatis",
@@ -130,6 +131,7 @@ const sidebars = {
             "user-manual/user-manager/account",
           ],
         }, 
+        "user-manual/Dashboard",
         "user-manual/customrule",
         "user-manual/knowledgebase",   
         "user-manual/allinstance", 
