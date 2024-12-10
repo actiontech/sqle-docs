@@ -525,8 +525,8 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
-            <td> </td>
-            <td> </td>
+            <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>上线中止</td>
@@ -690,7 +690,7 @@ title: 功能对比
             <td>√</td>
             <td>√</td>
             <td>√</td>
-            <td> </td>
+            <td>√</td>
             <td>√</td>
         </tr>
         <tr>

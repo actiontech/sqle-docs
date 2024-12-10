@@ -4,7 +4,7 @@ title: Java探针版应用程序SQL抓取【企业版】
 本节介绍如何利用SQLE平台抓取java应用中的SQL，选取的例子是一个[开源的问卷调查java应用](https://gitee.com/surveyking/surveyking)，架构简单，上手相对容易。
 
 ## 支持的数据源类型
-* All
+* MySQL
 
 ## 前置准备
 

@@ -5,12 +5,6 @@ title: 应用程序SQL抓取【企业版】
 
 ## 支持的数据源类型
 * MySQL
-* Oracle
-* DB2
-* OceanBase for MySQL
-* PostgreSQL
-* TiDB
-* SQL Server
 
 ## 前置准备
 
