@@ -204,8 +204,8 @@ title: 功能对比
         <tr>
             <td  rowspan="9">工单上线</td>
             <td>自定义审核流程</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td> </td>
+            <td> </td>
             <td>✅</td>
         </tr>
         <tr>
@@ -239,9 +239,9 @@ title: 功能对比
             <td>✅</td>
         </tr>
         <tr>
-            <td>生成回滚语句提示</td>
-            <td>✅</td>
-            <td>✅</td>
+            <td>变更回滚</td>
+            <td> </td>
+            <td> </td>
             <td>✅</td>
         </tr>
         <tr>
