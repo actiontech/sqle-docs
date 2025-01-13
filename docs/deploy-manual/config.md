@@ -36,24 +36,7 @@ dms:
     host: "127.0.0.1"  
     port: 8978
     admin_user: "cbadmin"
-    admin_password: "123456"
-  database_driver_options:
-    - db_type: MySQL
-      logo_path: "/logo/mysql.png"
-      params:  
-    - db_type: PostgreSQL
-      logo_path: "/static/logo/pg.png"
-      params:   
-    - db_type: Oracle
-      logo_path: "/static/logo/oracle.png"
-      params: [
-       {
-        "key":"service_name",
-        "value":"XE",
-        "desc":"service name",
-        "type":"string"
-       },    
-      ]   
+    admin_password: "123456" 
 sqle:
   id: 1
   dms_server_address: "http://127.0.0.1:10000"
