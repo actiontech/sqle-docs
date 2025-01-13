@@ -48,17 +48,22 @@ SQLE中支持通过配置的方式接入OAuth 2.0系统, 如同其他系统一�
 #### 操作步骤
 点击修改，选择启用OAuth 2.0
 
-* 应用ID：应用的唯一标识, 从要对接的平台申请 , 在OAuth2.0认证过程中，appid的值即为oauth_consumer_key的值
-* 应用密钥：appid对应的密钥，访问用户资源时用来验证应用的合法性。在OAuth2.0认证过程中，appkey的值即为oauth_consumer_secret的值
-* 外部访问SQLE的地址：格式为 http(s)://ip:port
-* oauth2登录授权页面地址：格式类似于 http(s)://ip:port/xxx
-* oauth2 access_token 获取地址：格式类似于 http(s)://ip:port/xxx
-* oauth2 user id 获取地址：格式类似于 http(s)://ip:port/xxx
-* 请求资源范围：此范围由验证服务器定义
-* access_token放置位置：SQLE会在获取用户ID时将access_token放在这个key对应的value中, 此参数会作为get请求的参数发送给用户ID获取地址
-* 用户ID保存位置：SQLE会尝试使用此key从第三方平台的响应中解析出用户ID,用户ID应当为唯一ID
-* 登录按钮文字：用于登录页面按钮提示
-* 自动创建并绑定用户：若开启，在通过OAuth2登陆时，若该用户未绑定SQLE用户，SQLE则会根据从OAuth2服务端获取的用户id创建SQLE账户，并且不会跳转到绑定界面，而是进入SQLE主界面
+* **应用ID**：应用的唯一标识, 从要对接的平台申请 , 在OAuth2.0认证过程中，appid的值即为oauth_consumer_key的值
+* **应用密钥**：与应用ID对应的密钥，用于验证应用访问用户资源的合法性。在 OAuth2.0 认证过程中，此密钥用作 oauth_consumer_secret 的值。
+* **外部访问SQLE的地址**：用户通过第三方平台登录后，将被重定向到此地址。格式为 http(s)://ip:port
+* **oauth2.0登录授权页面地址**：用户在此页面授权应用访问其账户信息。格式为 http(s)://ip:port/xxx
+* **oauth2.0 access_token 获取地址**：用于获取访问令牌的地址，该令牌允许用户的应用访问用户资源。格式为 http(s)://ip:port/xxx
+* **oauth2 user id 获取地址**：用于获取用户ID的地址，该ID用于识别用户。格式为 http(s)://ip:port/xxx
+* **注销跳转地址**：用户登出时，系统自动将浏览器重定向至此地址进行注销操作，以关闭第三方平台的会话信息。格式为 http://localhost:8080/logout?id_token_hint=$[id_token]&post_logout_redirect_url=$[sqle_url]
+* **请求资源范围**：定义应用可以访问的资源范围，由验证服务器定义。
+* **access_token Key名称**：指定在获取用户ID时，access_token 存储的键名。此参数会作为 GET 请求的参数发送给用户ID获取地址。
+* **用户UID的JSON路径**：指定从第三方平台响应中解析用户ID的 JSON 路径。用户ID应当为唯一ID。
+* **用户邮箱的JSON路径**：指定从第三方平台响应中解析用户邮箱的 JSON 路径。
+* **用户微信ID的JSON路径**：指定从第三方平台响应中解析用户微信ID的 JSON 路径。
+* **登录按钮文字**：自定义登录页面上 OAuth2.0 登录按钮的显示文字。
+* **自动创建并绑定用户**：若开启，在通过OAuth2登陆时，若该用户未绑定SQLE用户，SQLE则会根据从OAuth2服务端获取的用户id创建SQLE账户，并且不会跳转到绑定界面，而是进入SQLE主界面
+* **默认登录密码**：跳过对请求发送来源的验证，可能增加安全风险。建议仅在可信环境下启用此选项。启用后，SQLE 将不再验证回调中的 state 参数。
+* **跳过请求来源验证**：跳过对请求发送来源的验证，可能增加安全风险。建议仅在可信环境下启用此选项。启用后，SQLE 将不再验证回调中的 state 参数。
 
 :::tip
 当仅允许内网访问SQLE服务时，请确保回调地址的后缀为"/v1/oauth2/callback"。
