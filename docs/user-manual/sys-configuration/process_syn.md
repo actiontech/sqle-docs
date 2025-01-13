@@ -69,3 +69,29 @@ title: 流程对接
 ### 利用飞书进行审批
 当发生工单变化时，工单关联成员可在对应飞书账号中收到通知，并进行相应的审批操作；
 ![dingding-flow](img/feishu-flow.png)
+
+## Coding对接
+
+### 创建Coding API Token
+* 登录Coding平台，进入“个人账户设置”，点击“访问令牌管理”，新建访问令牌。
+* 配置令牌相关权限这些权限将决定Token能够访问的资源和操作。
+* 创建成功后，复制生成的Token，该Token将用于调用Coding Open API。
+
+![codingconfig](./img/codingconfig.png)
+
+### 创建Coding项目
+* 新创建的项目需要进行初始化
+* 其中，sqle对接coding的项目名称为，项目地址的后缀。
+
+![coding.](./img/coding.png)
+
+### SQLE对接Coding
+* 登录SQLE系统。进入`系统设置`-`流程对接`页面。
+* 启用Coding对接，填写Coding服务的地址和之前创建的访问令牌（API Token）。
+  * 测试联通性，确保SQLE能够成功连接到Coding平台。
+
+![codingSQLE](./img/codingSQLE.png)
+
+### 将SQL推送至Coding平台
+* 在SQL管控中，如果使用者想更直观地暴露问题SQL，并进行持续追踪，使用者只需要一键推送，就可以将问题SQL同步到Coding平台，其他开发人员也可以在熟悉的开发环境中进行任务分配与进度追踪。
+![codingSQL](./img/codingSQL.png)
