@@ -620,10 +620,10 @@ title: 功能对比
         <tr>
             <td>应用程序抓取</td>
             <td>√</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>自定义</td>
@@ -795,12 +795,12 @@ title: 功能对比
         </tr>
         <tr>
             <td>应用程序抓取</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
-            <td>√</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>自定义</td>
