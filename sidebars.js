@@ -103,6 +103,13 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'SQL优化',
+          items: [
+            "user-manual/project/sql-improve/sqlrewrite",
+          ],
+        },
+        {
+          type: 'category',
           label: 'SQL工作台',
           items: [
             "user-manual/sql-workbench/introduction",
