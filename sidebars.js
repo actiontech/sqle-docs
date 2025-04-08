@@ -126,6 +126,7 @@ const sidebars = {
             "user-manual/sys-configuration/message_syn",
             "user-manual/sys-configuration/process_syn",
             "user-manual/sys-configuration/webhook",
+            "user-manual/sys-configuration/MFA",
             "user-manual/sys-configuration/configuration",
             "user-manual/sys-configuration/customize",
           ],
