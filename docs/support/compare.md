@@ -13,7 +13,7 @@ title: 功能对比
             <td>企业版</td>
         </tr>
         <tr>
-            <td  rowspan="12">支持的数据源类型</td>
+            <td  rowspan="13">支持的数据源类型</td>
             <td>MySQL</td>
             <td>✅</td>
             <td>✅</td>
@@ -81,6 +81,12 @@ title: 功能对比
         </tr>
         <tr>
             <td>GoldenDB</td>
+            <td></td>
+            <td></td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>ActionDB</td>
             <td></td>
             <td></td>
             <td>✅</td>
@@ -485,7 +491,7 @@ title: 功能对比
 目前支持的数据源类型中，除MySQL为社区版，其他均为企业版。
 :::
 ### MySQL系
-<table border="0"  cellspacing="0" cellpadding="5">
+<table border="0"  cellspacing="0" cellpadding="6">
      <tr>
             <td width="150"> </td>
             <td width="500"> </td>
@@ -494,12 +500,14 @@ title: 功能对比
             <td>TDSQL for InnoDB</td>
             <td>OceanBase For MySQL</td>
             <td>TiDB</td>
+            <td>ActionDB</td>
         </tr>
         <tr>
             <td  rowspan="5">功能</td>
             <td>SQL分析</td>
             <td>√</td>
             <td> </td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -511,9 +519,11 @@ title: 功能对比
             <td>√</td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>元数据检查</td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -527,9 +537,11 @@ title: 功能对比
             <td> </td>
             <td>√</td>
             <td>√</td>
+            <td>√</td>
         </tr>
         <tr>
             <td>上线中止</td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -544,10 +556,12 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>慢日志</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -560,6 +574,7 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>TopSQL</td>
@@ -568,6 +583,7 @@ title: 功能对比
             <td> </td>
             <td>√</td>
             <td> </td>
+            <td>√</td>
         </tr>
         <tr>
             <td>TiDB审计日志</td>
@@ -576,9 +592,11 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td>√</td>
+            <td> </td>
         </tr>
         <tr>
             <td>MyBatis</td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -592,10 +610,12 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>阿里RDS MySQL审计日志</td>
             <td>√</td>
+            <td> </td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -608,9 +628,11 @@ title: 功能对比
             <td> </td>
             <td> </td>
             <td> </td>
+            <td> </td>
         </tr>
         <tr>
             <td>SQL文件扫描</td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -624,9 +646,11 @@ title: 功能对比
             <td></td>
             <td></td>
             <td></td>
+            <td> </td>
         </tr>
         <tr>
             <td>自定义</td>
+            <td>√</td>
             <td>√</td>
             <td>√</td>
             <td>√</td>
@@ -641,6 +665,7 @@ title: 功能对比
             <td>162</td>
             <td>150</td>
             <td>153</td>
+            <td>150</td>
         </tr>
     </table>
 
