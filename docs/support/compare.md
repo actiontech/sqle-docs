@@ -348,6 +348,19 @@ title: 功能对比
             <td>✅</td>
         </tr>
         <tr>
+            <td  rowspan="2">SQL优化</td>
+            <td>SQL合规重写</td>
+            <td></td>
+            <td> </td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>智能调优</td>
+            <td></td>
+            <td></td>
+            <td>✅</td>
+        </tr>
+        <tr>
             <td  rowspan="2">数据操作</td>
             <td>集成CloudBeaver-提供在线SQL客户端</td>
             <td>✅</td>
