@@ -90,6 +90,7 @@ const sidebars = {
           items: [
             "user-manual/project/audit_task/intro",
             "user-manual/project/audit_task/sqlmanage",
+            "user-manual/project/audit_task/SQLdrilldown",
             "user-manual/project/audit_task/metadata_audit",
             "user-manual/project/audit_task/slowlog_audit",
             "user-manual/project/audit_task/processlist_audit",
@@ -98,6 +99,13 @@ const sidebars = {
             "user-manual/project/audit_task/huaweiyunrds",
             "user-manual/project/audit_task/java_application_audit",
             "user-manual/project/audit_task/java_agent_audit",
+          ],
+        },
+        {
+          type: 'category',
+          label: 'SQL优化',
+          items: [
+            "user-manual/project/sql-improve/sqlrewrite",
           ],
         },
         {
@@ -118,6 +126,7 @@ const sidebars = {
             "user-manual/sys-configuration/message_syn",
             "user-manual/sys-configuration/process_syn",
             "user-manual/sys-configuration/webhook",
+            "user-manual/sys-configuration/MFA",
             "user-manual/sys-configuration/configuration",
             "user-manual/sys-configuration/customize",
           ],
