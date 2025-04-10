@@ -263,7 +263,7 @@ title: 功能对比
             <td>✅</td>
         </tr>
         <tr>
-            <td  rowspan="14">智能扫描</td>
+            <td  rowspan="15">智能扫描</td>
             <td>库表元数据</td>
             <td>✅</td>
             <td>✅</td>
@@ -343,6 +343,12 @@ title: 功能对比
         </tr>
         <tr>
             <td>支持JAVA探针采集JAVA应用SQL</td>
+            <td></td>
+            <td></td>
+            <td>✅</td>
+        </tr>
+        <tr>
+            <td>TDSQL锁监控</td>
             <td></td>
             <td></td>
             <td>✅</td>
