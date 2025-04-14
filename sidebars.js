@@ -99,6 +99,7 @@ const sidebars = {
             "user-manual/project/audit_task/huaweiyunrds",
             "user-manual/project/audit_task/java_application_audit",
             "user-manual/project/audit_task/java_agent_audit",
+            "user-manual/project/audit_task/lockinfo",
           ],
         },
         {
