@@ -146,6 +146,7 @@ const sidebars = {
         "user-manual/customrule",
         "user-manual/knowledgebase",   
         "user-manual/allinstance", 
+        "user-manual/resource-overview",
         "user-manual/project/instance_syn",
       ],
     },
