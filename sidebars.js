@@ -130,6 +130,7 @@ const sidebars = {
             "user-manual/sys-configuration/MFA",
             "user-manual/sys-configuration/configuration",
             "user-manual/sys-configuration/customize",
+            "user-manual/sys-configuration/zone",
           ],
         },           
         {
