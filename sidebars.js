@@ -114,8 +114,21 @@ const sidebars = {
           label: 'SQL工作台',
           items: [
             "user-manual/sql-workbench/introduction",
-            "user-manual/sql-workbench/how-to-configure",
-            "user-manual/sql-workbench/how-to-use",
+            {
+              type: 'category',
+              label: 'CloudBeaver',
+              items: [
+                "user-manual/sql-workbench/cloudbeaver/intro",
+                "user-manual/sql-workbench/cloudbeaver/customize",
+              ],
+            },
+            {
+              type: 'category',
+              label: '新版工作台',
+              items: [
+                "user-manual/sql-workbench/odc/deploy",
+              ],
+            },
           ],
         },
         {
