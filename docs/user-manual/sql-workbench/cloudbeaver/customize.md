@@ -23,8 +23,8 @@ SQLE在原有CloudBeaver release_25.2.1 分支的基础上拓展, 用户无需�
 ## 项目地址
 
 * Release: https://github.com/actiontech/cloudbeaver/releases
-* 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/sqle_22_2_0
-* 定制DBeaver分支: https://github.com/actiontech/dbeaver/tree/sqle_22_2_0
+* 定制CloudBeaver分支: https://github.com/actiontech/cloudbeaver/tree/release_25_2_1_sqle
+
 
 ## 使用说明
 
