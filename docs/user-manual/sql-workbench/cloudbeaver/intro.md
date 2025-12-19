@@ -7,7 +7,7 @@ title: CloudBeaver部署配置
 CloudBeaver Community 是一个开源的 Web 数据库可视化管理工具，支持 PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, DB2, Firebird, H2, Trino 等数据库。
 
 :::tip
-SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1版本，推荐使用23.2.1版本
+SQLE目前支持的CloudBeaver版本包括22.2.0、22.2.1、22.2.3、22.3.1、23.2.1、25.2.1版本，推荐使用25.2.1版本
 :::
 
 ## 安装CloudBeaver
