@@ -90,6 +90,7 @@ const sidebars = {
           items: [
             "user-manual/project/audit_task/intro",
             "user-manual/project/audit_task/sqlmanage",
+            "user-manual/project/audit_task/performance-insight",
             "user-manual/project/audit_task/SQLdrilldown",
             "user-manual/project/audit_task/metadata_audit",
             "user-manual/project/audit_task/slowlog_audit",
@@ -107,6 +108,7 @@ const sidebars = {
           label: 'SQL优化',
           items: [
             "user-manual/project/sql-improve/sqlrewrite",
+            "user-manual/project/sql-improve/sqltune",
           ],
         },
         {
@@ -114,8 +116,21 @@ const sidebars = {
           label: 'SQL工作台',
           items: [
             "user-manual/sql-workbench/introduction",
-            "user-manual/sql-workbench/how-to-configure",
-            "user-manual/sql-workbench/how-to-use",
+            {
+              type: 'category',
+              label: 'CloudBeaver',
+              items: [
+                "user-manual/sql-workbench/cloudbeaver/intro",
+                "user-manual/sql-workbench/cloudbeaver/customize",
+              ],
+            },
+            {
+              type: 'category',
+              label: '新版工作台',
+              items: [
+                "user-manual/sql-workbench/odc/deploy",
+              ],
+            },
           ],
         },
         {
