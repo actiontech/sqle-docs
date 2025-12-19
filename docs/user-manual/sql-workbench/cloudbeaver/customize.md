@@ -50,3 +50,5 @@ cd cloudbeaver
 docker run -d --restart unless-stopped --name cloudbeaver --privileged -it -p 8978:8978 actiontech/cloudbeaver:latest
 ```
 
+### 后续操作
+部署完成后，需要访问IP:PORT:8978/sql_query ，根据引导实现初始账号的配置，并开启工作台使用
