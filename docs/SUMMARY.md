@@ -42,6 +42,7 @@
       * [回滚工单](user-manual/project/workflow/rollback.md)
       * [版本管理](user-manual/project/workflow/version-management.md)
     * [扫描任务](user-manual/project/audit_task/intro.md)
+      * [性能洞察](user-manual/project/audit_task/performance-insight.md)
       * [库表元数据](user-manual/project/audit_task/metadata_audit.md)
       * [慢日志](user-manual/project/audit_task/slowlog_audit.md)
       * [会话SQL扫描任务](user-manual/project/audit_task/processlist_audit.md)
