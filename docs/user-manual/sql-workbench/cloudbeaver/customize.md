@@ -34,7 +34,7 @@ SQLE在原有CloudBeaver release_25.2.1 分支的基础上拓展, 用户无需�
 
 #### 下载定制包
 
-定制包下载地址 https://github.com/actiontech/cloudbeaver/releases/tag/v23.2.2
+定制包下载地址 https://github.com/actiontech/cloudbeaver/releases/tag/v25.2.1
 
 #### 安装与启动
 
