@@ -50,10 +50,3 @@ cd cloudbeaver
 docker run -d --restart unless-stopped --name cloudbeaver --privileged -it -p 8978:8978 actiontech/cloudbeaver:latest
 ```
 
-## 升级现有CloudBeaver环境至定制环境
-
-确保CloudBeaver程序目录下包含以下文件：
-
-![cb](../img/cb.png)
-
-将现有CloudBeaver程序目录下的`conf`和`workspace`目录移动到定制CloudBeaver程序目录下（覆盖原目录）。随后停止旧CloudBeaver，运行新的CloudBeaver即可。
