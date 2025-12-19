@@ -107,6 +107,7 @@ const sidebars = {
           label: 'SQL优化',
           items: [
             "user-manual/project/sql-improve/sqlrewrite",
+            "user-manual/project/sql-improve/sqltune",
           ],
         },
         {
