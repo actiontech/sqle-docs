@@ -4,7 +4,7 @@ title: 定制包使用
 
 # 定制包使用
 
-SQLE在原有CloudBeaver release_22_2_0 分支的基础上, 增加了对OceanBase 和 TiDB 的支持, 用户无需再手动配置环境，可直接使用SQL工作台功能。
+SQLE在原有CloudBeaver release_25.2.1 分支的基础上拓展, 用户无需再手动配置环境，可直接使用SQL工作台功能。
 
 ![cb](../img/appear.png)
 
