@@ -90,42 +90,36 @@ vi /opt/sqle/etc/config.yaml
 ```yaml
 dms:
   id: 1
-api:
-  addr: 0.0.0.0
-  port: 10000
-service:
-  database:
-    username: root
-    password: 123456
+  api:
+    addr: 0.0.0.0
+    port: 10000
+  service:
+    database:
+      username: root
+      password: 123456
+      host: 127.0.0.1
+      port: 3306
+      database: dms
+      auto_migrate: true
+  log:
+    level: INFO
+    path: logs
+    max_size_mb: 100
+    max_backup_number: 10
+  sql_workbench:
+    enable_https: false
     host: 127.0.0.1
-    port: 3306
-    database: dms
-    auto_migrate: true
-log:
-  level: INFO
-  path: logs
-  max_size_mb: 100
-  max_backup_number: 10
-cloudbeaver:
-  enable_https: false
-  host: 127.0.0.1
-  port: 8978
-  admin_user: administrator
-  admin_password: 123456
-sql_workbench:
-  enable_https: false
-  host: 127.0.0.1
-  port: 8989
-  admin_user: admin
-  admin_password: <your_admin_password>
-secret_key:
-server_id:
-enable_cluster_mode: false
-report_host: # the host name or IP address of the cluster node
-database_driver_options:
-  - db_type: MySQL
-    logo_path: "/logo/mysql.png"
-    params:
+    port: 8989
+    admin_user: admin
+    admin_password: <your_admin_password>
+  secret_key:
+  server_id:
+  enable_cluster_mode: false
+  report_host: # the host name or IP address of the cluster node
+  database_driver_options:
+    - db_type: MySQL
+      logo_path: "/logo/mysql.png"
+      params:
 # 其余内容省略
 ```
 
