@@ -9,7 +9,7 @@ title: 在线体验
 ## 登录用户
 |user|password|
 |---|---|
-|admin|admin|
+|admin|Sqle.@ctionSky666|
 
 ## 测试 MySQL
 |variable|value|
