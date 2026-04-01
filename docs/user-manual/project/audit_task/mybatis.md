@@ -1,98 +1,118 @@
 ---
-title: MyBatis扫描
+title: MyBatis 扫描
 ---
-本节介绍MyBatis扫描的应用场景及配置方法。
+
+# MyBatis 扫描
+
+MyBatis 扫描用于在应用开发阶段对 MyBatis XML 文件中的 SQL 进行审核，尽早发现 SQL 质量问题。采集通过 SQLE 提供的 scannerd 工具完成，支持直接执行和 CI/CD 集成两种方式。
 
 ## 支持的数据源类型
 
-目前所有数据源均已支持MyBatis扫描任务类型。
+所有平台已支持的数据源类型均支持 MyBatis 扫描。
 
-## 使用场景
-应用开发阶段可以通过MyBatis扫描任务对应用代码中SQL做实时审核，MyBatis扫描任务需要通过SQLE提供的Scannerd进行SQL采集并推送到SQLE进行SQL审核。
+## 前置条件
 
-当前支持用户直接执行Scannerd进行扫描，也支持用户利用CI/CD平台进行持续集成，例如 Jenkins ，GoCD ，git平台的 CI/CD 等，以此实现标准化开发流程，及时发现SQL问题。
+- 已在后端环境中准备好 MyBatis XML 文件
 
+## 方式一：直接执行 scannerd
 
-## 基础使用方式
+### 步骤一：创建扫描任务
 
-### 新建智能扫描任务
-进入智能扫描任务列表，点击新建，选择MyBatis扫描任务类型。
+进入智能扫描任务列表，点击 **新建**，选择 **MyBatis 扫描** 任务类型。
 
-### 直接执行scannerd文件 
+### 步骤二：执行 scannerd
 
-#### 1.在后端环境中准备MyBatis的XML文件
-
-#### 2.执行Scannerd文件
 :::tip
-注意：使用rpm或docker部署的情况下，scannerd通常在SQLE的bin目录下。
-::: 
+scannerd 通常位于 SQLE 安装目录的 `bin/` 下。使用 RPM 或 Docker 部署时路径相同。
+:::
 
-示例如下：
-
+```bash
+./scannerd mybatis \
+  -H 10.186.64.175 \
+  -P 10000 \
+  -J default \
+  -N mybatis1 \
+  -D /tmp/xml \
+  -A "<扫描任务凭证>"
 ```
-./scannerd mybatis -H10.186.64.175 -N"mybatis1" -P"10000" -J"default" -D/tmp/xml -A"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcG4iOiJteWJhdGlzMSIsImV4cCI6MTcyMTE4Mzc3OSwibmFtZSI6ImFkbWluIn0.Mx8G0Vttxt4hdLxn-odW_WopcMH4ANadNvX6fmp-Yqs"
-```
 
-参数解释如下：
+| 参数 | 说明 |
+|------|------|
+| `-J, --project` | 扫描任务所在项目名称 |
+| `-H, --host` | DMS/SQLE 主机地址 |
+| `-P, --port` | SQLE 服务端口 |
+| `-N, --name` | 扫描任务名称 |
+| `-D, --dir` | MyBatis XML 文件所在目录 |
+| `-A, --token` | 扫描任务凭证 Token，从平台页面复制 |
 
-* -J, --project：说明扫描任务所在项目，例如“default”；
-* -H, --host string：指定dms主机所在地址；
-* -P, --port string：指定dms所在端口；
-* -N, --name string：指定扫描任务名称，scannerd会将获得的SQL传至指定的任务池中审核；
-* -D, --dir string：指定要扫描的XML文件路径
-* -A, --token string：输入扫描任务凭证token；
+### 步骤三：查看审核结果
 
-### 平台查看执行结果
-* 用户进入扫描任务详情，可以查看已采集到的XML文件中的SQL信息；
-* 用户点击`立即审核`，可以在扫描任务报告中获取当前SQL的审核结果；
+1. 进入扫描任务详情，查看已采集的 XML 文件中的 SQL
+2. 点击 **立即审核**，在扫描报告中查看审核结果
 
-## 在腾讯云CODING上集成SQL审核
+## 方式二：在 CI/CD 平台集成
 
-### 新建智能扫描任务
-进入智能扫描任务列表，点击新建，选择MyBatis扫描任务类型。
+以腾讯云 CODING 为例，展示如何将 MyBatis 扫描集成到持续集成流程中。
 
-### 部署CODING平台
-#### 1.创建项目
-![coding-createproject](img/coding-createproject.png)
-#### 2.创建代码仓库，此处放置XML文件
-![coding-createcodebase](img/coding-createcodebase.png)
-![coding-codebaseexample](img/coding-codebaseexample.png)
-#### 3.上传SQLE插件，插件将用于扫描MyBatis文件
+### 步骤一：创建扫描任务
 
-左边栏进入"团队设置中心"->"功能设置" ；
-![coding-pluginroute](img/coding-pluginroute.png)
+进入智能扫描任务列表，点击 **新建**，选择 **MyBatis 扫描** 任务类型。
 
-点击"新建构建插件"，选择sqle-scannerd.zip，发布插件；
-![coding-pluginupload](img/coding-pluginupload.png)
+### 步骤二：部署 CODING 平台
 
-配置关联项目；
-![coding-pluginwithproject](img/coding-pluginwithproject.png)
+1. **创建项目**
 
-完成插件上传。
+![创建项目](img/coding-createproject.png)
 
-#### 4.创建构建计划 
-进入项目 -> 持续集成 -> 构建计划，点击创建构建计划；
-![coding-createstructure](img/coding-createstructure.png)
+2. **创建代码仓库**（存放 XML 文件）
 
-选择一个合适的构建模板，这里使用"自定义构建过程"；
-![coding-choosestructure](img/coding-choosestructure.png)
+![创建代码仓库](img/coding-createcodebase.png)
+![代码仓库示例](img/coding-codebaseexample.png)
 
-选择要做SQL审核的代码仓库；
-![coding-choosedatabase](img/coding-choosedatabase.png)
+3. **上传 SQLE 插件**
 
-添加一个SQL审核节点，点击加号，选择 其他 -> 团队插件 -> SQL扫描插件； 
-![coding-chooseplugin](img/coding-chooseplugin.png)
+进入 **团队设置中心** → **功能设置**：
 
-填写SQLE相关参数，点击参数名右边的问号可以查看参数说明，此处以SQLE社区演示环境的信息为例；
-![coding-editinfo](img/coding-editinfo.png)
+![插件入口](img/coding-pluginroute.png)
 
-编辑后点击保存，完成构建计划。
+点击 **新建构建插件**，上传 `sqle-scannerd.zip` 并发布：
 
-### 触发构建，获得审核结果
+![上传插件](img/coding-pluginupload.png)
 
-在构建计划中点击立即构建按钮；
-![coding-do](img/coding-do.png)
+配置关联项目：
 
-可以在在构建过程中查看构建结果，也可以在SQLE平台的扫描任务中查看审核结果。
-![coding-result](img/coding-result.png)
+![关联项目](img/coding-pluginwithproject.png)
 
+4. **创建构建计划**
+
+进入项目 → **持续集成** → **构建计划**，点击 **创建构建计划**：
+
+![创建构建计划](img/coding-createstructure.png)
+
+选择 **自定义构建过程** 模板：
+
+![选择模板](img/coding-choosestructure.png)
+
+选择代码仓库：
+
+![选择代码仓库](img/coding-choosedatabase.png)
+
+添加 SQL 审核节点：点击加号 → **其他** → **团队插件** → **SQL 扫描插件**：
+
+![选择插件](img/coding-chooseplugin.png)
+
+填写 SQLE 参数：
+
+![填写参数](img/coding-editinfo.png)
+
+点击 **保存** 完成构建计划配置。
+
+### 步骤三：触发构建
+
+在构建计划中点击 **立即构建**：
+
+![执行构建](img/coding-do.png)
+
+可在构建过程中查看结果，也可在 SQLE 平台的扫描任务中查看审核结果：
+
+![构建结果](img/coding-result.png)

@@ -12,13 +12,15 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "export-pdf": "xvfb-run npx docexport http://10.186.61.13:3000/sqle-docs/docs/user-manual/intro -o DMS用户手册.pdf"
   },
   "dependencies": {
     "@docusaurus/core": "2.2.0",
     "@docusaurus/preset-classic": "2.2.0",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
+    "docusaurus-export-pdf": "^2.3.0",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

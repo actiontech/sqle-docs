@@ -80,3 +80,60 @@ div[class^='docPage'] {
 .feature-content {
   text-align: left;
 }
+
+/* Edition admonitions */
+[data-theme='light'] .alert--edition-enterprise {
+  --ifm-alert-background-color: #e7f5ff;
+  --ifm-alert-foreground-color: #1864ab;
+  --ifm-alert-border-color: #1971c2;
+}
+
+[data-theme='dark'] .alert--edition-enterprise {
+  --ifm-alert-background-color: #1a3a5c;
+  --ifm-alert-foreground-color: #a5d8ff;
+  --ifm-alert-border-color: #339af0;
+}
+
+[data-theme='light'] .alert--edition-dms {
+  --ifm-alert-background-color: #f3f0ff;
+  --ifm-alert-foreground-color: #5f3dc4;
+  --ifm-alert-border-color: #7048e8;
+}
+
+[data-theme='dark'] .alert--edition-dms {
+  --ifm-alert-background-color: #2b1a4e;
+  --ifm-alert-foreground-color: #d0bfff;
+  --ifm-alert-border-color: #9775fa;
+}
+
+/* Inline edition badge */
+.edition-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+  line-height: 1.4;
+}
+
+.edition-badge--enterprise {
+  background-color: #d0ebff;
+  color: #1864ab;
+}
+
+.edition-badge--dms {
+  background-color: #e5dbff;
+  color: #5f3dc4;
+}
+
+[data-theme='dark'] .edition-badge--enterprise {
+  background-color: #1a3a5c;
+  color: #a5d8ff;
+}
+
+[data-theme='dark'] .edition-badge--dms {
+  background-color: #2b1a4e;
+  color: #d0bfff;
+}
